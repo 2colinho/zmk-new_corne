@@ -143,8 +143,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - INS
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   NUM:
