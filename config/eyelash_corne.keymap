@@ -79,10 +79,10 @@
         symbol {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp GRAVE  &none   &kp LBKT  &kp RBKT  &kp MINUS                    &trans          &kp PLUS   &kp LPAR       &kp RPAR          &none     &none     &kp BSPC
-&trans  &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT            &trans  &trans  &trans  &kp CARET  &kp AMPS       &kp ASTRK         &kp BSLH  &kp PIPE  &none
-&trans  &kp TILDE  &none   &kp LBRC  &kp RBRC  &kp UNDER  &trans            &trans          &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN  &none     &none     &none
-                           &trans    &trans    &kp SPACE                                    &kp RET    &trans         &trans
+&trans            &kp GRAVE  &none   &kp LBKT  &kp RBKT  &kp MINUS                    &trans          &kp PLUS   &kp LPAR       &kp RPAR          &none     &none     &kp BSPC
+&kp LEFT_CONTROL  &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT            &trans  &trans  &trans  &kp CARET  &kp AMPS       &kp ASTRK         &kp BSLH  &kp PIPE  &none
+&kp LEFT_SHIFT    &kp TILDE  &none   &kp LBRC  &kp RBRC  &kp UNDER  &trans            &trans          &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN  &none     &none     &none
+                                     &trans    &trans    &kp SPACE                                    &kp RET    &trans         &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
