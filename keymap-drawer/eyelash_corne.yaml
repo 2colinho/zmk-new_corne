@@ -77,7 +77,7 @@ layers:
   - '*'
   - {t: \, s: '|'}
   - '|'
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
   - $$mdi:apple-keyboard-shift$$
   - '~'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -126,7 +126,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: 'Ctl+$$mdi:backspace-reverse-outline$$', h: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Z
   - Ctl+Sft+Z
