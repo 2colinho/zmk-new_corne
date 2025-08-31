@@ -103,22 +103,10 @@
         numpad {
             display-name = "NUM";
             bindings = <
-&trans            &kp GRAVE  &none   &kp LBKT  &kp RBKT  &kp MINUS                    &trans          &kp PLUS   &kp LPAR       &kp RPAR          &none     &none     &trans
-&kp LEFT_CONTROL  &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT            &trans  &trans  &trans  &kp CARET  &kp AMPS       &kp ASTRK         &kp BSLH  &kp PIPE  &mt LC(DEL) DEL
-&kp LEFT_SHIFT    &kp TILDE  &none   &kp LBRC  &kp RBRC  &kp UNDER  &trans            &trans          &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN  &none     &none     &none
-                                     &trans    &trans    &kp SPACE                                    &kp RET    &kp BSPC       &kp DEL
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-
-        function {
-            display-name = "FUN";
-            bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                              &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &trans                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans       &trans     &trans                                                               &trans       &trans     &trans
+&trans            &none  &none  &none   &none   &none                        &trans          &kp FSLH   &kp N7        &kp N8  &kp N9  &kp STAR  &trans
+&kp LEFT_CONTROL  &none  &none  &none   &none   &none                &trans  &trans  &trans  &kp MINUS  &kp N4        &kp N5  &kp N6  &kp PLUS  &mt LC(DEL) DEL
+&kp LEFT_SHIFT    &none  &none  &none   &none   &none      &trans            &trans          &none      &kp NUMBER_1  &kp N2  &kp N3  &kp DOT   &none
+                                &trans  &trans  &kp SPACE                                    &kp RET    &kp N0        &kp N0
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -131,6 +119,18 @@
 &trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
 &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &trans                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
                                          &trans        &trans        &trans                                                                      &kp INS          &kp DEL          &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        function {
+            display-name = "FUN";
+            bindings = <
+&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                              &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
+&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &trans                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                       &trans       &trans     &trans                                                               &trans       &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
