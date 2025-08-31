@@ -341,8 +341,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:apple-keyboard-option$$
-  - RGUI
+  - {t: '&mkp MB4', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '&mkp MB5', h: RGUI}
   FUN:
   - '&studio_unlock'
   - F1
