@@ -112,7 +112,7 @@ layers:
   - {t: 'Ctl+$$mdi:arrow-right-bold$$', h: Ctl+END}
   - Meh+P
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-control$$
   - {t: Meh+A, h: Ctl+A}
   - Ctl+X
   - Meh+C
@@ -127,7 +127,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: 'Ctl+$$mdi:backspace-reverse-outline$$', h: '$$mdi:backspace-reverse-outline$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
   - Ctl+Z
   - Ctl+Sft+Z
   - {t: '$$mdi:minus-circle-outline$$', type: none}
