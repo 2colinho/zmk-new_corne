@@ -79,7 +79,6 @@
             require-prior-idle-ms = <150>;
             flavor = "balanced";
             quick-tap-ms = <175>;
-            label = "LT2";
         };
     };
 
