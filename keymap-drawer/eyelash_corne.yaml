@@ -230,7 +230,7 @@ layers:
   - RGB TOG
   - RGB BRD
   - RGB BRI
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - RGB EFF
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
