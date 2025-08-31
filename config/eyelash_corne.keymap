@@ -80,7 +80,7 @@
             display-name = "SYM";
             bindings = <
 &trans            &kp GRAVE  &none   &kp LBKT  &kp RBKT  &kp MINUS                    &trans          &kp PLUS   &kp LPAR       &kp RPAR          &none     &none     &trans
-&kp LEFT_CONTROL  &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT            &trans  &trans  &trans  &kp CARET  &kp AMPS       &kp ASTRK         &kp BSLH  &kp PIPE  &kp DEL
+&kp LEFT_CONTROL  &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT            &trans  &trans  &trans  &kp CARET  &kp AMPS       &kp ASTRK         &kp BSLH  &kp PIPE  &mt LC(DEL) DEL
 &kp LEFT_SHIFT    &kp TILDE  &none   &kp LBRC  &kp RBRC  &kp UNDER  &trans            &trans          &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN  &none     &none     &none
                                      &trans    &trans    &kp SPACE                                    &kp RET    &kp BSPC       &kp DEL
             >;
@@ -92,7 +92,7 @@
             display-name = "NAV";
             bindings = <
 &trans  &none                    &none          &none              &none              &none                        &trans          &kp PG_UP  &mt HOME LC(LEFT)  &kp UP    &mt LC(END) LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
-&trans  &mt LC(A) LC(LS(LA(A)))  &kp LC(X)      &kp LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN  &kp RIGHT              &none              &kp DEL
+&trans  &mt LC(A) LC(LS(LA(A)))  &kp LC(X)      &kp LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN  &kp RIGHT              &none              &mt DEL LC(DEL)
 &trans  &kp LC(Z)                &kp LC(LS(Z))  &none              &none              &none      &trans            &trans          &none      &kp LC(LS(LA(M)))  &none     &kp LC(LS(LA(DOT)))    &none              &none
                                                 &trans             &trans             &kp SPACE                                    &kp RET    &kp BSPC           &kp DEL
             >;
