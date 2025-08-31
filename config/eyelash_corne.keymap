@@ -112,6 +112,18 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
+        window {
+            display-name = "WIN";
+            bindings = <
+&none             &none  &none             &kp LG(TAB)  &none              &none                    &trans          &kp LS(LG(UP))    &kp LS(LG(LEFT))  &kp LA(LG(UP))          &kp LS(LG(RIGHT))  &kp LC(LS(LA(P)))  &none
+&kp LEFT_CONTROL  &none  &kp LC(LG(LEFT))  &kp LG(D)    &kp LC(LG(RIGHT))  &none            &trans  &trans  &trans  &kp LS(LG(DOWN))  &kp LA(LG(LEFT))  &kp LA(LG(DOWN_ARROW))  &kp LA(LG(RIGHT))  &none              &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &none  &none             &none        &none              &none  &trans            &trans          &none             &kp LG(PG_DN)     &kp LA(F4)              &kp LG(PG_UP)      &none              &kp RIGHT_SHIFT
+                                           &trans       &trans             &none                                    &none             &kp RIGHT_ALT     &kp RGUI
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
         function {
             display-name = "FN";
             bindings = <
