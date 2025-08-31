@@ -92,7 +92,7 @@
             display-name = "NAV";
             bindings = <
 &trans            &none                    &none          &none              &none              &none                        &trans          &kp PG_UP  &mt HOME LC(LEFT)  &kp UP    &mt LC(END) LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
-&kp LEFT_CONTROL  &mt LC(A) LC(LS(LA(A)))  &kp LC(X)      &kp LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN  &kp RIGHT              &none              &mt DEL LC(DEL)
+&kp LEFT_CONTROL  &mt LC(A) LC(LS(LA(A)))  &kp LC(X)      &kp LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN  &kp RIGHT              &none              &mt LC(DEL) DEL
 &kp LEFT_SHIFT    &kp LC(Z)                &kp LC(LS(Z))  &none              &none              &none      &trans            &trans          &none      &kp LC(LS(LA(M)))  &none     &kp LC(LS(LA(DOT)))    &none              &none
                                                           &trans             &trans             &kp SPACE                                    &kp RET    &kp BSPC           &kp DEL
             >;
