@@ -33,7 +33,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+            bindings = <&kp LEFT_SHIFT>, <&caps_word>;
         };
     };
 
@@ -91,10 +91,10 @@
         navigation {
             display-name = "NAV";
             bindings = <
-&trans  &none      &none          &none      &none      &none                        &trans          &kp PG_UP  &kp HOME      &kp UP    &kp END        &none  &trans
-&trans  &kp LC(A)  &kp LC(X)      &kp LC(C)  &kp LC(V)  &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT      &kp DOWN  &kp RIGHT      &none  &kp DEL
-&trans  &kp LC(Z)  &kp LC(LS(Z))  &none      &none      &none      &trans            &trans          &none      &kp LC(LEFT)  &none     &kp LC(RIGHT)  &none  &none
-                                  &trans     &trans     &kp SPACE                                    &kp RET    &kp BSPC      &kp DEL
+&trans  &none      &none          &none              &none              &none                        &trans          &kp PG_UP  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
+&trans  &kp LC(A)  &kp LC(X)      &kp LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT      &kp DOWN  &kp RIGHT      &none              &kp DEL
+&trans  &kp LC(Z)  &kp LC(LS(Z))  &none              &none              &none      &trans            &trans          &none      &kp HOME      &none     &kp END        &none              &none
+                                  &trans             &trans             &kp SPACE                                    &kp RET    &kp BSPC      &kp DEL
             >;
 
             sensor-bindings = <&scroll_encoder>;
