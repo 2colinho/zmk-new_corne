@@ -126,7 +126,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: 'Ctl+$$mdi:backspace-reverse-outline$$', h: '$$mdi:backspace-reverse-outline$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
   - $$mdi:apple-keyboard-shift$$
   - Ctl+Z
   - Ctl+Sft+Z
