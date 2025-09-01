@@ -83,7 +83,6 @@
 
         mmv0: mmv0 {
             compatible = "zmk,behavior-input-two-axis";
-
             #binding-cells = <1>;
             x-input-code = <INPUT_REL_X>;
             y-input-code = <INPUT_REL_Y>;
@@ -94,7 +93,6 @@
 
         mmv1: mmv1 {
             compatible = "zmk,behavior-input-two-axis";
-
             #binding-cells = <1>;
             x-input-code = <INPUT_REL_X>;
             y-input-code = <INPUT_REL_Y>;
@@ -135,7 +133,7 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB                  &kp Q     &kp W     &kp E     &kp R         &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U               &kp I         &kp O     &kp P         &mt LC(BSPC) BSPC
-&mt LEFT_CONTROL ESCAPE  &lt0 6 A  &lt0 1 S  &lt0 3 D  &lt0 2 F      &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 2 J            &kp K         &lt1 1 L  &lt2 7 SEMI   &mt RIGHT_CONTROL SQT
+&mt LEFT_CONTROL ESCAPE  &lt0 6 A  &lt0 1 S  &lt0 3 D  &lt0 2 F      &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 2 J            &kp K         &lt1 1 L  &lt2 8 SEMI   &mt RIGHT_CONTROL SQT
 &td0                     &lt0 5 Z  &kp X     &kp C     &lt0 4 V      &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 4 M            &kp COMMA     &kp DOT   &lt1 5 SLASH  &mt RIGHT_SHIFT ESC
                                              &kp LGUI  &kp LEFT_ALT  &kp SPACE                                                                 &kp RET  &mt RIGHT_ALT BSPC  &mt RGUI DEL
             >;
@@ -207,12 +205,21 @@
             display-name = "MOU";
             bindings = <
 &none             &none  &none  &none   &none   &none                        &trans          &msc SCRL_UP    &mkp LCLK           &mmv MOVE_UP    &mkp RCLK        &kp LC(LS(LA(P)))  &none
-&kp LEFT_CONTROL  &none  &none  &none   &none   &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none              &kp RIGHT_CONTROL
+&kp LEFT_CONTROL  &none  &mo 7  &none   &none   &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none              &kp RIGHT_CONTROL
 &kp LEFT_SHIFT    &none  &none  &none   &none   &none      &trans            &trans          &none           &msc SCRL_LEFT      &mkp MCLK       &msc SCRL_RIGHT  &none              &kp RIGHT_SHIFT
                                 &trans  &trans  &mkp RCLK                                    &mkp LCLK       &mt0 RIGHT_ALT MB4  &mt0 RGUI MB5
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        mouse0 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans           &mmv0 MOVE_UP    &trans            &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv0 MOVE_LEFT  &mmv0 MOVE_DOWN  &mmv0 MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans           &trans           &trans            &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans           &trans
+            >;
         };
 
         browser {
