@@ -84,10 +84,10 @@
         sl0: sl0 {
             compatible = "zmk,behavior-sticky-key";
             bindings = <&mo>;
-
             #binding-cells = <1>;
             release-after-ms = <5000>;
             quick-release;
+
             /delete-property/ ignore-modifiers;
         };
     };
@@ -120,68 +120,82 @@
         sel_word_fwd: sel_word_fwd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp LC(RIGHT) &kp LC(LEFT)>
-                , <&macro_press &kp LC(LS(RIGHT))>
-                , <&macro_pause_for_release>
-                , <&macro_release &kp LC(LS(RIGHT))>
-                , <&macro_tap &sl0 3>
-                ;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(RIGHT) &kp LC(LEFT)>,
+                <&macro_press>,
+                <&kp LC(LS(RIGHT))>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LC(LS(RIGHT))>,
+                <&macro_tap>,
+                <&sl0 4>;
         };
 
         sel_word_bwd: sel_word_bwd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp LC(LEFT) &kp LC(RIGHT)>
-                , <&macro_press &kp LC(LS(LEFT))>
-                , <&macro_pause_for_release>
-                , <&macro_release &kp LC(LS(LEFT))>
-                , <&macro_tap &sl0 3>
-                ;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(LEFT) &kp LC(RIGHT)>,
+                <&macro_press>,
+                <&kp LC(LS(LEFT))>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LC(LS(LEFT))>,
+                <&macro_tap>,
+                <&sl0 4>;
         };
 
         sel_line: sel_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp HOME &kp LS(END)>
-                , <&macro_tap &sl0 3>
-                ;
+            bindings =
+                <&macro_tap>,
+                <&kp HOME &kp LS(END)>,
+                <&macro_tap>,
+                <&sl0 4>;
         };
 
         cont_sel_word_fwd: cont_sel_word_fwd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LC(LS(RIGHT))>
-                , <&macro_pause_for_release>
-                , <&macro_release &kp LC(LS(RIGHT))>
-                , <&macro_tap &sl0 3>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LC(LS(RIGHT))>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LC(LS(RIGHT))>,
+                <&macro_tap>,
+                <&sl0 4>;
         };
 
         cont_sel_word_bwd: cont_sel_word_bwd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LC(LS(LEFT))>
-                , <&macro_pause_for_release>
-                , <&macro_release &kp LC(LS(LEFT))>
-                , <&macro_tap &sl0 3>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LC(LS(LEFT))>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LC(LS(LEFT))>,
+                <&macro_tap>,
+                <&sl0 4>;
         };
 
         cont_sel_line: cont_sel_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LS(DOWN)>
-                , <&macro_pause_for_release>
-                , <&macro_release &kp LS(DOWN)>
-                , <&macro_tap &kp LS(END)>
-                , <&macro_tap &sl0 3>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LS(DOWN)>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LS(DOWN)>,
+                <&macro_tap>,
+                <&kp LS(END)>,
+                <&macro_tap>,
+                <&sl0 4>;
         };
     };
 
@@ -192,8 +206,8 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB                  &kp Q     &kp W     &kp E     &kp R         &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U               &kp I         &kp O     &kp P         &mt LC(BSPC) BSPC
-&mt LEFT_CONTROL ESCAPE  &lt0 7 A  &lt0 1 S  &lt0 4 D  &lt0 2 F      &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 2 J            &kp K         &lt1 1 L  &lt2 9 SEMI   &mt RIGHT_CONTROL SQT
-&td0                     &lt0 6 Z  &kp X     &kp C     &lt0 5 V      &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 5 M            &kp COMMA     &kp DOT   &lt1 6 SLASH  &mt RIGHT_SHIFT ESC
+&mt LEFT_CONTROL ESCAPE  &lt0 8 A  &lt0 1 S  &lt0 5 D  &lt0 2 F      &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 2 J            &kp K         &lt1 1 L  &lt2 10 SEMI  &mt RIGHT_CONTROL SQT
+&td0                     &lt0 7 Z  &kp X     &kp C     &lt0 6 V      &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 6 M            &kp COMMA     &kp DOT   &lt1 7 SLASH  &mt RIGHT_SHIFT ESC
                                              &kp LGUI  &kp LEFT_ALT  &kp SPACE                                                                 &kp RET  &mt RIGHT_ALT BSPC  &mt RGUI DEL
             >;
 
@@ -231,6 +245,18 @@
 &trans  &cont_sel_line  &trans  &cont_sel_word_bwd  &cont_sel_word_fwd  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans  &trans              &trans              &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans              &trans              &trans                                    &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        navigation1 {
+            display-name = "NAV";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -276,7 +302,7 @@
             display-name = "MOU";
             bindings = <
 &none             &none  &none  &none   &none   &none                        &trans          &msc SCRL_UP    &mkp LCLK           &mmv MOVE_UP    &mkp RCLK        &kp LC(LS(LA(P)))  &none
-&kp LEFT_CONTROL  &none  &mo 8  &mo 9   &mo 10  &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none              &kp RIGHT_CONTROL
+&kp LEFT_CONTROL  &none  &mo 9  &mo 10  &mo 11  &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none              &kp RIGHT_CONTROL
 &kp LEFT_SHIFT    &none  &none  &none   &none   &none      &trans            &trans          &none           &msc SCRL_LEFT      &mkp MCLK       &msc SCRL_RIGHT  &none              &kp RIGHT_SHIFT
                                 &trans  &trans  &mkp RCLK                                    &mkp LCLK       &mt0 RIGHT_ALT MB4  &mt0 RGUI MB5
             >;
