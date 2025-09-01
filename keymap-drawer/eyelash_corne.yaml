@@ -27,7 +27,7 @@ layers:
   - {t: J, h: NAV}
   - K
   - {t: L, h: SYM}
-  - {t: ;, h: BRO, s: ':'}
+  - {t: ;, h: MOU, s: ':'}
   - {t: '''', h: '$$mdi:apple-keyboard-control$$', s: '"'}
   - '&td0'
   - {t: Z, h: FN}
@@ -321,7 +321,7 @@ layers:
   - '&mmv MOVE_X(-100)'
   - '&mmv MOVE_Y(100)'
   - '&mmv MOVE_X(100)'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -370,7 +370,7 @@ layers:
   - Ctl+Alt+$$mdi:arrow-left-bold$$
   - Ctl+Alt+$$mdi:arrow-down-bold$$
   - Ctl+Alt+$$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
