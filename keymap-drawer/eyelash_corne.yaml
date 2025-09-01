@@ -189,7 +189,7 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: ., s: '>'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: QWERTY, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
@@ -399,3 +399,6 @@ combos:
 - p: [43, 46]
   k: {t: NUM, h: toggle}
   l: [NUM]
+- p: [43, 46]
+  k: {t: MOU, h: toggle}
+  l: [MOU]
