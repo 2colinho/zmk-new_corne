@@ -185,12 +185,15 @@
         };
 
         navigation0 {
+            display-name = "NAV";
             bindings = <
 &trans  &trans          &trans  &trans              &trans              &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &cont_sel_line  &trans  &cont_sel_word_bwd  &cont_sel_word_fwd  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans  &trans              &trans              &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans              &trans              &trans                                    &trans  &trans  &trans
             >;
+
+            sensor-bindings = <&scroll_encoder>;
         };
 
         numpad {
