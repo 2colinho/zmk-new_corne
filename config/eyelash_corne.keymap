@@ -229,10 +229,10 @@
         navigation {
             display-name = "NAV";
             bindings = <
-&trans            &none                &none          &none              &none              &none                        &trans          &kp PG_UP  &mt HOME LC(LEFT)  &kp UP    &mt END LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
-&kp LEFT_CONTROL  &sel_line            &sel_word_bwd  &none              &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN  &kp RIGHT          &none              &mt LC(DEL) DEL
-&kp LEFT_SHIFT    &mt LC(LS(Z)) LC(Z)  &kp LC(X)      &kp LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none      &trans            &trans          &none      &none              &none     &none              &none              &none
-                                                      &trans             &trans             &kp SPACE                                    &kp RET    &kp BSPC           &kp DEL
+&trans            &none                &none      &none              &none              &none                        &trans          &kp PG_UP  &mt HOME LC(LEFT)  &kp UP    &mt END LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
+&kp LEFT_CONTROL  &sel_line            &none      &none              &none              &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN  &kp RIGHT          &none              &mt LC(DEL) DEL
+&kp LEFT_SHIFT    &mt LC(LS(Z)) LC(Z)  &kp LC(X)  &kp LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none      &trans            &trans          &none      &sel_word_bwd      &none     &sel_word_fwd      &none              &none
+                                                  &trans             &trans             &kp SPACE                                    &kp RET    &kp BSPC           &kp DEL
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -241,10 +241,10 @@
         navigation0 {
             display-name = "NAV";
             bindings = <
-&trans  &trans          &trans              &trans  &trans              &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &cont_sel_line  &cont_sel_word_bwd  &trans  &cont_sel_word_fwd  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans              &trans  &trans              &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                            &trans  &trans              &trans                                    &trans  &trans  &trans
+&trans  &trans          &trans  &trans  &trans  &trans                    &trans          &trans  &trans              &trans  &trans              &trans  &trans
+&trans  &cont_sel_line  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans              &trans  &trans              &trans  &trans
+&trans  &trans          &trans  &trans  &trans  &trans  &trans            &trans          &trans  &cont_sel_word_bwd  &trans  &cont_sel_word_fwd  &trans  &trans
+                                &trans  &trans  &trans                                    &trans  &trans              &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
