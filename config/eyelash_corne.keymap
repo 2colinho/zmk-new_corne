@@ -216,9 +216,9 @@
         mouse0 {
             display-name = "MOU";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans              &mmv0 MOVE_Y(-100)    &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv0 MOVE_X(-100)  &mmv0 MOVE_Y(100)     &mmv0 MOVE_X(100)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans              &trans                &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans              &mmv0 MOVE_Y(-100)  &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv0 MOVE_X(-100)  &mmv0 MOVE_Y(100)   &mmv0 MOVE_X(100)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans              &trans              &trans             &trans  &trans
                         &trans  &trans  &trans                                    &trans  &trans              &trans
             >;
 
