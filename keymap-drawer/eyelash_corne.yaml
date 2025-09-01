@@ -304,7 +304,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mmv MOVE_Y(-1000)'
+  - '&mmv MOVE_Y(-1500)'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -318,9 +318,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mmv MOVE_X(-1000)'
-  - '&mmv MOVE_Y(1000)'
-  - '&mmv MOVE_X(1000)'
+  - '&mmv MOVE_X(-1500)'
+  - '&mmv MOVE_Y(1500)'
+  - '&mmv MOVE_X(1500)'
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
