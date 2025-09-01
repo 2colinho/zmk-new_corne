@@ -130,6 +130,9 @@
                 <&kp LC(LS(RIGHT))>,
                 <&macro_tap>,
                 <&sl0 4>;
+
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         sel_word_bwd: sel_word_bwd {
@@ -145,6 +148,9 @@
                 <&kp LC(LS(LEFT))>,
                 <&macro_tap>,
                 <&sl0 4>;
+
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         sel_line: sel_line {
@@ -155,6 +161,9 @@
                 <&kp HOME &kp LS(END)>,
                 <&macro_tap>,
                 <&sl0 4>;
+
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         cont_sel_word_fwd: cont_sel_word_fwd {
@@ -168,6 +177,9 @@
                 <&kp LC(LS(RIGHT))>,
                 <&macro_tap>,
                 <&sl0 4>;
+
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         cont_sel_word_bwd: cont_sel_word_bwd {
@@ -181,6 +193,9 @@
                 <&kp LC(LS(LEFT))>,
                 <&macro_tap>,
                 <&sl0 4>;
+
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         cont_sel_line: cont_sel_line {
@@ -196,6 +211,9 @@
                 <&kp LS(END)>,
                 <&macro_tap>,
                 <&sl0 4>;
+
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
     };
 
