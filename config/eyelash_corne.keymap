@@ -1,5 +1,5 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100   // 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 500  // 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 100  // 10
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -196,8 +196,8 @@
         mouse0 {
             display-name = "MOU";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans            &mmv MOVE_Y(-50)  &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv MOVE_X(-50)  &mmv MOVE_Y(50)   &mmv MOVE_X(50)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans            &mmv MOVE_Y(-30)  &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv MOVE_X(-30)  &mmv MOVE_Y(30)   &mmv MOVE_X(30)  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans            &trans            &trans           &trans  &trans
                         &trans  &trans  &trans                                    &trans  &trans            &trans
             >;
@@ -220,8 +220,8 @@
         mouse2 {
             display-name = "MOU";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans              &mmv MOVE_Y(-1000)  &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans              &mmv MOVE_Y(-1500)  &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv MOVE_X(-1500)  &mmv MOVE_Y(1500)   &mmv MOVE_X(1500)  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans              &trans              &trans             &trans  &trans
                         &trans  &trans  &trans                                    &trans  &trans              &trans
             >;
