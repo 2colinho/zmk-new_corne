@@ -196,6 +196,18 @@
         mouse0 {
             display-name = "MOU";
             bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans            &mmv MOVE_Y(-50)  &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv MOVE_X(-50)  &mmv MOVE_Y(50)   &mmv MOVE_X(50)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans            &trans            &trans           &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans            &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        mouse1 {
+            display-name = "MOU";
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans             &mmv MOVE_Y(-100)  &trans            &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv MOVE_X(-100)  &mmv MOVE_Y(100)   &mmv MOVE_X(100)  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans             &trans             &trans            &trans  &trans
