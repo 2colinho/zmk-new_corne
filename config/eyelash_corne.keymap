@@ -1,6 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 400  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100  // 10
-
 #define SELECT_TIMEOUT_MS 5000
 
 #include <input/processors.dtsi>
@@ -153,8 +152,8 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB                  &kp Q     &kp W     &kp E     &kp R         &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U               &kp I         &kp O     &kp P         &mt LC(BSPC) BSPC
-&mt LEFT_CONTROL ESCAPE  &lt0 6 A  &lt0 1 S  &lt0 3 D  &lt0 2 F      &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 2 J            &kp K         &lt1 1 L  &lt2 8 SEMI   &mt RIGHT_CONTROL SQT
-&td0                     &lt0 5 Z  &kp X     &kp C     &lt0 4 V      &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 4 M            &kp COMMA     &kp DOT   &lt1 5 SLASH  &mt RIGHT_SHIFT ESC
+&mt LEFT_CONTROL ESCAPE  &lt0 7 A  &lt0 1 S  &lt0 4 D  &lt0 2 F      &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 2 J            &kp K         &lt1 1 L  &lt2 9 SEMI   &mt RIGHT_CONTROL SQT
+&td0                     &lt0 6 Z  &kp X     &kp C     &lt0 5 V      &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 5 M            &kp COMMA     &kp DOT   &lt1 6 SLASH  &mt RIGHT_SHIFT ESC
                                              &kp LGUI  &kp LEFT_ALT  &kp SPACE                                                                 &kp RET  &mt RIGHT_ALT BSPC  &mt RGUI DEL
             >;
 
@@ -176,13 +175,22 @@
         navigation {
             display-name = "NAV";
             bindings = <
-&trans            &none                &none              &none              &none              &none                        &trans          &kp PG_UP  &mt HOME LC(LEFT)  &kp UP    &mt END LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
-&kp LEFT_CONTROL  &kp LC(LS(LA(A)))    &kp LC(LS(LA(S)))  &none              &kp LC(LS(LA(F)))  &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN  &kp RIGHT          &none              &mt LC(DEL) DEL
-&kp LEFT_SHIFT    &mt LC(LS(Z)) LC(Z)  &kp LC(X)          &kp LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none      &trans            &trans          &none      &none              &none     &none              &none              &none
-                                                          &trans             &trans             &kp SPACE                                    &kp RET    &kp BSPC           &kp DEL
+&trans            &none                &none          &none              &none              &none                        &trans          &kp PG_UP  &mt HOME LC(LEFT)  &kp UP    &mt END LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
+&kp LEFT_CONTROL  &sel_line            &sel_word_bwd  &none              &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN  &kp RIGHT          &none              &mt LC(DEL) DEL
+&kp LEFT_SHIFT    &mt LC(LS(Z)) LC(Z)  &kp LC(X)      &kp LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none      &trans            &trans          &none      &none              &none     &none              &none              &none
+                                                      &trans             &trans             &kp SPACE                                    &kp RET    &kp BSPC           &kp DEL
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        navigation0 {
+            bindings = <
+&trans  &trans          &trans  &trans              &trans              &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &cont_sel_line  &trans  &cont_sel_word_bwd  &cont_sel_word_fwd  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans              &trans              &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans              &trans              &trans                                    &trans  &trans  &trans
+            >;
         };
 
         numpad {
@@ -225,7 +233,7 @@
             display-name = "MOU";
             bindings = <
 &none             &none  &none  &none   &none   &none                        &trans          &msc SCRL_UP    &mkp LCLK           &mmv MOVE_UP    &mkp RCLK        &kp LC(LS(LA(P)))  &none
-&kp LEFT_CONTROL  &none  &mo 7  &mo 8   &mo 9   &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none              &kp RIGHT_CONTROL
+&kp LEFT_CONTROL  &none  &mo 8  &mo 9   &mo 10  &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none              &kp RIGHT_CONTROL
 &kp LEFT_SHIFT    &none  &none  &none   &none   &none      &trans            &trans          &none           &msc SCRL_LEFT      &mkp MCLK       &msc SCRL_RIGHT  &none              &kp RIGHT_SHIFT
                                 &trans  &trans  &mkp RCLK                                    &mkp LCLK       &mt0 RIGHT_ALT MB4  &mt0 RGUI MB5
             >;
