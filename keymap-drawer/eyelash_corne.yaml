@@ -402,3 +402,6 @@ combos:
 - p: [43, 46]
   k: {t: MOU, h: toggle}
   l: [MOU]
+- p: [43, 46]
+  k: {t: NAV, h: toggle}
+  l: [NAV]
