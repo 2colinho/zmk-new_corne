@@ -214,12 +214,15 @@
         };
 
         mouse0 {
+            display-name = "MOU";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans           &mmv0 MOVE_UP    &trans            &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv0 MOVE_LEFT  &mmv0 MOVE_DOWN  &mmv0 MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans           &trans           &trans            &trans  &trans
                         &trans  &trans  &trans                                    &trans  &trans           &trans
             >;
+
+            sensor-bindings = <&scroll_encoder>;
         };
 
         browser {
