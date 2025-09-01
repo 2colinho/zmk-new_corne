@@ -117,35 +117,30 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LEFT) &kp LC(RIGHT) &kp LC(LS(LEFT))>;
-            label = "SEL_WORD_BWD";
         };
 
         sel_line: sel_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp HOME &kp LS(END)>;
-            label = "SEL_LINE";
         };
 
         cont_sel_word_fwd: cont_sel_word_fwd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LS(RIGHT))>;
-            label = "CONT_SEL_WORD_FWD";
         };
 
         cont_sel_word_bwd: cont_sel_word_bwd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LS(LEFT))>;
-            label = "CONT_SEL_WORD_BWD";
         };
 
         cont_sel_line: cont_sel_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(DOWN) &kp LS(END)>;
-            label = "CONT_SEL_LINE";
         };
     };
 
