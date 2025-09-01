@@ -185,7 +185,7 @@
             display-name = "MOU";
             bindings = <
 &none             &none  &none  &none   &none   &none                        &trans          &msc SCRL_UP    &mkp LCLK           &mmv MOVE_UP    &mkp RCLK        &kp LC(LS(LA(P)))  &none
-&kp LEFT_CONTROL  &none  &mo 7  &none   &none   &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none              &kp RIGHT_CONTROL
+&kp LEFT_CONTROL  &none  &mo 7  &mo 8   &mo 9   &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none              &kp RIGHT_CONTROL
 &kp LEFT_SHIFT    &none  &none  &none   &none   &none      &trans            &trans          &none           &msc SCRL_LEFT      &mkp MCLK       &msc SCRL_RIGHT  &none              &kp RIGHT_SHIFT
                                 &trans  &trans  &mkp RCLK                                    &mkp LCLK       &mt0 RIGHT_ALT MB4  &mt0 RGUI MB5
             >;
@@ -206,6 +206,18 @@
         };
 
         mouse1 {
+            display-name = "MOU";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans             &mmv MOVE_Y(-100)  &trans            &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv MOVE_X(-100)  &mmv MOVE_Y(100)   &mmv MOVE_X(100)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans             &trans             &trans            &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans             &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        mouse2 {
             display-name = "MOU";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans             &mmv MOVE_Y(-100)  &trans            &trans  &trans
