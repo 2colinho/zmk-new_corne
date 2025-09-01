@@ -106,6 +106,15 @@
         };
     };
 
+    macros {
+        sel_word_fwd: sel_word_fwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RIGHT) &kp LC(LEFT) &kp LC(LS(RIGHT))>;
+            label = "SEL_WORD_FWD";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
