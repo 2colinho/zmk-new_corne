@@ -80,6 +80,24 @@
             flavor = "balanced";
             quick-tap-ms = <175>;
         };
+
+        &mmv0: mmv0 {
+            compatible = "zmk,behavior-input-two-axis";
+
+            #binding-cells = <1>;
+            time-to-max-speed-ms = <0>;
+            acceleration-exponent = <0>;
+            trigger-period-ms = <16>;
+        };
+
+        &mmv1: mmv1 {
+            compatible = "zmk,behavior-input-two-axis";
+
+            #binding-cells = <1>;
+            time-to-max-speed-ms = <300>;
+            acceleration-exponent = <1>;
+            trigger-period-ms = <16>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
