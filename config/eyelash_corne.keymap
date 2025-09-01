@@ -81,7 +81,7 @@
             quick-tap-ms = <175>;
         };
 
-        &mmv0: mmv0 {
+        mmv0: mmv0 {
             compatible = "zmk,behavior-input-two-axis";
 
             #binding-cells = <1>;
@@ -90,7 +90,7 @@
             trigger-period-ms = <16>;
         };
 
-        &mmv1: mmv1 {
+        mmv1: mmv1 {
             compatible = "zmk,behavior-input-two-axis";
 
             #binding-cells = <1>;
