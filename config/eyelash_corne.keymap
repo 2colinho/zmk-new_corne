@@ -80,26 +80,6 @@
             flavor = "balanced";
             quick-tap-ms = <175>;
         };
-
-        mmv0: mmv0 {
-            compatible = "zmk,behavior-input-two-axis";
-            #binding-cells = <1>;
-            x-input-code = <INPUT_REL_X>;
-            y-input-code = <INPUT_REL_Y>;
-            time-to-max-speed-ms = <0>;
-            acceleration-exponent = <0>;
-            trigger-period-ms = <16>;
-        };
-
-        mmv1: mmv1 {
-            compatible = "zmk,behavior-input-two-axis";
-            #binding-cells = <1>;
-            x-input-code = <INPUT_REL_X>;
-            y-input-code = <INPUT_REL_Y>;
-            time-to-max-speed-ms = <300>;
-            acceleration-exponent = <1>;
-            trigger-period-ms = <16>;
-        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -216,10 +196,10 @@
         mouse0 {
             display-name = "MOU";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans              &mmv0 MOVE_Y(-100)  &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv0 MOVE_X(-100)  &mmv0 MOVE_Y(100)   &mmv0 MOVE_X(100)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans              &trans              &trans             &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans              &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans             &mmv MOVE_Y(-100)  &trans            &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv MOVE_X(-100)  &mmv MOVE_Y(100)   &mmv MOVE_X(100)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans             &trans             &trans            &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans             &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
