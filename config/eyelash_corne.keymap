@@ -90,6 +90,15 @@
 
             /delete-property/ ignore-modifiers;
         };
+
+        mt1: mt1 {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            label = "MT1";
+        };
     };
 
     rgb_encoder: rgb_encoder {
