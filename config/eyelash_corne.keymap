@@ -128,35 +128,59 @@
                 ;
         };
 
-        sel_word_bwd: sel_word_bwd {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LEFT) &kp LC(RIGHT) &kp LC(LS(LEFT))>;
-        };
+    sel_word_bwd: sel_word_bwd {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp LC(LEFT) &kp LC(RIGHT)>
+            , <&macro_press &kp LC(LS(LEFT))>
+            , <&macro_pause_for_release>
+            , <&macro_release &kp LC(LS(LEFT))>
+            , <&macro_tap &sl0 3>
+            ;
+    };
 
-        sel_line: sel_line {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp HOME &kp LS(END)>;
-        };
+    sel_line: sel_line {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_tap &kp HOME &kp LS(END)>
+            , <&macro_tap &sl0 3>
+            ;
+    };
 
-        cont_sel_word_fwd: cont_sel_word_fwd {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(RIGHT))>;
-        };
+    cont_sel_word_fwd: cont_sel_word_fwd {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_press &kp LC(LS(RIGHT))>
+            , <&macro_pause_for_release>
+            , <&macro_release &kp LC(LS(RIGHT))>
+            , <&macro_tap &sl0 3>
+            ;
+    };
 
-        cont_sel_word_bwd: cont_sel_word_bwd {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(LEFT))>;
-        };
+    cont_sel_word_bwd: cont_sel_word_bwd {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_press &kp LC(LS(LEFT))>
+            , <&macro_pause_for_release>
+            , <&macro_release &kp LC(LS(LEFT))>
+            , <&macro_tap &sl0 3>
+            ;
+    };
 
-        cont_sel_line: cont_sel_line {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(DOWN) &kp LS(END)>;
-        };
+    cont_sel_line: cont_sel_line {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_press &kp LS(DOWN)>
+            , <&macro_pause_for_release>
+            , <&macro_release &kp LS(DOWN)>
+            , <&macro_tap &kp LS(END)>
+            , <&macro_tap &sl0 3>
+            ;
     };
 
     keymap {
