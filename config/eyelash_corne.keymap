@@ -81,6 +81,15 @@
             flavor = "balanced";
             quick-tap-ms = <175>;
         };
+
+        sl0: sl0 {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SL0";
+            bindings = <&mo>;
+            #binding-cells = <1>;
+            release-after-ms = <5000>;
+            quick-release;
+        };
     };
 
     rgb_encoder: rgb_encoder {
