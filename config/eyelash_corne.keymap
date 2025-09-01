@@ -285,10 +285,10 @@
         navigation {
             display-name = "NAV";
             bindings = <
-&trans            &none                &none      &none              &none              &none                        &trans          &kp PG_UP  &mt HOME LC(LEFT)  &kp UP    &mt END LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
-&kp LEFT_CONTROL  &sel_line            &none      &none              &none              &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN  &kp RIGHT          &none              &mt LC(DEL) DEL
-&kp LEFT_SHIFT    &mt LC(LS(Z)) LC(Z)  &kp LC(X)  &kp LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none      &trans            &trans          &none      &sel_word_bwd      &none     &sel_word_fwd      &none              &to 0
-                                                  &trans             &trans             &kp SPACE                                    &kp RET    &trans             &trans
+&trans            &none                &none      &none              &none              &none                         &trans          &kp PG_UP  &mt HOME LC(LEFT)  &kp UP    &mt END LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
+&kp LEFT_CONTROL  &sel_line            &none      &none              &none              &srch_seln            &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN  &kp RIGHT          &none              &mt LC(DEL) DEL
+&kp LEFT_SHIFT    &mt LC(LS(Z)) LC(Z)  &kp LC(X)  &kp LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none       &trans            &trans          &none      &sel_word_bwd      &none     &sel_word_fwd      &none              &to 0
+                                                  &trans             &trans             &kp SPACE                                     &kp RET    &trans             &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -357,10 +357,10 @@
         mouse {
             display-name = "MOU";
             bindings = <
-&none             &none  &none  &none   &none   &none                        &trans          &msc SCRL_UP    &mkp LCLK           &mmv MOVE_UP    &mkp RCLK        &kp LC(LS(LA(P)))  &none
-&kp LEFT_CONTROL  &none  &mo 9  &mo 10  &mo 11  &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none              &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &none  &none  &none   &none   &none      &trans            &trans          &none           &msc SCRL_LEFT      &mkp MCLK       &msc SCRL_RIGHT  &none              &mt1 RIGHT_SHIFT 0
-                                &trans  &trans  &mkp RCLK                                    &mkp LCLK       &mt0 RIGHT_ALT MB4  &mt0 RGUI MB5
+&none             &none  &none  &none   &none   &none                         &trans          &msc SCRL_UP    &mkp LCLK           &mmv MOVE_UP    &mkp RCLK        &kp LC(LS(LA(P)))  &none
+&kp LEFT_CONTROL  &none  &mo 9  &mo 10  &mo 11  &srch_seln            &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none              &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &none  &none  &none   &none   &none       &trans            &trans          &none           &msc SCRL_LEFT      &mkp MCLK       &msc SCRL_RIGHT  &none              &mt1 RIGHT_SHIFT 0
+                                &trans  &trans  &mkp RCLK                                     &mkp LCLK       &mt0 RIGHT_ALT MB4  &mt0 RGUI MB5
             >;
 
             sensor-bindings = <&scroll_encoder>;
