@@ -1,6 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 400  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100  // 10
-#define SELECT_TIMEOUT_MS 5000
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -84,8 +83,8 @@
 
         sl0: sl0 {
             compatible = "zmk,behavior-sticky-key";
-            label = "SL0";
             bindings = <&mo>;
+
             #binding-cells = <1>;
             release-after-ms = <5000>;
             quick-release;
