@@ -250,7 +250,6 @@
                 <&macro_wait_time 100>,
                 <&kp LC(V) &kp SPACE>;
 
-            label = "SRCH_SELN";
             wait-ms = <0>;
             tap-ms = <0>;
         };
