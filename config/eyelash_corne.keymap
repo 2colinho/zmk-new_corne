@@ -220,10 +220,10 @@
         mouse2 {
             display-name = "MOU";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans             &mmv MOVE_Y(-100)  &trans            &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv MOVE_X(-100)  &mmv MOVE_Y(100)   &mmv MOVE_X(100)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans             &trans             &trans            &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans              &mmv MOVE_Y(-1000)  &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans              &trans              &trans             &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans              &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
