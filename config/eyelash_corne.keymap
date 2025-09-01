@@ -223,10 +223,10 @@
         base {
             display-name = "QWERTY";
             bindings = <
-&kp TAB                  &kp Q     &kp W     &kp E     &kp R         &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U               &kp I         &kp O     &kp P         &mt LC(BSPC) BSPC
-&mt LEFT_CONTROL ESCAPE  &lt0 8 A  &lt0 1 S  &lt0 5 D  &lt0 2 F      &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 2 J            &kp K         &lt1 1 L  &lt2 10 SEMI  &mt RIGHT_CONTROL SQT
-&td0                     &lt0 7 Z  &kp X     &kp C     &lt0 6 V      &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 6 M            &kp COMMA     &kp DOT   &lt1 7 SLASH  &mt RIGHT_SHIFT ESC
-                                             &kp LGUI  &kp LEFT_ALT  &kp SPACE                                                                 &kp RET  &mt RIGHT_ALT BSPC  &mt RGUI DEL
+&kp TAB                  &kp Q     &kp W     &kp E     &kp R         &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U              &kp I            &kp O     &kp P         &mt LC(BSPC) BSPC
+&mt LEFT_CONTROL ESCAPE  &lt0 8 A  &lt0 1 S  &lt0 5 D  &lt0 2 F      &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 2 J           &kp K            &lt1 1 L  &lt2 10 SEMI  &mt RIGHT_CONTROL SQT
+&td0                     &lt0 7 Z  &kp X     &kp C     &lt0 6 V      &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 6 M           &kp COMMA        &kp DOT   &lt1 7 SLASH  &mt RIGHT_SHIFT ESC
+                                             &kp LGUI  &kp LEFT_ALT  &kp SPACE                                                                 &kp RET  &mt LC(BSPC) BSPC  &mt LC(DEL) DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -238,7 +238,7 @@
 &trans            &kp GRAVE  &none   &kp LBKT  &kp RBKT  &kp MINUS                    &trans          &kp PLUS   &kp LPAR       &kp RPAR          &none     &none     &trans
 &kp LEFT_CONTROL  &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT            &trans  &trans  &trans  &kp CARET  &kp AMPS       &kp ASTRK         &kp BSLH  &kp PIPE  &mt LC(DEL) DEL
 &kp LEFT_SHIFT    &kp TILDE  &none   &kp LBRC  &kp RBRC  &kp UNDER  &trans            &trans          &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN  &none     &none     &none
-                                     &trans    &trans    &kp SPACE                                    &kp RET    &kp BSPC       &kp DEL
+                                     &trans    &trans    &kp SPACE                                    &kp RET    &trans         &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -250,7 +250,7 @@
 &trans            &none                &none      &none              &none              &none                        &trans          &kp PG_UP  &mt HOME LC(LEFT)  &kp UP    &mt END LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
 &kp LEFT_CONTROL  &sel_line            &none      &none              &none              &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN  &kp RIGHT          &none              &mt LC(DEL) DEL
 &kp LEFT_SHIFT    &mt LC(LS(Z)) LC(Z)  &kp LC(X)  &kp LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none      &trans            &trans          &none      &sel_word_bwd      &none     &sel_word_fwd      &none              &none
-                                                  &trans             &trans             &kp SPACE                                    &kp RET    &kp BSPC           &kp DEL
+                                                  &trans             &trans             &kp SPACE                                    &kp RET    &trans             &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
