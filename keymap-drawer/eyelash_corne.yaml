@@ -397,11 +397,11 @@ combos:
   k: '&soft_off'
   l: [QWERTY]
 - p: [43, 46]
+  k: {t: NAV, h: toggle}
+  l: [NAV]
+- p: [43, 46]
   k: {t: NUM, h: toggle}
   l: [NUM]
 - p: [43, 46]
   k: {t: MOU, h: toggle}
   l: [MOU]
-- p: [43, 46]
-  k: {t: NAV, h: toggle}
-  l: [NAV]
