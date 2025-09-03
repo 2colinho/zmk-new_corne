@@ -29,7 +29,7 @@ layers:
   - {t: L, h: SYM}
   - {t: ;, h: MOU, s: ':'}
   - {t: '''', h: '$$mdi:apple-keyboard-control$$', s: '"'}
-  - {t: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:alpha-w-box$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
   - {t: Z, h: FN}
   - X
   - C
@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, h: FN, s: '?'}
-  - {t: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:apple-keyboard-caps$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:apple-keyboard-caps$$'}
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
