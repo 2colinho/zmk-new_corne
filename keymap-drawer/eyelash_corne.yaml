@@ -29,7 +29,7 @@ layers:
   - {t: L, h: SYM}
   - {t: ;, h: MOU, s: ':'}
   - {t: '''', h: '$$mdi:apple-keyboard-control$$', s: '"'}
-  - '&td0'
+  - {t: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:alpha-w-box$$'}
   - {t: Z, h: FN}
   - X
   - C
