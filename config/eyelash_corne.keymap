@@ -120,7 +120,6 @@
             bindings = <&kp RIGHT_SHIFT>, <&kp CAPS>;
 
             #binding-cells = <0>;
-            label = "RSHFT_CAPS";
             mods = <(MOD_RSFT)>;
         };
     };
