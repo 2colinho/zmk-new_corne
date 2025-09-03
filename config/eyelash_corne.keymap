@@ -109,7 +109,7 @@
 
         lshft_caps: lshft_caps {
             compatible = "zmk,behavior-mod-morph";
-            bindings = <&kp LEFT_SHIFT>, <&caps_word>;
+            bindings = <&sk0 LEFT_SHIFT>, <&caps_word>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -117,10 +117,20 @@
 
         rshft_caps: rshft_caps {
             compatible = "zmk,behavior-mod-morph";
-            bindings = <&kp RIGHT_SHIFT>, <&kp CAPS>;
+            bindings = <&sk0 RIGHT_SHIFT>, <&kp CAPS>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
+        };
+
+        sk0: sk0 {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SK0";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
+            quick-release;
+            ignore-modifiers;
         };
     };
 
