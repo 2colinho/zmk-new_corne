@@ -155,15 +155,15 @@
         };
 
         to_numpad {
-            bindings = <&to 5>;
+            bindings = <&to 7>;
             key-positions = <43 46>;
-            layers = <5>;
+            layers = <7>;
         };
 
         to_mouse {
-            bindings = <&to 8>;
+            bindings = <&to 10>;
             key-positions = <43 46>;
-            layers = <8>;
+            layers = <10>;
         };
     };
 
@@ -180,7 +180,7 @@
                 <&macro_release>,
                 <&kp LC(LS(RIGHT))>,
                 <&macro_tap>,
-                <&sl0 4>;
+                <&sl0 6>;
 
             wait-ms = <0>;
             tap-ms = <0>;
@@ -198,7 +198,7 @@
                 <&macro_release>,
                 <&kp LC(LS(LEFT))>,
                 <&macro_tap>,
-                <&sl0 4>;
+                <&sl0 6>;
 
             wait-ms = <0>;
             tap-ms = <0>;
@@ -211,7 +211,7 @@
                 <&macro_tap>,
                 <&kp HOME &kp LS(END)>,
                 <&macro_tap>,
-                <&sl0 4>;
+                <&sl0 6>;
 
             wait-ms = <0>;
             tap-ms = <0>;
@@ -227,7 +227,7 @@
                 <&macro_release>,
                 <&kp LC(LS(RIGHT))>,
                 <&macro_tap>,
-                <&sl0 4>;
+                <&sl0 6>;
 
             wait-ms = <0>;
             tap-ms = <0>;
@@ -243,7 +243,7 @@
                 <&macro_release>,
                 <&kp LC(LS(LEFT))>,
                 <&macro_tap>,
-                <&sl0 4>;
+                <&sl0 6>;
 
             wait-ms = <0>;
             tap-ms = <0>;
@@ -261,7 +261,7 @@
                 <&macro_tap>,
                 <&kp LS(END)>,
                 <&macro_tap>,
-                <&sl0 4>;
+                <&sl0 6>;
 
             wait-ms = <0>;
             tap-ms = <0>;
@@ -274,10 +274,10 @@
         base {
             display-name = "QWERTY";
             bindings = <
-&kp TAB                  &kp Q     &kp W     &kp E     &kp R         &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U              &kp I            &kp O     &kp P         &mt LC(BSPC) BSPC
-&mt LEFT_CONTROL ESCAPE  &lt0 8 A  &lt0 1 S  &lt0 5 D  &lt0 2 F      &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 2 J           &kp K            &lt1 1 L  &lt2 10 SEMI  &mt RIGHT_CONTROL SQT
-&lshft_caps              &lt0 7 Z  &kp X     &kp C     &lt0 6 V      &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 6 M           &kp COMMA        &kp DOT   &lt1 7 SLASH  &rshft_caps
-                                             &kp LGUI  &kp LEFT_ALT  &kp SPACE                                                                 &kp RET  &mt LC(BSPC) BSPC  &mt LC(DEL) DEL
+&kp TAB                  &kp Q      &kp W     &kp E     &kp R         &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U              &kp I            &kp O     &kp P         &mt LC(BSPC) BSPC
+&mt LEFT_CONTROL ESCAPE  &lt0 10 A  &lt0 1 S  &lt0 7 D  &lt0 2 F      &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 2 J           &kp K            &lt1 1 L  &lt2 12 SEMI  &mt RIGHT_CONTROL SQT
+&lshft_caps              &lt0 9 Z   &kp X     &kp C     &lt0 8 V      &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 8 M           &kp COMMA        &kp DOT   &lt1 9 SLASH  &rshft_caps
+                                              &kp LGUI  &kp LEFT_ALT  &kp SPACE                                                                 &kp RET  &mt LC(BSPC) BSPC  &mt LC(DEL) DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -310,6 +310,30 @@
         navigation0 {
             display-name = "NAV";
             bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        navigation1 {
+            display-name = "NAV";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        navigation2 {
+            display-name = "NAV";
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans              &trans          &trans              &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans              &trans          &trans              &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &cont_sel_word_bwd  &cont_sel_line  &cont_sel_word_fwd  &trans  &trans
@@ -319,7 +343,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        navigation1 {
+        navigation3 {
             display-name = "NAV";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
@@ -370,10 +394,10 @@
         mouse {
             display-name = "MOU";
             bindings = <
-&none             &none  &none  &none   &none   &none                        &trans          &msc SCRL_UP    &mkp LCLK           &mmv MOVE_UP    &mkp RCLK        &kp LC(LS(LA(P)))  &none
-&kp LEFT_CONTROL  &none  &mo 9  &mo 10  &mo 11  &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none              &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &none  &none  &none   &none   &none      &trans            &trans          &none           &msc SCRL_LEFT      &mkp MCLK       &msc SCRL_RIGHT  &none              &mt1 RIGHT_SHIFT 0
-                                &trans  &trans  &mkp RCLK                                    &mkp LCLK       &mt0 RIGHT_ALT MB4  &mt0 RGUI MB5
+&none             &none  &none   &none   &none   &none                        &trans          &msc SCRL_UP    &mkp LCLK           &mmv MOVE_UP    &mkp RCLK        &kp LC(LS(LA(P)))  &none
+&kp LEFT_CONTROL  &none  &mo 11  &mo 12  &mo 13  &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none              &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &none  &none   &none   &none   &none      &trans            &trans          &none           &msc SCRL_LEFT      &mkp MCLK       &msc SCRL_RIGHT  &none              &mt1 RIGHT_SHIFT 0
+                                 &trans  &trans  &mkp RCLK                                    &mkp LCLK       &mt0 RIGHT_ALT MB4  &mt0 RGUI MB5
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -432,8 +456,8 @@
         compatible = "zmk,conditional-layers";
 
         continue_selection {
-            if-layers = <2 4>;
-            then-layer = <3>;
+            if-layers = <2 6>;
+            then-layer = <5>;
         };
     };
 };
