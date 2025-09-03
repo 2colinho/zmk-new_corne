@@ -109,7 +109,6 @@
 
         lshft_caps: lshft_caps {
             compatible = "zmk,behavior-mod-morph";
-            label = "LSHFT_CAPS";
             bindings = <&kp LEFT_SHIFT>, <&caps_word>;
 
             #binding-cells = <0>;
