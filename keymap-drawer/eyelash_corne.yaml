@@ -399,6 +399,3 @@ combos:
 - p: [43, 46]
   k: {t: NUM, h: toggle}
   l: [NUM]
-- p: [43, 46]
-  k: {t: MOU, h: toggle}
-  l: [MOU]
