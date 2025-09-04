@@ -325,10 +325,10 @@
         symbol {
             display-name = "SYM";
             bindings = <
-&trans            &mt N1 EXCL  &mt N2 AT  &mt N3 HASH  &mt N4 DLLR  &mt N5 PRCNT                    &trans          &mt N6 CARET  &mt N7 AMPS  &mt N8 ASTRK  &mt N9 LPAR  &mt N0 RPAR  &trans
-&kp LEFT_CONTROL  &kp GRAVE    &none      &none        &kp MINUS    &kp LPAR                &trans  &trans  &trans  &kp RPAR      &kp PLUS     &none         &none        &kp BSLH     &mt LC(DEL) DEL
-&kp LEFT_SHIFT    &kp TILDE    &none      &none        &kp UNDER    &kp LBKT      &trans            &trans          &kp RBKT      &kp EQUAL    &kp COMMA     &kp DOT      &kp PIPE     &none
-                                          &trans       &trans       &kp SPACE                                       &kp RET       &trans       &trans
+&trans            &mt N1 EXCL  &mt N2 AT  &mt N3 HASH     &mt N4 DLLR  &mt N5 PRCNT                    &trans          &mt N6 CARET  &mt N7 AMPS  &mt N8 ASTRK           &mt N9 LPAR  &mt N0 RPAR  &trans
+&kp LEFT_CONTROL  &kp GRAVE    &none      &mt SEMI COLON  &kp MINUS    &kp LPAR                &trans  &trans  &trans  &kp RPAR      &kp PLUS     &mt SQT DOUBLE_QUOTES  &none        &kp BSLH     &mt LC(DEL) DEL
+&kp LEFT_SHIFT    &kp TILDE    &none      &none           &kp UNDER    &kp LBKT      &trans            &trans          &kp RBKT      &kp EQUAL    &kp COMMA              &kp DOT      &kp PIPE     &none
+                                          &trans          &trans       &kp SPACE                                       &kp RET       &trans       &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
