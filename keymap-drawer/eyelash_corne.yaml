@@ -346,7 +346,7 @@ layers:
   BRO:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&move_tab'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+R
   - Ctl+T
@@ -368,7 +368,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Alt+HOME
   - Ctl+Alt+$$mdi:arrow-left-bold$$
-  - Ctl+Alt+$$mdi:arrow-down-bold$$
+  - {t: 'Ctl+Alt+$$mdi:arrow-down-bold$$', h: Meh+K}
   - Ctl+Alt+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-control$$
