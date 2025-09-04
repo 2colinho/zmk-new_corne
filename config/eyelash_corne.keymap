@@ -123,6 +123,24 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
         };
+
+        td1: td1 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "Shift/Caps Lock Tap Dance";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp LC(BSPC)>;
+
+            label = "TD1";
+        };
+
+        td2: td2 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "Shift/Caps Lock Tap Dance";
+            #binding-cells = <0>;
+            bindings = <&kp DEL>, <&kp LC(DEL)>;
+
+            label = "TD2";
+        };
     };
 
     rgb_encoder: rgb_encoder {
