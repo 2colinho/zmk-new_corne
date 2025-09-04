@@ -103,6 +103,28 @@
             quick-tap-ms = <175>;
         };
 
+        lt3: lt3 {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&mo>, <&td1>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+        };
+
+        lt4: lt4 {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&mo>, <&td2>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+        };
+
         sl0: sl0 {
             compatible = "zmk,behavior-sticky-key";
             bindings = <&mo>;
@@ -136,30 +158,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
-        };
-
-        lt3: lt3 {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&mo>, <&td1>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            require-prior-idle-ms = <150>;
-            flavor = "balanced";
-            quick-tap-ms = <175>;
-            label = "LT3";
-        };
-
-        lt4: lt4 {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&mo>, <&td2>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            require-prior-idle-ms = <150>;
-            flavor = "balanced";
-            quick-tap-ms = <175>;
-            label = "LT4";
         };
     };
 
