@@ -64,19 +64,19 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
-  - '!'
-  - {t: '@', type: held}
-  - '#'
-  - $
-  - '%'
+  - {t: '!', h: '1'}
+  - {t: '@', h: '2', type: held}
+  - {t: '#', h: '3'}
+  - {t: $, h: '4'}
+  - {t: '%', h: '5'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - ^
-  - '&'
-  - '*'
-  - {t: \, s: '|', type: held alternate}
-  - '|'
+  - {t: ^, h: '6'}
+  - {t: '&', h: '7'}
+  - {t: '*', h: '8'}
+  - {t: \, h: '9', s: '|', type: held alternate}
+  - {t: '|', h: '0'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
   - $$mdi:apple-keyboard-shift$$
   - '~'
@@ -90,7 +90,7 @@ layers:
   - <
   - '>'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
