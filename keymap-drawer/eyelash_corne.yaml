@@ -368,7 +368,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Alt+HOME
   - Ctl+Alt+$$mdi:arrow-left-bold$$
-  - {t: 'Ctl+Alt+$$mdi:arrow-down-bold$$', h: Meh+K}
+  - Ctl+Alt+$$mdi:arrow-down-bold$$
   - Ctl+Alt+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-control$$
@@ -411,3 +411,6 @@ combos:
 - p: [39, 40]
   k: '?'
   l: [QWERTY, SYM]
+- p: [25, 23]
+  k: Meh+K
+  l: [BRO]
