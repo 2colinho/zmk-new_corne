@@ -281,6 +281,17 @@
             wait-ms = <0>;
             tap-ms = <0>;
         };
+
+        move_tab: move_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp ESC &kp ESC &kp F6 &kp F6 &kp C_MENU>,
+                <&macro_wait_time 100>,
+                <&kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp RIGHT>;
+
+            label = "MOVE_TAB";
+        };
     };
 
     keymap {
