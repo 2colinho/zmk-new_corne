@@ -114,17 +114,6 @@
             quick-tap-ms = <175>;
         };
 
-        lt4: lt4 {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&mo>, <&td2>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            require-prior-idle-ms = <150>;
-            flavor = "balanced";
-            quick-tap-ms = <175>;
-        };
-
         sl0: sl0 {
             compatible = "zmk,behavior-sticky-key";
             bindings = <&mo>;
@@ -292,10 +281,10 @@
         base {
             display-name = "QWERTY";
             bindings = <
-&kp TAB                  &kp Q      &kp W     &kp E     &kp R         &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U              &kp I            &kp O     &kp P          &mt LC(BSPC) BSPC
-&mt LEFT_CONTROL ESCAPE  &lt0 13 A  &lt0 1 S  &lt0 8 D  &lt0 3 F      &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 3 J           &kp K            &lt1 1 L  &lt2 16 SEMI   &mt RIGHT_CONTROL SQT
-&lshft_caps              &lt0 11 Z  &kp X     &kp C     &lt0 10 V     &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 10 M          &kp COMMA        &kp DOT   &lt1 11 SLASH  &rshft_caps
-                                              &kp LGUI  &kp LEFT_ALT  &kp SPACE                                                                 &kp RET  &mt LC(BSPC) BSPC  &mt LC(DEL) DEL
+&kp TAB                  &kp Q      &kp W     &kp E      &kp R         &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U      &kp I            &kp O     &kp P         &mt LC(BSPC) BSPC
+&mt LEFT_CONTROL ESCAPE  &lt0 13 A  &lt0 1 S  &lt0 10 D  &lt0 3 F      &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 3 J   &lt1 10 K        &lt1 1 L  &lt2 16 SEMI  &mt RIGHT_CONTROL SQT
+&lshft_caps              &kp Z      &kp X     &kp C      &lt0 11 V     &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 11 M  &kp COMMA        &kp DOT   &kp SLASH     &rshft_caps
+                                              &kp LGUI   &kp LEFT_ALT  &kp SPACE                                                                 &kp RET  &lt3 8 0   &mt LC(DEL) DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -378,8 +367,8 @@
             bindings = <
 &trans            &none  &none  &none   &none   &none                        &trans          &kp FSLH   &kp N7        &kp N8  &kp N9  &kp STAR  &trans
 &kp LEFT_CONTROL  &none  &none  &none   &none   &none                &trans  &trans  &trans  &kp MINUS  &kp N4        &kp N5  &kp N6  &kp PLUS  &mt LC(DEL) DEL
-&kp LEFT_SHIFT    &none  &none  &none   &none   &none      &trans            &trans          &none      &kp NUMBER_1  &kp N2  &kp N3  &kp DOT   &tog 9
-                                &trans  &trans  &kp SPACE                                    &kp RET    &kp N0        &kp N0
+&kp LEFT_SHIFT    &none  &none  &none   &none   &none      &trans            &trans          &kp N0     &kp NUMBER_1  &kp N2  &kp N3  &kp DOT   &tog 9
+                                &trans  &trans  &kp SPACE                                    &kp RET    &none         &kp N0
             >;
 
             sensor-bindings = <&scroll_encoder>;
