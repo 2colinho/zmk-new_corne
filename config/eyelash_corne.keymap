@@ -290,7 +290,7 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB                  &kp Q      &kp W     &kp E      &kp R         &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U      &kp I            &kp O     &kp P         &mt LC(BSPC) BSPC
-&mt LEFT_CONTROL ESCAPE  &lt0 13 A  &lt0 1 S  &lt0 10 D  &lt0 3 F      &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 3 J   &lt1 10 K        &lt1 1 L  &lt2 16 SEMI  &mt RIGHT_CONTROL SQT
+&mt LEFT_CONTROL ESCAPE  &lt0 13 A  &lt0 1 S  &lt0 10 D  &lt0 3 F      &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 3 J   &lt1 10 K        &lt1 1 L  &lt2 18 SEMI  &mt RIGHT_CONTROL SQT
 &lshft_caps              &kp Z      &kp X     &kp C      &lt0 11 V     &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 11 M  &kp COMMA        &kp DOT   &kp SLASH     &rshft_caps
                                               &kp LGUI   &kp LEFT_ALT  &kp SPACE                                                                 &kp RET  &lt3 8 0   &mt LC(DEL) DEL
             >;
