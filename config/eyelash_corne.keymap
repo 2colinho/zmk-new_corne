@@ -207,7 +207,7 @@
 
         combo_question {
             bindings = <&kp QUESTION>;
-            key-positions = <39 40>;
+            key-positions = <40 25>;
             layers = <0 1>;
         };
 
