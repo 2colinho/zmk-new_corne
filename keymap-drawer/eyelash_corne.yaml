@@ -60,37 +60,37 @@ layers:
   - {t: ^, h: '6'}
   - {t: '&', h: '7'}
   - {t: '*', h: '8'}
-  - {t: \, h: '9', s: '|'}
-  - {t: '|', h: '0'}
+  - {t: (, h: '9'}
+  - {t: ), h: '0'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
   - {t: '`', s: '~'}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - {t: '-', s: _}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - +
-  - (
-  - )
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '-', s: _}
+  - (
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - )
+  - +
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: \, s: '|'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
   - $$mdi:apple-keyboard-shift$$
   - '~'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '{'
-  - '}'
-  - _
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '=', s: +}
-  - <
-  - '>'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: /, s: '?'}
+  - _
+  - {t: '[', s: '{'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ']', s: '}'}
+  - {t: '=', s: +}
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - '|'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -396,3 +396,15 @@ combos:
 - p: [1, 15, 29]
   k: '&soft_off'
   l: [QWERTY]
+- p: [33, 32]
+  k: '{'
+  l: [SYM]
+- p: [36, 37]
+  k: '}'
+  l: [SYM]
+- p: [17, 18]
+  k: <
+  l: [SYM]
+- p: [22, 23]
+  k: '>'
+  l: [SYM]
