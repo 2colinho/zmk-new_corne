@@ -180,6 +180,30 @@
             key-positions = <1 15 29>;
             layers = <0>;
         };
+
+        combo_lbrc {
+            bindings = <&kp LBRC>;
+            key-positions = <33 32>;
+            layers = <1>;
+        };
+
+        combo_rbrc {
+            bindings = <&kp RBRC>;
+            key-positions = <36 37>;
+            layers = <1>;
+        };
+
+        combo_lessthan {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <17 18>;
+            layers = <1>;
+        };
+
+        combo_greaterthan {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <22 23>;
+            layers = <1>;
+        };
     };
 
     macros {
@@ -301,10 +325,10 @@
         symbol {
             display-name = "SYM";
             bindings = <
-&trans            &mt N1 EXCL  &mt N2 AT  &mt N3 HASH  &mt N4 DLLR  &mt N5 PRCNT                    &trans          &mt N6 CARET  &mt N7 AMPS    &mt N8 ASTRK      &mt N9 BSLH  &mt N0 PIPE  &trans
-&kp LEFT_CONTROL  &kp GRAVE    &none      &kp LBKT     &kp RBKT     &kp MINUS               &trans  &trans  &trans  &kp PLUS      &kp LPAR       &kp RPAR          &none        &none        &mt LC(DEL) DEL
-&kp LEFT_SHIFT    &kp TILDE    &none      &kp LBRC     &kp RBRC     &kp UNDER     &trans            &trans          &kp EQUAL     &kp LESS_THAN  &kp GREATER_THAN  &none        &kp SLASH    &none
-                                          &trans       &trans       &kp SPACE                                       &kp RET       &trans         &trans
+&trans            &mt N1 EXCL  &mt N2 AT  &mt N3 HASH  &mt N4 DLLR  &mt N5 PRCNT                    &trans          &mt N6 CARET  &mt N7 AMPS  &mt N8 ASTRK  &mt N9 LPAR  &mt N0 RPAR  &trans
+&kp LEFT_CONTROL  &kp GRAVE    &none      &none        &kp MINUS    &kp LPAR                &trans  &trans  &trans  &kp RPAR      &kp PLUS     &none         &none        &kp BSLH     &mt LC(DEL) DEL
+&kp LEFT_SHIFT    &kp TILDE    &none      &none        &kp UNDER    &kp LBKT      &trans            &trans          &kp RBKT      &kp EQUAL    &kp COMMA     &kp DOT      &kp PIPE     &none
+                                          &trans       &trans       &kp SPACE                                       &kp RET       &trans       &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
