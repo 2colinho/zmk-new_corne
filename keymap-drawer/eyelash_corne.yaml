@@ -27,19 +27,19 @@ layers:
   - {t: J, h: NAV}
   - {t: K, h: WIN}
   - {t: L, h: SYM}
-  - {t: ;, h: BRO, s: ':'}
+  - {t: ;, s: ':'}
   - {t: '''', h: '$$mdi:apple-keyboard-control$$', s: '"'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
   - Z
   - X
-  - C
-  - {t: V, h: FN}
+  - {t: C, h: FN}
+  - {t: V, h: BRO}
   - B
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - N
-  - {t: M, h: FN}
-  - {t: ',', s: <}
+  - {t: M, h: BRO}
+  - {t: ',', h: FN, s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:apple-keyboard-caps$$'}
@@ -277,14 +277,14 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB TOG
-  - RGB BRD
-  - {t: RGB BRI, type: held}
+  - {t: RGB BRD, type: held}
+  - RGB BRI
   - RGB EFF
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: F1, type: held alternate}
-  - F2
+  - F1
+  - {t: F2, type: held alternate}
   - F3
   - F10
   - $$mdi:apple-keyboard-shift$$
@@ -370,18 +370,18 @@ layers:
   - Ctl+Alt+$$mdi:arrow-left-bold$$
   - Ctl+Alt+$$mdi:arrow-down-bold$$
   - Ctl+Alt+$$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+N
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
