@@ -408,3 +408,6 @@ combos:
 - p: [22, 23]
   k: '>'
   l: [SYM]
+- p: [39, 40]
+  k: '?'
+  l: [QWERTY, SYM]
