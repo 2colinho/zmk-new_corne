@@ -36,6 +36,18 @@
             bindings = <&kp LEFT_SHIFT>, <&caps_word>;
         };
 
+        td1: td1 {
+            compatible = "zmk,behavior-tap-dance";
+            bindings = <&kp BSPC>, <&kp LC(BSPC)>;
+            #binding-cells = <0>;
+        };
+
+        td2: td2 {
+            compatible = "zmk,behavior-tap-dance";
+            bindings = <&kp DEL>, <&kp LC(DEL)>;
+            #binding-cells = <0>;
+        };
+
         mt0: mt0 {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&mkp>;
@@ -122,24 +134,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
-        };
-
-        td1: td1 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp LC(BSPC)>;
-
-            label = "TD1";
-        };
-
-        td2: td2 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp DEL>, <&kp LC(DEL)>;
-
-            label = "TD2";
         };
     };
 
