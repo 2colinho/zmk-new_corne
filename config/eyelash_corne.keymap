@@ -216,6 +216,30 @@
             key-positions = <25 23>;
             layers = <18>;
         };
+
+        combo_sel_line {
+            bindings = <&sel_line>;
+            key-positions = <14 15>;
+            layers = <0>;
+        };
+
+        combo_cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <14 30>;
+            layers = <0>;
+        };
+
+        combo_copy {
+            bindings = <&kp LC(LS(LA(C)))>;
+            key-positions = <15 31>;
+            layers = <0>;
+        };
+
+        combo_paste {
+            bindings = <&kp LC(LS(LA(V)))>;
+            key-positions = <16 32>;
+            layers = <0>;
+        };
     };
 
     macros {
