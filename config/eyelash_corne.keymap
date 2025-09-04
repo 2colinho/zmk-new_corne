@@ -286,7 +286,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp ESC &kp ESC &kp F6 &kp F6 &kp C_MENU>,
+                <&kp ESC &kp ESC &kp F6 &kp F6 &kp LS(F10)>,
                 <&macro_wait_time 100>,
                 <&kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp RIGHT>;
 
