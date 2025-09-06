@@ -420,9 +420,9 @@ combos:
 - p: [14, 30]
   k: Ctl+X
   l: [QWERTY]
-- p: [15, 31]
+- p: [31, 14]
   k: Meh+C
   l: [QWERTY]
-- p: [16, 32]
+- p: [32, 14]
   k: Meh+V
   l: [QWERTY]
