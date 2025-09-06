@@ -156,6 +156,24 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
         };
+
+        comma_semi: comma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_SEMI";
+            bindings = <&kp COMMA>, <&kp SEMI>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dot_colon: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_COLON";
+            bindings = <&kp DOT>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -349,9 +367,9 @@
         base {
             display-name = "QWERTY";
             bindings = <
-&kp TAB                  &kp Q      &kp W     &lt0 11 E  &kp R         &kp T                                       &mmv MOVE_UP                     &kp Y    &kp U      &lt1 11 I        &kp O     &kp P      &mt LC(BSPC) BSPC
-&mt LEFT_CONTROL ESCAPE  &lt0 13 A  &lt0 1 S  &lt0 10 D  &lt0 3 F      &kp G                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 3 J   &lt1 10 K        &lt1 1 L  &kp SEMI   &mt RIGHT_CONTROL SQT
-&lshft_caps              &kp Z      &kp X     &kp C      &lt0 18 V     &kp B         &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 18 M  &kp COMMA        &kp DOT   &kp SLASH  &rshft_caps
+&kp TAB                  &kp Q      &kp W     &lt0 11 E  &kp R         &kp T                                       &mmv MOVE_UP                     &kp Y    &kp U      &lt1 11 I        &kp O       &kp P      &mt LC(BSPC) BSPC
+&mt LEFT_CONTROL ESCAPE  &lt0 13 A  &lt0 1 S  &lt0 10 D  &lt0 3 F      &kp G                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 3 J   &lt1 10 K        &lt1 1 L    &kp SQT    &mt LC(DEL) DEL
+&lshft_caps              &kp Z      &kp X     &kp C      &lt0 18 V     &kp B         &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 18 M  &comma_semi      &dot_colon  &kp SLASH  &rshft_caps
                                               &kp LGUI   &kp LEFT_ALT  &lt2 3 SPACE                                                                 &kp RET  &lt3 8 0   &mt LC(DEL) DEL
             >;
 
@@ -362,7 +380,7 @@
             display-name = "SYM";
             bindings = <
 &trans            &mt N1 EXCL  &mt N2 AT  &mt N3 HASH     &mt N4 DLLR  &mt N5 PRCNT                    &trans          &mt N6 CARET  &mt N7 AMPS  &mt N8 ASTRK           &mt N9 LPAR  &mt N0 RPAR  &trans
-&kp LEFT_CONTROL  &kp GRAVE    &none      &mt SEMI COLON  &kp MINUS    &kp LPAR                &trans  &trans  &trans  &kp RPAR      &kp PLUS     &mt SQT DOUBLE_QUOTES  &none        &kp BSLH     &mt LC(DEL) DEL
+&kp LEFT_CONTROL  &kp GRAVE    &none      &mt SEMI COLON  &kp MINUS    &kp LPAR                &trans  &trans  &trans  &kp RPAR      &kp PLUS     &mt SQT DOUBLE_QUOTES  &none        &kp BSLH     &trans
 &kp LEFT_SHIFT    &kp TILDE    &none      &none           &kp UNDER    &kp LBKT      &trans            &trans          &kp RBKT      &kp EQUAL    &kp COMMA              &kp DOT      &kp PIPE     &none
                                           &trans          &trans       &kp SPACE                                       &kp RET       &trans       &trans
             >;
