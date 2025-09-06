@@ -28,7 +28,7 @@ layers:
   - {t: K, h: WIN}
   - {t: L, h: SYM}
   - {t: '''', s: '"'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
+  - {t: '&td2', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
   - Z
   - X
@@ -77,7 +77,7 @@ layers:
   - {t: '"', h: ''''}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: \, s: '|'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&td2'
   - $$mdi:apple-keyboard-shift$$
   - '~'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
