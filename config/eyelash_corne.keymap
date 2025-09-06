@@ -231,13 +231,13 @@
 
         combo_copy {
             bindings = <&kp LC(LS(LA(C)))>;
-            key-positions = <15 31>;
+            key-positions = <31 14>;
             layers = <0>;
         };
 
         combo_paste {
             bindings = <&kp LC(LS(LA(V)))>;
-            key-positions = <16 32>;
+            key-positions = <32 14>;
             layers = <0>;
         };
     };
