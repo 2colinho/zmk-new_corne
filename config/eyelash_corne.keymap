@@ -183,7 +183,6 @@
 
         mm0: mm0 {
             compatible = "zmk,behavior-mod-morph";
-            label = "MM0";
             bindings = <&kp LA(LG(LEFT))>, <&kp LC(LG(LEFT))>;
 
             #binding-cells = <0>;
@@ -192,7 +191,6 @@
 
         mm1: mm1 {
             compatible = "zmk,behavior-mod-morph";
-            label = "MM1";
             bindings = <&kp LA(LG(RIGHT))>, <&kp LC(LG(RIGHT))>;
 
             #binding-cells = <0>;
