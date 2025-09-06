@@ -27,8 +27,8 @@ layers:
   - {t: J, h: NAV}
   - {t: K, h: WIN}
   - {t: L, h: SYM}
-  - {t: ;, s: ':'}
-  - {t: '''', h: '$$mdi:apple-keyboard-control$$', s: '"'}
+  - {t: '''', s: '"'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
   - Z
   - X
@@ -39,8 +39,8 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - N
   - {t: M, h: BRO}
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
   - {t: /, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:apple-keyboard-caps$$'}
   - LGUI
@@ -77,7 +77,7 @@ layers:
   - {t: '"', h: ''''}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: \, s: '|'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
   - '~'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
