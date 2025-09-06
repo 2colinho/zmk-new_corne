@@ -64,9 +64,9 @@ layers:
   - {t: ), h: '0'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '~', type: held}
   - {t: '`', s: '~'}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: ':', h: ;}
   - {t: '-', s: _}
   - (
   - {t: '$$mdi:transfer$$', type: trans}
@@ -74,12 +74,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - )
   - +
-  - {t: '"', h: ''''}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: \, s: '|'}
+  - {t: '|', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&td2'
   - $$mdi:apple-keyboard-shift$$
-  - '~'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - _
@@ -88,9 +88,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ']', s: '}'}
   - {t: '=', s: +}
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - '|'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
