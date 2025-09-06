@@ -509,10 +509,10 @@
         window {
             display-name = "WIN";
             bindings = <
-&none             &none  &none  &kp LG(TAB)     &none   &none                    &trans          &kp LS(LG(UP))    &kp LS(LG(LEFT))  &kp LA(LG(UP))          &kp LS(LG(RIGHT))  &none  &none
-&kp LEFT_CONTROL  &none  &none  &none           &none   &none            &trans  &trans  &trans  &kp LS(LG(DOWN))  &mm0              &kp LA(LG(DOWN_ARROW))  &mm1               &none  &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &none  &none  &none           &none   &none  &trans            &trans          &none             &kp LG(PG_DN)     &kp LA(F4)              &kp LG(PG_UP)      &none  &kp RIGHT_SHIFT
-                                &mt LGUI LG(D)  &trans  &none                                    &none             &kp RIGHT_ALT     &kp RGUI
+&none             &none  &none  &none             &none   &none                    &trans          &kp LS(LG(UP))    &kp LS(LG(LEFT))  &kp LA(LG(UP))          &kp LS(LG(RIGHT))  &none  &none
+&kp LEFT_CONTROL  &none  &none  &none             &none   &none            &trans  &trans  &trans  &kp LS(LG(DOWN))  &mm0              &kp LA(LG(DOWN_ARROW))  &mm1               &none  &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &none  &none  &none             &none   &none  &trans            &trans          &none             &kp LG(PG_DN)     &kp LA(F4)              &kp LG(PG_UP)      &none  &kp RIGHT_SHIFT
+                                &mt LGUI LG(TAB)  &trans  &none                                    &none             &kp RIGHT_ALT     &kp RGUI
             >;
 
             sensor-bindings = <&scroll_encoder>;
