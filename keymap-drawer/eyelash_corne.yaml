@@ -212,17 +212,17 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+Gui+$$mdi:arrow-left-bold$$
-  - {t: D, h: '$$mdi:apple-keyboard-command$$', type: held}
-  - Ctl+Gui+$$mdi:arrow-right-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+Gui+$$mdi:arrow-down-bold$$
-  - Alt+Gui+$$mdi:arrow-left-bold$$
+  - {t: 'Alt+Gui+$$mdi:arrow-left-bold$$', s: 'Ctl+Gui+$$mdi:arrow-left-bold$$'}
   - {t: 'Alt+Gui+$$mdi:arrow-down-bold$$', type: held alternate}
-  - Alt+Gui+$$mdi:arrow-right-bold$$
+  - {t: 'Alt+Gui+$$mdi:arrow-right-bold$$', s: 'Ctl+Gui+$$mdi:arrow-right-bold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
@@ -239,7 +239,7 @@ layers:
   - Gui+PG UP
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: D, h: LGUI}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
