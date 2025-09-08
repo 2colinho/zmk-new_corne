@@ -423,3 +423,9 @@ combos:
 - p: [32, 14]
   k: Meh+V
   l: [QWERTY]
+- p: [1, 29]
+  k: $$mdi:progress-download$$
+  l: [FN]
+- p: [11, 40]
+  k: $$mdi:progress-download$$
+  l: [FN]
