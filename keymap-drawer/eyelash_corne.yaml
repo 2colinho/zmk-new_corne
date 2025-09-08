@@ -396,6 +396,12 @@ combos:
 - p: [1, 15, 29]
   k: '&soft_off'
   l: [QWERTY]
+- p: [1, 29]
+  k: $$mdi:progress-download$$
+  l: [FN]
+- p: [11, 40]
+  k: $$mdi:progress-download$$
+  l: [FN]
 - p: [33, 32]
   k: '{'
   l: [SYM]
@@ -423,9 +429,3 @@ combos:
 - p: [32, 14]
   k: Meh+V
   l: [QWERTY]
-- p: [1, 29]
-  k: $$mdi:progress-download$$
-  l: [FN]
-- p: [11, 40]
-  k: $$mdi:progress-download$$
-  l: [FN]
