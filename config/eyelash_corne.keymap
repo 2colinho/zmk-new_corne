@@ -202,7 +202,6 @@
             bindings = <&kp LC(LA(DOWN))>, <&kp LC(LS(LA(K)))>;
 
             #binding-cells = <0>;
-            label = "MM2";
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
