@@ -410,7 +410,7 @@ combos:
   l: [SYM]
 - p: [40, 25]
   k: '?'
-  l: [QWERTY, SYM]
+  l: [QWERTY]
 - p: [14, 15]
   k: '&sel_line'
   l: [QWERTY]
