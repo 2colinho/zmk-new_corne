@@ -359,7 +359,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: /, s: '?'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+Sft+G
   - Ctl+G
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -368,7 +368,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Alt+HOME
   - Ctl+Alt+$$mdi:arrow-left-bold$$
-  - Ctl+Alt+$$mdi:arrow-down-bold$$
+  - {t: 'Ctl+Alt+$$mdi:arrow-down-bold$$', s: Meh+K}
   - Ctl+Alt+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-control$$
@@ -388,10 +388,10 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+L
-  - Alt+F
+  - {t: /, s: '?'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-option$$
-  - RGUI
+  - {t: Alt+F, h: RGUI}
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
@@ -411,9 +411,6 @@ combos:
 - p: [40, 25]
   k: '?'
   l: [QWERTY, SYM]
-- p: [25, 23]
-  k: Meh+K
-  l: [BRO]
 - p: [14, 15]
   k: '&sel_line'
   l: [QWERTY]
