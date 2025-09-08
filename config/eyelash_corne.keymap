@@ -229,6 +229,18 @@
             layers = <0>;
         };
 
+        bootloader_left {
+            bindings = <&bootloader>;
+            key-positions = <1 29>;
+            layers = <11>;
+        };
+
+        bootloader_right {
+            bindings = <&bootloader>;
+            key-positions = <11 40>;
+            layers = <11>;
+        };
+
         combo_lbrc {
             bindings = <&kp LBRC>;
             key-positions = <33 32>;
@@ -281,18 +293,6 @@
             bindings = <&kp LC(LS(LA(V)))>;
             key-positions = <32 14>;
             layers = <0>;
-        };
-
-        bootloader_left {
-            bindings = <&bootloader>;
-            key-positions = <1 29>;
-            layers = <11>;
-        };
-
-        bootloader_right {
-            bindings = <&bootloader>;
-            key-positions = <11 40>;
-            layers = <11>;
         };
     };
 
