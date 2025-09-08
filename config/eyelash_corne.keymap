@@ -256,7 +256,7 @@
         combo_question {
             bindings = <&kp QUESTION>;
             key-positions = <40 25>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         combo_sel_line {
