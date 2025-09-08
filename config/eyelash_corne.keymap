@@ -196,6 +196,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
+
+        mm2: mm2 {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&kp LC(LA(DOWN))>, <&kp LC(LS(LA(K)))>;
+
+            #binding-cells = <0>;
+            label = "MM2";
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -249,12 +258,6 @@
             bindings = <&kp QUESTION>;
             key-positions = <40 25>;
             layers = <0 1>;
-        };
-
-        combo_move_tab {
-            bindings = <&kp LC(LS(LA(K)))>;
-            key-positions = <25 23>;
-            layers = <18>;
         };
 
         combo_sel_line {
@@ -605,10 +608,10 @@
         browser {
             display-name = "BRO";
             bindings = <
-&none             &none  &none     &none          &kp LC(R)  &kp LC(T)                    &trans          &none         &kp LA(LEFT)      &kp LC(LA(UP))    &kp LA(RIGHT)      &none  &none
-&kp LEFT_CONTROL  &none  &kp FSLH  &kp LC(LS(G))  &kp LC(G)  &none                &trans  &trans  &trans  &kp LA(HOME)  &kp LC(LA(LEFT))  &kp LC(LA(DOWN))  &kp LC(LA(RIGHT))  &none  &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &none  &none     &none          &none      &none      &trans            &trans          &kp LC(N)     &none             &none             &none              &none  &kp RIGHT_SHIFT
-                                   &trans         &trans     &kp LC(L)                                    &kp LA(F)     &kp RIGHT_ALT     &kp RGUI
+&none             &none  &none  &none          &kp LC(R)  &kp LC(T)                    &trans          &none         &kp LA(LEFT)      &kp LC(LA(UP))  &kp LA(RIGHT)      &none  &none
+&kp LEFT_CONTROL  &none  &none  &kp LC(LS(G))  &kp LC(G)  &none                &trans  &trans  &trans  &kp LA(HOME)  &kp LC(LA(LEFT))  &mm2            &kp LC(LA(RIGHT))  &none  &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &none  &none  &none          &none      &none      &trans            &trans          &kp LC(N)     &none             &none           &none              &none  &kp RIGHT_SHIFT
+                                &trans         &trans     &kp SLASH                                    &none         &kp RIGHT_ALT     &mt RGUI LA(F)
             >;
 
             sensor-bindings = <&scroll_encoder>;
