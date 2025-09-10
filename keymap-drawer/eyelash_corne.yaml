@@ -276,8 +276,8 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - RGB TOG
-  - RGB BRD
+  - {t: RGB TOG, h: LGUI}
+  - {t: RGB BRD, h: '$$mdi:apple-keyboard-option$$'}
   - RGB BRI
   - RGB EFF
   - {t: '$$mdi:transfer$$', type: trans}
