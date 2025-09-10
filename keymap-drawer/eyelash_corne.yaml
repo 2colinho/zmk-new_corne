@@ -13,7 +13,7 @@ layers:
   - {t: I, h: FN}
   - O
   - P
-  - '&td1'
+  - '&td_bspc_bspcwd'
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: A, h: MOU}
   - {t: S, h: SYM}
@@ -28,7 +28,7 @@ layers:
   - {t: K, h: WIN}
   - {t: L, h: SYM}
   - {t: '''', s: '"'}
-  - {t: '&td2', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '&td_del_delwd', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
   - Z
   - {t: X, h: LGUI}
@@ -47,8 +47,8 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '&td1', h: NUM}
-  - '&td2'
+  - {t: '&td_bspc_bspcwd', h: NUM}
+  - '&td_del_delwd'
   SYM:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '!', h: '1'}
@@ -77,7 +77,7 @@ layers:
   - {t: \, s: '|'}
   - {t: '|', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&td2'
+  - '&td_del_delwd'
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LGUI
@@ -96,7 +96,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - '&td1'
+  - '&td_bspc_bspcwd'
   - {t: '$$mdi:transfer$$', type: trans}
   NAV:
   - {t: '$$mdi:transfer$$', type: trans}
