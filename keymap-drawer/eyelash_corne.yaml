@@ -235,8 +235,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Gui+PG DN
-  - Alt+F4
-  - Gui+PG UP
+  - {t: Alt+F4, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: Gui+PG UP, h: RGUI}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
   - {t: 'Gui+$$mdi:keyboard-tab$$', h: LGUI}
@@ -284,8 +284,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F1
-  - F2
-  - F3
+  - {t: F2, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F3, h: RGUI}
   - F10
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
