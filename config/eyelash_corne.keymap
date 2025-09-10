@@ -534,10 +534,10 @@
         numpad {
             display-name = "NUM";
             bindings = <
-&trans            &none  &none  &none   &none   &none                        &trans          &kp FSLH   &kp N7        &kp N8  &kp N9  &kp STAR  &trans
-&kp LEFT_CONTROL  &none  &none  &none   &none   &none                &trans  &trans  &trans  &kp MINUS  &kp N4        &kp N5  &kp N6  &kp PLUS  &td2
-&kp LEFT_SHIFT    &none  &none  &none   &none   &none      &trans            &trans          &kp N0     &kp NUMBER_1  &kp N2  &kp N3  &kp DOT   &tog 9
-                                &trans  &trans  &kp SPACE                                    &kp RET    &none         &kp N0
+&trans            &none  &none     &none         &none   &none                        &trans          &kp FSLH   &kp N7        &kp N8  &kp N9  &kp STAR  &trans
+&kp LEFT_CONTROL  &none  &none     &none         &none   &none                &trans  &trans  &trans  &kp MINUS  &kp N4        &kp N5  &kp N6  &kp PLUS  &td2
+&kp LEFT_SHIFT    &none  &kp LGUI  &kp LEFT_ALT  &none   &none      &trans            &trans          &kp N0     &kp NUMBER_1  &kp N2  &kp N3  &kp DOT   &tog 9
+                                   &trans        &trans  &kp SPACE                                    &kp RET    &none         &kp N0
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -572,7 +572,7 @@
             bindings = <
 &none             &none  &none                   &none             &none              &none                    &trans          &kp LS(LG(UP))    &kp LS(LG(LEFT))        &kp LA(LG(UP))          &kp LS(LG(RIGHT))  &none  &none
 &kp LEFT_CONTROL  &none  &kp LC(LG(LEFT_ARROW))  &none             &kp LC(LG(RIGHT))  &none            &trans  &trans  &trans  &kp LS(LG(DOWN))  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(DOWN_ARROW))  &kp LA(LG(RIGHT))  &none  &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &none  &none                   &none             &none              &none  &trans            &trans          &none             &kp LG(PG_DN)           &kp LA(F4)              &kp LG(PG_UP)      &none  &kp RIGHT_SHIFT
+&kp LEFT_SHIFT    &none  &kp LGUI                &kp LEFT_ALT      &none              &none  &trans            &trans          &none             &kp LG(PG_DN)           &kp LA(F4)              &kp LG(PG_UP)      &none  &kp RIGHT_SHIFT
                                                  &mt LGUI LG(TAB)  &trans             &none                                    &none             &kp RIGHT_ALT           &kp RGUI
             >;
 
