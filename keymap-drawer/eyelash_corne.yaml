@@ -385,13 +385,13 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - RGUI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: /, s: '?'}
   - Ctl+L
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Alt+F, h: RGUI}
+  - {t: Alt+F, h: '$$mdi:apple-keyboard-shift$$'}
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
