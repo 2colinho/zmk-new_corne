@@ -636,7 +636,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        mouse2 {
+        mouse_xslow {
             display-name = "MOU";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans            &mmv MOVE_Y(-40)  &trans           &trans  &trans
@@ -648,7 +648,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        mouse3 {
+        mouse_slow {
             display-name = "MOU";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans             &mmv MOVE_Y(-120)  &trans            &trans  &trans
@@ -660,7 +660,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        mouse4 {
+        mouse_fast {
             display-name = "MOU";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans              &mmv MOVE_Y(-1600)  &trans             &trans  &trans
