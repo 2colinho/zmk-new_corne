@@ -29,21 +29,21 @@
 
 / {
     behaviors {
-        td0: td0 {
+        td_lshft_caps: td_lshft_caps {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&caps_word>;
         };
 
-        td1: td1 {
+        td_bspc_bspcwd: td_bspc_bspcwd {
             compatible = "zmk,behavior-tap-dance";
             bindings = <&kp BSPC>, <&kp LC(BSPC)>;
 
             #binding-cells = <0>;
         };
 
-        td2: td2 {
+        td_del_delwd: td_del_delwd {
             compatible = "zmk,behavior-tap-dance";
             bindings = <&kp DEL>, <&kp LC(DEL)>;
 
@@ -139,7 +139,7 @@
 
         mt8: mt8 {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&td2>;
+            bindings = <&kp>, <&td_del_delwd>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -200,7 +200,7 @@
 
         lt3: lt3 {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&mo>, <&td1>;
+            bindings = <&mo>, <&td_bspc_bspcwd>;
 
             #binding-cells = <2>;
             tapping-term-ms = <280>;
@@ -466,10 +466,10 @@
         base {
             display-name = "QWERTY";
             bindings = <
-&kp TAB                  &kp Q      &kp W        &lt0 11 E        &kp R         &kp T                                       &mmv MOVE_UP                     &kp Y    &kp U      &lt1 11 I         &kp O        &kp P      &td1
+&kp TAB                  &kp Q      &kp W        &lt0 11 E        &kp R         &kp T                                       &mmv MOVE_UP                     &kp Y    &kp U      &lt1 11 I         &kp O        &kp P      &td_bspc_bspcwd
 &mt LEFT_CONTROL ESCAPE  &lt0 13 A  &lt0 1 S     &lt0 10 D        &lt0 3 F      &kp G                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 3 J   &lt1 10 K         &lt1 1 L     &kp SQT    &mt8 RIGHT_CONTROL 0
 &lshft_caps              &kp Z      &mt0 LGUI X  &mt0 LEFT_ALT C  &lt0 18 V     &kp B         &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 18 M  &mt3 RIGHT_ALT 0  &mt4 RGUI 0  &kp SLASH  &rshft_caps
-                                                 &lshft_caps      &kp LEFT_ALT  &lt2 3 SPACE                                                                 &kp RET  &lt3 8 0   &td2
+                                                 &lshft_caps      &kp LEFT_ALT  &lt2 3 SPACE                                                                 &kp RET  &lt3 8 0   &td_del_delwd
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -478,10 +478,10 @@
         symbol {
             display-name = "SYM";
             bindings = <
-&trans            &mt N1 EXCL  &mt N2 AT  &mt N3 HASH   &mt N4 DLLR  &mt N5 PRCNT                    &trans          &mt N6 CARET  &mt N7 AMPS  &mt N8 ASTRK  &mt N9 LPAR  &mt N0 RPAR  &trans
-&kp LEFT_CONTROL  &none        &kp TILDE  &kp GRAVE     &kp MINUS    &kp LPAR                &trans  &trans  &trans  &kp RPAR      &kp PLUS     &kp BSLH      &kp PIPE     &none        &td2
-&kp LEFT_SHIFT    &none        &kp LGUI   &kp LEFT_ALT  &kp UNDER    &kp LBKT      &trans            &trans          &kp RBKT      &kp EQUAL    &none         &none        &none        &none
-                                          &kp LSHFT     &trans       &kp SPACE                                       &kp RET       &td1         &trans
+&trans            &mt N1 EXCL  &mt N2 AT  &mt N3 HASH   &mt N4 DLLR  &mt N5 PRCNT                    &trans          &mt N6 CARET  &mt N7 AMPS      &mt N8 ASTRK  &mt N9 LPAR  &mt N0 RPAR  &trans
+&kp LEFT_CONTROL  &none        &kp TILDE  &kp GRAVE     &kp MINUS    &kp LPAR                &trans  &trans  &trans  &kp RPAR      &kp PLUS         &kp BSLH      &kp PIPE     &none        &td_del_delwd
+&kp LEFT_SHIFT    &none        &kp LGUI   &kp LEFT_ALT  &kp UNDER    &kp LBKT      &trans            &trans          &kp RBKT      &kp EQUAL        &none         &none        &none        &none
+                                          &kp LSHFT     &trans       &kp SPACE                                       &kp RET       &td_bspc_bspcwd  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -491,9 +491,9 @@
             display-name = "NAV";
             bindings = <
 &trans            &none                &none               &none                       &none              &none                        &trans          &kp PG_UP  &mt HOME LC(LEFT)  &kp UP     &mt END LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
-&kp LEFT_CONTROL  &mt7 LC(A) 0         &sel_word_bwd       &none                       &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td2
+&kp LEFT_CONTROL  &mt7 LC(A) 0         &sel_word_bwd       &none                       &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td_del_delwd
 &kp LEFT_SHIFT    &mt LC(LS(Z)) LC(Z)  &mt LEFT_ALT LC(X)  &mt LEFT_ALT LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none      &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &none              &tog 4
-                                                           &kp LSHFT                   &trans             &kp SPACE                                    &kp RET    &td1               &trans
+                                                           &kp LSHFT                   &trans             &kp SPACE                                    &kp RET    &td_bspc_bspcwd    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -551,7 +551,7 @@
             display-name = "NUM";
             bindings = <
 &trans            &none  &none     &none         &none   &none                        &trans          &kp FSLH   &kp N7        &kp N8  &kp N9  &kp STAR  &trans
-&kp LEFT_CONTROL  &none  &none     &none         &none   &none                &trans  &trans  &trans  &kp MINUS  &kp N4        &kp N5  &kp N6  &kp PLUS  &td2
+&kp LEFT_CONTROL  &none  &none     &none         &none   &none                &trans  &trans  &trans  &kp MINUS  &kp N4        &kp N5  &kp N6  &kp PLUS  &td_del_delwd
 &kp LEFT_SHIFT    &none  &kp LGUI  &kp LEFT_ALT  &none   &none      &trans            &trans          &kp N0     &kp NUMBER_1  &kp N2  &kp N3  &kp DOT   &tog 9
                                    &kp LSHFT     &trans  &kp SPACE                                    &kp RET    &none         &kp N0
             >;
