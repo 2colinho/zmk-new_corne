@@ -259,6 +259,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        mt10: mt10 {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&msc>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            label = "MT10";
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -602,10 +611,10 @@
         mouse {
             display-name = "MOU";
             bindings = <
-&none             &none  &none   &none   &none   &none                        &trans          &msc SCRL_UP    &mkp LCLK           &mmv MOVE_UP    &mkp RCLK        &kp LC(LS(LA(P)))  &none
-&kp LEFT_CONTROL  &none  &mo 15  &mo 16  &mo 17  &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none              &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &none  &none   &none   &none   &none      &trans            &trans          &none           &msc SCRL_LEFT      &mkp MCLK       &msc SCRL_RIGHT  &none              &mt6 RIGHT_SHIFT 14
-                                 &trans  &trans  &mkp RCLK                                    &mkp LCLK       &mt5 RIGHT_ALT MB4  &mt5 RGUI MB5
+&none             &none  &none     &none         &none   &none                        &trans          &msc SCRL_UP    &mkp LCLK           &mmv MOVE_UP         &mkp RCLK              &kp LC(LS(LA(P)))  &none
+&kp LEFT_CONTROL  &none  &mo 15    &mo 16        &mo 17  &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN       &mmv MOVE_RIGHT        &none              &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &none  &kp LGUI  &kp LEFT_ALT  &none   &none      &trans            &trans          &none           &msc SCRL_LEFT      &mt5 RIGHT_ALT MCLK  &mt10 RGUI SCRL_RIGHT  &none              &mt6 RIGHT_SHIFT 14
+                                   &trans        &trans  &mkp RCLK                                    &mkp LCLK       &mt5 RIGHT_ALT MB4  &mt5 RGUI MB5
             >;
 
             sensor-bindings = <&scroll_encoder>;
