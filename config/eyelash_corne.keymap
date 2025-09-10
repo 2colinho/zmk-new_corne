@@ -329,30 +329,6 @@
             key-positions = <40 25>;
             layers = <0>;
         };
-
-        combo_sel_line {
-            bindings = <&sel_line>;
-            key-positions = <14 15>;
-            layers = <0>;
-        };
-
-        combo_cut {
-            bindings = <&kp LC(X)>;
-            key-positions = <14 30>;
-            layers = <0>;
-        };
-
-        combo_copy {
-            bindings = <&kp LC(LS(LA(C)))>;
-            key-positions = <31 14>;
-            layers = <0>;
-        };
-
-        combo_paste {
-            bindings = <&kp LC(LS(LA(V)))>;
-            key-positions = <32 14>;
-            layers = <0>;
-        };
     };
 
     macros {
