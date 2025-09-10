@@ -516,7 +516,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        navigation2 {
+        navigation_cont_sel {
             display-name = "NAV";
             bindings = <
 &trans  &trans          &trans              &trans  &trans              &trans                    &trans          &trans  &trans              &trans          &trans              &trans  &trans
@@ -528,7 +528,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        navigation3 {
+        navigation_cont_sel_sl {
             display-name = "NAV";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
