@@ -39,8 +39,8 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - N
   - {t: M, h: BRO}
-  - {t: ',', s: ;}
-  - {t: ., s: ':'}
+  - {t: ',', h: '$$mdi:apple-keyboard-option$$', s: ;}
+  - {t: ., h: RGUI, s: ':'}
   - {t: /, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:apple-keyboard-caps$$'}
   - LGUI
