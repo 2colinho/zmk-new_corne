@@ -492,7 +492,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        navigation0 {
+        navigation_momentary {
             display-name = "NAV";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
@@ -504,7 +504,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        navigation1 {
+        navigation_lock {
             display-name = "NAV";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
@@ -552,7 +552,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        numpad0 {
+        numpad_momentary {
             display-name = "NUM";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
@@ -564,7 +564,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        numpad1 {
+        numpad_lock {
             display-name = "NUM";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
@@ -612,7 +612,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        mouse0 {
+        mouse_momentary {
             display-name = "MOU";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
@@ -624,7 +624,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        mouse1 {
+        mouse_lock {
             display-name = "MOU";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
