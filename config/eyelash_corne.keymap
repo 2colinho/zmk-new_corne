@@ -474,10 +474,10 @@
         navigation {
             display-name = "NAV";
             bindings = <
-&trans            &none                &none                &none                        &none              &none                        &trans          &kp PG_UP  &mt HOME LC(LEFT)  &kp UP     &mt END LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
-&kp LEFT_CONTROL  &mt9 LC(A) 0         &sel_word_bwd        &none                        &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td2
-&kp LEFT_SHIFT    &mt LC(LS(Z)) LC(Z)  &mt0 LEFT_ALT LC(X)  &mt0 LEFT_ALT LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none      &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &none              &tog 4
-                                                            &trans                       &trans             &kp SPACE                                    &kp RET    &td1               &trans
+&trans            &none                &none               &none                       &none              &none                        &trans          &kp PG_UP  &mt HOME LC(LEFT)  &kp UP     &mt END LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
+&kp LEFT_CONTROL  &mt9 LC(A) 0         &sel_word_bwd       &none                       &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td2
+&kp LEFT_SHIFT    &mt LC(LS(Z)) LC(Z)  &mt LEFT_ALT LC(X)  &mt LEFT_ALT LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none      &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &none              &tog 4
+                                                           &trans                      &trans             &kp SPACE                                    &kp RET    &td1               &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -570,9 +570,9 @@
         window {
             display-name = "WIN";
             bindings = <
-&none             &none  &none                   &none             &none              &none                    &trans          &kp LS(LG(UP))    &kp LS(LG(LEFT))        &kp LA(LG(UP))          &kp LS(LG(RIGHT))    &none  &none
-&kp LEFT_CONTROL  &none  &kp LC(LG(LEFT_ARROW))  &none             &kp LC(LG(RIGHT))  &none            &trans  &trans  &trans  &kp LS(LG(DOWN))  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(DOWN_ARROW))  &kp LA(LG(RIGHT))    &none  &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &none  &kp LGUI                &kp LEFT_ALT      &none              &none  &trans            &trans          &none             &kp LG(PG_DN)           &mt1 RIGHT_ALT LA(F4)   &mt1 RGUI LG(PG_UP)  &none  &kp RIGHT_SHIFT
+&none             &none  &none                   &none             &none              &none                    &trans          &kp LS(LG(UP))    &kp LS(LG(LEFT))        &kp LA(LG(UP))          &kp LS(LG(RIGHT))   &none  &none
+&kp LEFT_CONTROL  &none  &kp LC(LG(LEFT_ARROW))  &none             &kp LC(LG(RIGHT))  &none            &trans  &trans  &trans  &kp LS(LG(DOWN))  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(DOWN_ARROW))  &kp LA(LG(RIGHT))   &none  &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &none  &kp LGUI                &kp LEFT_ALT      &none              &none  &trans            &trans          &none             &kp LG(PG_DN)           &mt RIGHT_ALT LA(F4)    &mt RGUI LG(PG_UP)  &none  &kp RIGHT_SHIFT
                                                  &mt LGUI LG(TAB)  &trans             &none                                    &none             &kp RIGHT_ALT           &kp RGUI
             >;
 
