@@ -50,7 +50,7 @@
             #binding-cells = <0>;
         };
 
-        mt0: mt0 {
+        mt3: mt3 {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&mkp>;
 
@@ -58,7 +58,7 @@
             tapping-term-ms = <200>;
         };
 
-        mt1: mt1 {
+        mt4: mt4 {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&tog>;
 
@@ -66,7 +66,7 @@
             tapping-term-ms = <200>;
         };
 
-        mt2: mt2 {
+        mt5: mt5 {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&sel_line>;
 
@@ -74,7 +74,7 @@
             tapping-term-ms = <200>;
         };
 
-        mt3: mt3 {
+        mt6: mt6 {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&td2>;
 
@@ -388,7 +388,7 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB                  &kp Q      &kp W     &lt0 11 E  &kp R         &kp T                                       &mmv MOVE_UP                     &kp Y    &kp U      &lt1 11 I    &kp O       &kp P      &td1
-&mt LEFT_CONTROL ESCAPE  &lt0 13 A  &lt0 1 S  &lt0 10 D  &lt0 3 F      &kp G                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 3 J   &lt1 10 K    &lt1 1 L    &kp SQT    &mt3 RIGHT_CONTROL 0
+&mt LEFT_CONTROL ESCAPE  &lt0 13 A  &lt0 1 S  &lt0 10 D  &lt0 3 F      &kp G                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 3 J   &lt1 10 K    &lt1 1 L    &kp SQT    &mt6 RIGHT_CONTROL 0
 &lshft_caps              &kp Z      &kp X     &kp C      &lt0 18 V     &kp B         &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 18 M  &comma_semi  &dot_colon  &kp SLASH  &rshft_caps
                                               &kp LGUI   &kp LEFT_ALT  &lt2 3 SPACE                                                                 &kp RET  &lt3 8 0   &td2
             >;
@@ -412,7 +412,7 @@
             display-name = "NAV";
             bindings = <
 &trans            &none                &none          &none              &none              &none                        &trans          &kp PG_UP  &mt HOME LC(LEFT)  &kp UP     &mt END LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
-&kp LEFT_CONTROL  &mt2 LC(A) 0         &sel_word_bwd  &none              &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td2
+&kp LEFT_CONTROL  &mt5 LC(A) 0         &sel_word_bwd  &none              &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td2
 &kp LEFT_SHIFT    &mt LC(LS(Z)) LC(Z)  &kp LC(X)      &kp LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none      &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &none              &tog 4
                                                       &trans             &trans             &kp SPACE                                    &kp RET    &td1               &trans
             >;
@@ -533,8 +533,8 @@
             bindings = <
 &none             &none  &none   &none   &none   &none                        &trans          &msc SCRL_UP    &mkp LCLK           &mmv MOVE_UP    &mkp RCLK        &kp LC(LS(LA(P)))  &none
 &kp LEFT_CONTROL  &none  &mo 15  &mo 16  &mo 17  &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none              &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &none  &none   &none   &none   &none      &trans            &trans          &none           &msc SCRL_LEFT      &mkp MCLK       &msc SCRL_RIGHT  &none              &mt1 RIGHT_SHIFT 14
-                                 &trans  &trans  &mkp RCLK                                    &mkp LCLK       &mt0 RIGHT_ALT MB4  &mt0 RGUI MB5
+&kp LEFT_SHIFT    &none  &none   &none   &none   &none      &trans            &trans          &none           &msc SCRL_LEFT      &mkp MCLK       &msc SCRL_RIGHT  &none              &mt4 RIGHT_SHIFT 14
+                                 &trans  &trans  &mkp RCLK                                    &mkp LCLK       &mt3 RIGHT_ALT MB4  &mt3 RGUI MB5
             >;
 
             sensor-bindings = <&scroll_encoder>;
