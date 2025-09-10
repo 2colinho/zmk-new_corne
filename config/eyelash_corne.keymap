@@ -183,22 +183,6 @@
 
         mm0: mm0 {
             compatible = "zmk,behavior-mod-morph";
-            bindings = <&kp LA(LG(LEFT))>, <&kp LC(LG(LEFT))>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
-        };
-
-        mm1: mm1 {
-            compatible = "zmk,behavior-mod-morph";
-            bindings = <&kp LA(LG(RIGHT))>, <&kp LC(LG(RIGHT))>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
-        };
-
-        mm2: mm2 {
-            compatible = "zmk,behavior-mod-morph";
             bindings = <&kp LC(LA(DOWN))>, <&kp LC(LS(LA(K)))>;
 
             #binding-cells = <0>;
@@ -523,10 +507,10 @@
         window {
             display-name = "WIN";
             bindings = <
-&none             &none  &none  &none             &none   &none                    &trans          &kp LS(LG(UP))    &kp LS(LG(LEFT))  &kp LA(LG(UP))          &kp LS(LG(RIGHT))  &none  &none
-&kp LEFT_CONTROL  &none  &none  &none             &none   &none            &trans  &trans  &trans  &kp LS(LG(DOWN))  &mm0              &kp LA(LG(DOWN_ARROW))  &mm1               &none  &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &none  &none  &none             &none   &none  &trans            &trans          &none             &kp LG(PG_DN)     &kp LA(F4)              &kp LG(PG_UP)      &none  &kp RIGHT_SHIFT
-                                &mt LGUI LG(TAB)  &trans  &none                                    &none             &kp RIGHT_ALT     &kp RGUI
+&none             &none  &none                   &none             &none              &none                    &trans          &kp LS(LG(UP))    &kp LS(LG(LEFT))        &kp LA(LG(UP))          &kp LS(LG(RIGHT))  &none  &none
+&kp LEFT_CONTROL  &none  &kp LC(LG(LEFT_ARROW))  &none             &kp LC(LG(RIGHT))  &none            &trans  &trans  &trans  &kp LS(LG(DOWN))  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(DOWN_ARROW))  &kp LA(LG(RIGHT))  &none  &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &none  &none                   &none             &none              &none  &trans            &trans          &none             &kp LG(PG_DN)           &kp LA(F4)              &kp LG(PG_UP)      &none  &kp RIGHT_SHIFT
+                                                 &mt LGUI LG(TAB)  &trans             &none                                    &none             &kp RIGHT_ALT           &kp RGUI
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -620,7 +604,7 @@
             display-name = "BRO";
             bindings = <
 &none             &none          &none  &none          &kp LC(R)  &kp LC(T)                    &trans          &none         &kp LA(LEFT)      &kp LC(LA(UP))  &kp LA(RIGHT)      &none  &none
-&kp LEFT_CONTROL  &kp LC(LS(A))  &none  &kp LC(LS(G))  &kp LC(G)  &none                &trans  &trans  &trans  &kp LA(HOME)  &kp LC(LA(LEFT))  &mm2            &kp LC(LA(RIGHT))  &none  &kp RIGHT_CONTROL
+&kp LEFT_CONTROL  &kp LC(LS(A))  &none  &kp LC(LS(G))  &kp LC(G)  &none                &trans  &trans  &trans  &kp LA(HOME)  &kp LC(LA(LEFT))  &mm0            &kp LC(LA(RIGHT))  &none  &kp RIGHT_CONTROL
 &kp LEFT_SHIFT    &none          &none  &none          &none      &none      &trans            &trans          &kp LC(N)     &none             &none           &none              &none  &kp RIGHT_SHIFT
                                         &trans         &trans     &kp SLASH                                    &kp LC(L)     &kp RIGHT_ALT     &mt RGUI LA(F)
             >;
