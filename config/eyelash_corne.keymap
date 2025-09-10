@@ -153,6 +153,14 @@
             tapping-term-ms = <200>;
         };
 
+        mt10: mt10 {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&msc>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
         lt0: lt0 {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&kp>;
@@ -258,15 +266,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        mt10: mt10 {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&msc>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            label = "MT10";
         };
     };
 
