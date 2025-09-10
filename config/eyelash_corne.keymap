@@ -329,6 +329,12 @@
             key-positions = <40 25>;
             layers = <0>;
         };
+
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <1 2>;
+            layers = <0>;
+        };
     };
 
     macros {
