@@ -417,15 +417,3 @@ combos:
 - p: [40, 25]
   k: '?'
   l: [QWERTY]
-- p: [14, 15]
-  k: '&sel_line'
-  l: [QWERTY]
-- p: [14, 30]
-  k: Ctl+X
-  l: [QWERTY]
-- p: [31, 14]
-  k: Meh+C
-  l: [QWERTY]
-- p: [32, 14]
-  k: Meh+V
-  l: [QWERTY]
