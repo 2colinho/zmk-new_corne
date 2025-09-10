@@ -417,3 +417,6 @@ combos:
 - p: [40, 25]
   k: '?'
   l: [QWERTY]
+- p: [1, 2]
+  k: $$mdi:keyboard-tab$$
+  l: [QWERTY]
