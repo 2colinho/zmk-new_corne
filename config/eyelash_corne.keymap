@@ -87,7 +87,7 @@
             quick-tap-ms = <175>;
         };
 
-        mt3: mt3 {
+        mt_hr_comma: mt_hr_comma {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&comma_semi>;
 
@@ -100,7 +100,7 @@
             hold-trigger-key-positions = <42 43 44 45 46 47 47 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
         };
 
-        mt4: mt4 {
+        mt_hr_dot: mt_hr_dot {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&dot_colon>;
 
@@ -466,9 +466,9 @@
         base {
             display-name = "QWERTY";
             bindings = <
-&kp TAB                  &kp Q           &kp W             &lt_hr_lh 11 E        &kp R           &kp T                                         &mmv MOVE_UP                     &kp Y    &kp U           &lt_hr_rh 11 I    &kp O          &kp P      &td_bspc_bspcwd
-&mt LEFT_CONTROL ESCAPE  &lt_hr_lh 13 A  &lt_hr_lh 1 S     &lt_hr_lh 10 D        &lt_hr_lh 3 F   &kp G                         &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt_hr_rh 3 J   &lt_hr_rh 10 K    &lt_hr_rh 1 L  &kp SQT    &mt8 RIGHT_CONTROL 0
-&lshft_caps              &kp Z           &mt_hr_lh LGUI X  &mt_hr_lh LEFT_ALT C  &lt_hr_lh 18 V  &kp B           &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt_hr_rh 18 M  &mt3 RIGHT_ALT 0  &mt4 RGUI 0    &kp SLASH  &rshft_caps
+&kp TAB                  &kp Q           &kp W             &lt_hr_lh 11 E        &kp R           &kp T                                         &mmv MOVE_UP                     &kp Y    &kp U           &lt_hr_rh 11 I            &kp O              &kp P      &td_bspc_bspcwd
+&mt LEFT_CONTROL ESCAPE  &lt_hr_lh 13 A  &lt_hr_lh 1 S     &lt_hr_lh 10 D        &lt_hr_lh 3 F   &kp G                         &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt_hr_rh 3 J   &lt_hr_rh 10 K            &lt_hr_rh 1 L      &kp SQT    &mt8 RIGHT_CONTROL 0
+&lshft_caps              &kp Z           &mt_hr_lh LGUI X  &mt_hr_lh LEFT_ALT C  &lt_hr_lh 18 V  &kp B           &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt_hr_rh 18 M  &mt_hr_comma RIGHT_ALT 0  &mt_hr_dot RGUI 0  &kp SLASH  &rshft_caps
                                                            &lshft_caps           &kp LEFT_ALT    &lt_hr 3 SPACE                                                                 &kp RET  &lt3 8 0        &td_del_delwd
             >;
 
