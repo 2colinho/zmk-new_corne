@@ -27,6 +27,8 @@
 
 &soft_off { hold-time-ms = <2000>; };
 
+&sk { quick-release; };
+
 / {
     behaviors {
         td_lshft_caps: td_lshft_caps {
@@ -198,7 +200,7 @@
             hold-trigger-key-positions = <42 43 44 45 46 47 47 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
         };
 
-        lt3: lt3 {
+        lt_hr_bspc: lt_hr_bspc {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&td_bspc_bspcwd>;
 
@@ -209,7 +211,7 @@
             quick-tap-ms = <175>;
         };
 
-        sl0: sl0 {
+        sl_cont_sel: sl_cont_sel {
             compatible = "zmk,behavior-sticky-key";
             bindings = <&mo>;
             #binding-cells = <1>;
@@ -219,18 +221,9 @@
             /delete-property/ ignore-modifiers;
         };
 
-        sk0: sk0 {
-            compatible = "zmk,behavior-sticky-key";
-            bindings = <&kp>;
-            #binding-cells = <1>;
-            release-after-ms = <1000>;
-            quick-release;
-            ignore-modifiers;
-        };
-
         lshft_caps: lshft_caps {
             compatible = "zmk,behavior-mod-morph";
-            bindings = <&sk0 LEFT_SHIFT>, <&caps_word>;
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -238,7 +231,7 @@
 
         rshft_caps: rshft_caps {
             compatible = "zmk,behavior-mod-morph";
-            bindings = <&sk0 RIGHT_SHIFT>, <&kp CAPS>;
+            bindings = <&sk RIGHT_SHIFT>, <&kp CAPS>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
@@ -372,7 +365,7 @@
                 <&macro_release>,
                 <&kp LC(LS(RIGHT))>,
                 <&macro_tap>,
-                <&sl0 6>;
+                <&sl_cont_sel 6>;
 
             wait-ms = <0>;
             tap-ms = <0>;
@@ -390,7 +383,7 @@
                 <&macro_release>,
                 <&kp LC(LS(LEFT))>,
                 <&macro_tap>,
-                <&sl0 6>;
+                <&sl_cont_sel 6>;
 
             wait-ms = <0>;
             tap-ms = <0>;
@@ -403,7 +396,7 @@
                 <&macro_tap>,
                 <&kp HOME &kp LS(END)>,
                 <&macro_tap>,
-                <&sl0 6>;
+                <&sl_cont_sel 6>;
 
             wait-ms = <0>;
             tap-ms = <0>;
@@ -419,7 +412,7 @@
                 <&macro_release>,
                 <&kp LC(LS(RIGHT))>,
                 <&macro_tap>,
-                <&sl0 6>;
+                <&sl_cont_sel 6>;
 
             wait-ms = <0>;
             tap-ms = <0>;
@@ -435,7 +428,7 @@
                 <&macro_release>,
                 <&kp LC(LS(LEFT))>,
                 <&macro_tap>,
-                <&sl0 6>;
+                <&sl_cont_sel 6>;
 
             wait-ms = <0>;
             tap-ms = <0>;
@@ -453,7 +446,7 @@
                 <&macro_tap>,
                 <&kp LS(END)>,
                 <&macro_tap>,
-                <&sl0 6>;
+                <&sl_cont_sel 6>;
 
             wait-ms = <0>;
             tap-ms = <0>;
@@ -466,10 +459,10 @@
         base {
             display-name = "QWERTY";
             bindings = <
-&kp TAB                  &kp Q           &kp W             &lt_hr_lh 11 E        &kp R           &kp T                                         &mmv MOVE_UP                     &kp Y    &kp U           &lt_hr_rh 11 I            &kp O              &kp P      &td_bspc_bspcwd
-&mt LEFT_CONTROL ESCAPE  &lt_hr_lh 13 A  &lt_hr_lh 1 S     &lt_hr_lh 10 D        &lt_hr_lh 3 F   &kp G                         &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt_hr_rh 3 J   &lt_hr_rh 10 K            &lt_hr_rh 1 L      &kp SQT    &mt_del RIGHT_CONTROL 0
-&lshft_caps              &kp Z           &mt_hr_lh LGUI X  &mt_hr_lh LEFT_ALT C  &lt_hr_lh 18 V  &kp B           &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt_hr_rh 18 M  &mt_hr_comma RIGHT_ALT 0  &mt_hr_dot RGUI 0  &kp SLASH  &rshft_caps
-                                                           &lshft_caps           &kp LEFT_ALT    &lt_hr 3 SPACE                                                                 &kp RET  &lt3 8 0        &td_del_delwd
+&kp TAB                  &kp Q           &kp W             &lt_hr_lh 11 E        &kp R           &kp T                                         &mmv MOVE_UP                     &kp Y    &kp U            &lt_hr_rh 11 I            &kp O              &kp P      &td_bspc_bspcwd
+&mt LEFT_CONTROL ESCAPE  &lt_hr_lh 13 A  &lt_hr_lh 1 S     &lt_hr_lh 10 D        &lt_hr_lh 3 F   &kp G                         &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt_hr_rh 3 J    &lt_hr_rh 10 K            &lt_hr_rh 1 L      &kp SQT    &mt_del RIGHT_CONTROL 0
+&lshft_caps              &kp Z           &mt_hr_lh LGUI X  &mt_hr_lh LEFT_ALT C  &lt_hr_lh 18 V  &kp B           &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt_hr_rh 18 M   &mt_hr_comma RIGHT_ALT 0  &mt_hr_dot RGUI 0  &kp SLASH  &rshft_caps
+                                                           &lshft_caps           &kp LEFT_ALT    &lt_hr 3 SPACE                                                                 &kp RET  &lt_hr_bspc 8 0  &td_del_delwd
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
