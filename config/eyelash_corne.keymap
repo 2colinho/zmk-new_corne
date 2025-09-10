@@ -462,10 +462,10 @@
         symbol {
             display-name = "SYM";
             bindings = <
-&trans            &mt N1 EXCL  &mt N2 AT  &mt N3 HASH  &mt N4 DLLR  &mt N5 PRCNT                    &trans          &mt N6 CARET  &mt N7 AMPS  &mt N8 ASTRK  &mt N9 LPAR  &mt N0 RPAR  &trans
-&kp LEFT_CONTROL  &none        &kp TILDE  &kp GRAVE    &kp MINUS    &kp LPAR                &trans  &trans  &trans  &kp RPAR      &kp PLUS     &kp BSLH      &kp PIPE     &none        &td2
-&kp LEFT_SHIFT    &none        &none      &none        &kp UNDER    &kp LBKT      &trans            &trans          &kp RBKT      &kp EQUAL    &none         &none        &none        &none
-                                          &trans       &trans       &kp SPACE                                       &kp RET       &td1         &trans
+&trans            &mt N1 EXCL  &mt N2 AT  &mt N3 HASH   &mt N4 DLLR  &mt N5 PRCNT                    &trans          &mt N6 CARET  &mt N7 AMPS  &mt N8 ASTRK  &mt N9 LPAR  &mt N0 RPAR  &trans
+&kp LEFT_CONTROL  &none        &kp TILDE  &kp GRAVE     &kp MINUS    &kp LPAR                &trans  &trans  &trans  &kp RPAR      &kp PLUS     &kp BSLH      &kp PIPE     &none        &td2
+&kp LEFT_SHIFT    &none        &kp LGUI   &kp LEFT_ALT  &kp UNDER    &kp LBKT      &trans            &trans          &kp RBKT      &kp EQUAL    &none         &none        &none        &none
+                                          &trans        &trans       &kp SPACE                                       &kp RET       &td1         &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -474,10 +474,10 @@
         navigation {
             display-name = "NAV";
             bindings = <
-&trans            &none                &none          &none              &none              &none                        &trans          &kp PG_UP  &mt HOME LC(LEFT)  &kp UP     &mt END LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
-&kp LEFT_CONTROL  &mt7 LC(A) 0         &sel_word_bwd  &none              &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td2
-&kp LEFT_SHIFT    &mt LC(LS(Z)) LC(Z)  &kp LC(X)      &kp LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none      &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &none              &tog 4
-                                                      &trans             &trans             &kp SPACE                                    &kp RET    &td1               &trans
+&trans            &none                &none                &none                        &none              &none                        &trans          &kp PG_UP  &mt HOME LC(LEFT)  &kp UP     &mt END LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
+&kp LEFT_CONTROL  &mt7 LC(A) 0         &sel_word_bwd        &none                        &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td2
+&kp LEFT_SHIFT    &mt LC(LS(Z)) LC(Z)  &mt0 LEFT_ALT LC(X)  &mt0 LEFT_ALT LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none      &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &none              &tog 4
+                                                            &trans                       &trans             &kp SPACE                                    &kp RET    &td1               &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
