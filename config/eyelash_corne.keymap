@@ -678,10 +678,10 @@
         browser {
             display-name = "BRO";
             bindings = <
-&none             &none          &none     &none           &kp LC(R)  &kp LC(T)                    &trans          &none         &kp LA(LEFT)      &kp LC(LA(UP))  &kp LA(RIGHT)      &none  &none
-&kp LEFT_CONTROL  &kp LC(LS(A))  &none     &kp LC(LS(G))   &kp LC(G)  &none                &trans  &trans  &trans  &kp LA(HOME)  &kp LC(LA(LEFT))  &mm_move_tab    &kp LC(LA(RIGHT))  &none  &kp RIGHT_CONTROL
-&none             &none          &kp LGUI  &kp LEFT_ALT    &none      &none      &trans            &trans          &kp LC(N)     &none             &kp RIGHT_ALT   &kp RGUI           &none  &kp RIGHT_SHIFT
-                                           &kp LEFT_SHIFT  &none      &kp SLASH                                    &kp LC(L)     &none             &mt RGUI LA(F)
+&none             &none          &none     &none           &kp LC(R)  &kp LC(T)                    &trans          &none         &kp LA(LEFT)      &kp LC(LA(UP))         &kp LA(RIGHT)      &none  &none
+&kp LEFT_CONTROL  &kp LC(LS(A))  &none     &kp LC(LS(G))   &kp LC(G)  &none                &trans  &trans  &trans  &kp LA(HOME)  &kp LC(LA(LEFT))  &mm_move_tab           &kp LC(LA(RIGHT))  &none  &kp RIGHT_CONTROL
+&none             &none          &kp LGUI  &kp LEFT_ALT    &none      &none      &trans            &trans          &kp LC(N)     &none             &kp RIGHT_ALT          &kp RGUI           &none  &none
+                                           &kp LEFT_SHIFT  &none      &kp SLASH                                    &kp LC(L)     &none             &mt RIGHT_SHIFT LA(F)
             >;
 
             sensor-bindings = <&scroll_encoder>;
