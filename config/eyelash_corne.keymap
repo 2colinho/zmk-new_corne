@@ -225,6 +225,34 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        mt3: mt3 {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&comma_semi>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <42 43 44 45 46 47 47 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
+            label = "MT3";
+        };
+
+        mt4: mt4 {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&dot_colon>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <42 43 44 45 46 47 47 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
+            label = "MT4";
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -424,9 +452,9 @@
         base {
             display-name = "QWERTY";
             bindings = <
-&kp TAB                  &kp Q      &kp W        &lt0 11 E        &kp R         &kp T                                       &mmv MOVE_UP                     &kp Y    &kp U      &lt1 11 I    &kp O       &kp P      &td1
-&mt LEFT_CONTROL ESCAPE  &lt0 13 A  &lt0 1 S     &lt0 10 D        &lt0 3 F      &kp G                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 3 J   &lt1 10 K    &lt1 1 L    &kp SQT    &mt8 RIGHT_CONTROL 0
-&lshft_caps              &kp Z      &mt0 LGUI X  &mt0 LEFT_ALT C  &lt0 18 V     &kp B         &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 18 M  &comma_semi  &dot_colon  &kp SLASH  &rshft_caps
+&kp TAB                  &kp Q      &kp W        &lt0 11 E        &kp R         &kp T                                       &mmv MOVE_UP                     &kp Y    &kp U      &lt1 11 I         &kp O        &kp P      &td1
+&mt LEFT_CONTROL ESCAPE  &lt0 13 A  &lt0 1 S     &lt0 10 D        &lt0 3 F      &kp G                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &lt1 3 J   &lt1 10 K         &lt1 1 L     &kp SQT    &mt8 RIGHT_CONTROL 0
+&lshft_caps              &kp Z      &mt0 LGUI X  &mt0 LEFT_ALT C  &lt0 18 V     &kp B         &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &lt1 18 M  &mt3 RIGHT_ALT 0  &mt4 RGUI 0  &kp SLASH  &rshft_caps
                                                  &kp LGUI         &kp LEFT_ALT  &lt2 3 SPACE                                                                 &kp RET  &lt3 8 0   &td2
             >;
 
