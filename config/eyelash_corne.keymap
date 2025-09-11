@@ -301,13 +301,13 @@
 
         combo_bootloader_left {
             bindings = <&bootloader>;
-            key-positions = <1 29 13>;
+            key-positions = <1 13 29>;
             layers = <0>;
         };
 
         combo_bootloader_right {
             bindings = <&bootloader>;
-            key-positions = <11 40 27>;
+            key-positions = <11 27 40>;
             layers = <0>;
         };
 
