@@ -52,6 +52,30 @@
             #binding-cells = <0>;
         };
 
+        mt_del: mt_del {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&td_del_delwd>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        mt_mkp: mt_mkp {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        mt_msc: mt_msc {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&msc>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
         hm: hm {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&kp>;
@@ -184,36 +208,14 @@
             flavor = "tap-preferred";
         };
 
-        mt_mkp: mt_mkp {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&mkp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        mt_msc: mt_msc {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&msc>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
         mt_sel_line: mt_sel_line {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&sel_line>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        mt_del: mt_del {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&td_del_delwd>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <135>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
         };
 
         sl_cont_sel: sl_cont_sel {
