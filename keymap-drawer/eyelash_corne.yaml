@@ -342,7 +342,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: D, h: '$$mdi:apple-keyboard-command$$'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   FN:
   - $$mdi:bluetooth-off$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -391,7 +391,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   MOU:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -528,7 +528,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+N
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: Alt+F, type: held alternate}
   - $$mdi:apple-keyboard-option$$
   - RGUI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -538,7 +538,7 @@ layers:
   - {t: /, s: '?'}
   - Ctl+L
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Alt+F, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
