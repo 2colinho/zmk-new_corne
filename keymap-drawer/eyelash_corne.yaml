@@ -402,9 +402,9 @@ combos:
 - p: [11, 40]
   k: $$mdi:progress-download$$
   l: [FN]
-- p: [1, 2]
+- p: [16, 17]
   k: $$mdi:keyboard-tab$$
-  l: [QWERTY]
+  l: [QWERTY, SYM, NAV, NAV, NAV]
 - p: [40, 25]
   k: '?'
   l: [QWERTY]
