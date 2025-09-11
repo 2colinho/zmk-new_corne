@@ -564,3 +564,6 @@ combos:
 - p: [22, 23]
   k: '>'
   l: [SYM]
+- p: [16, 15]
+  k: $$mdi:keyboard-esc$$
+  l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ']
