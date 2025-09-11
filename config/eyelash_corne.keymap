@@ -476,7 +476,7 @@
         };
 
         navigation_momentary {
-            display-name = "NAV";
+            display-name = "NAV ";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -488,7 +488,7 @@
         };
 
         navigation_lock {
-            display-name = "NAV";
+            display-name = "NAV ";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -500,7 +500,7 @@
         };
 
         navigation_cont_sel {
-            display-name = "NAV";
+            display-name = "NAV ";
             bindings = <
 &trans  &trans          &trans              &trans  &trans              &trans                    &trans          &trans  &trans              &trans          &trans              &trans  &trans
 &trans  &cont_sel_line  &cont_sel_word_bwd  &trans  &cont_sel_word_fwd  &trans            &trans  &trans  &trans  &trans  &trans              &trans          &trans              &trans  &trans
@@ -512,7 +512,7 @@
         };
 
         navigation_cont_sel_sl {
-            display-name = "NAV";
+            display-name = "NAV ";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -596,7 +596,7 @@
         };
 
         mouse_momentary {
-            display-name = "MOU";
+            display-name = "MOU ";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -608,7 +608,7 @@
         };
 
         mouse_lock {
-            display-name = "MOU";
+            display-name = "MOU ";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -620,7 +620,7 @@
         };
 
         mouse_xslow {
-            display-name = "MOU";
+            display-name = "MOU ";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans            &mmv MOVE_Y(-40)  &trans           &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv MOVE_X(-40)  &mmv MOVE_Y(40)   &mmv MOVE_X(40)  &trans  &trans
@@ -632,7 +632,7 @@
         };
 
         mouse_slow {
-            display-name = "MOU";
+            display-name = "MOU ";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans             &mmv MOVE_Y(-120)  &trans            &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv MOVE_X(-120)  &mmv MOVE_Y(120)   &mmv MOVE_X(120)  &trans  &trans
@@ -644,7 +644,7 @@
         };
 
         mouse_fast {
-            display-name = "MOU";
+            display-name = "MOU ";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans              &mmv MOVE_Y(-1600)  &trans             &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv MOVE_X(-1600)  &mmv MOVE_Y(1600)   &mmv MOVE_X(1600)  &trans  &trans
