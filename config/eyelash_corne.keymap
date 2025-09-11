@@ -74,6 +74,26 @@
             tapping-term-ms = <200>;
         };
 
+        lt_bspc: lt_bspc {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&mo>, <&td_bspc_bspcwd>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+        };
+
+        lt_del: lt_del {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&mo>, <&td_del_delwd>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+        };
+
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&kp>;
@@ -150,26 +170,6 @@
             quick-tap-ms = <175>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <42 43 44 45 46 47 47 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
-        };
-
-        lt_bspc: lt_bspc {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&mo>, <&td_bspc_bspcwd>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-            quick-tap-ms = <175>;
-        };
-
-        lt_del: lt_del {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&mo>, <&td_del_delwd>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-            quick-tap-ms = <175>;
         };
 
         as: as {
