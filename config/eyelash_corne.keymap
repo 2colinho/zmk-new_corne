@@ -298,12 +298,6 @@
             layers = <0 1 3 4 6>;
         };
 
-        combo_question {
-            bindings = <&kp QUESTION>;
-            key-positions = <40 25>;
-            layers = <0>;
-        };
-
         combo_lbrc {
             bindings = <&kp LBRC>;
             key-positions = <33 32>;
@@ -448,10 +442,10 @@
         symbol {
             display-name = "SYM";
             bindings = <
-&trans            &mt N1 EXCL  &mt N2 AT  &mt N3 HASH     &mt N4 DLLR    &mt N5 PRCNT                    &trans          &mt N6 CARET  &mt N7 AMPS      &mt N8 ASTRK  &mt N9 LPAR  &mt N0 RPAR  &trans
-&kp LEFT_CONTROL  &none        &kp TILDE  &kp GRAVE       &kp MINUS      &kp LPAR                &trans  &trans  &trans  &kp RPAR      &kp PLUS         &kp BSLH      &kp PIPE     &none        &td_del_delwd
-&none             &none        &kp LGUI   &kp LEFT_ALT    &kp UNDER      &kp LBKT      &trans            &trans          &kp RBKT      &kp EQUAL        &none         &none        &none        &none
-                                          &kp LEFT_SHIFT  &td_del_delwd  &kp SPACE                                       &kp RET       &td_bspc_bspcwd  &none
+&trans            &mt N1 EXCL  &mt N2 AT       &mt N3 HASH                 &mt N4 DLLR    &mt N5 PRCNT                    &trans          &mt N6 CARET  &mt N7 AMPS      &mt N8 ASTRK  &mt N9 LPAR  &mt N0 RPAR  &trans
+&kp LEFT_CONTROL  &none        &kp GRAVE       &kp SQT                     &kp PLUS       &kp LPAR                &trans  &trans  &trans  &kp RPAR      &kp MINUS        &kp SEMI      &kp BSLH     &none        &td_del_delwd
+&none             &none        &mt LGUI TILDE  &mt LEFT_ALT DOUBLE_QUOTES  &kp EQUAL      &kp LBKT      &trans            &trans          &kp RBKT      &kp UNDER        &kp COLON     &kp PIPE     &none        &none
+                                               &kp LEFT_SHIFT              &td_del_delwd  &kp SPACE                                       &kp RET       &td_bspc_bspcwd  &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
