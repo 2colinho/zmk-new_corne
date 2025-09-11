@@ -549,10 +549,13 @@ combos:
 - p: [11, 40]
   k: $$mdi:progress-download$$
   l: [FN]
+- p: [15, 16]
+  k: $$mdi:keyboard-esc$$
+  l: [QWERTY]
 - p: [16, 17]
   k: $$mdi:keyboard-tab$$
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ']
-- p: [33, 32]
+- p: [32, 33]
   k: '{'
   l: [SYM]
 - p: [36, 37]
@@ -564,6 +567,3 @@ combos:
 - p: [22, 23]
   k: '>'
   l: [SYM]
-- p: [16, 15]
-  k: $$mdi:keyboard-esc$$
-  l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ']
