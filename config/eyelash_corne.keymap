@@ -448,10 +448,10 @@
         base {
             display-name = "QWERTY";
             bindings = <
-&kp TAB                  &kp Q      &kp W        &hll 11 E        &kp R        &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U         &hlr 11 I               &kp O            &kp P      &td_bspc_bspcwd
-&mt LEFT_CONTROL ESCAPE  &hll 13 A  &hll 1 S     &hll 10 D        &hll 3 F     &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &hlr 3 J      &hlr 10 K               &hlr 1 L         &kp SQT    &mt_del RIGHT_CONTROL 0
-&lshft_caps              &kp Z      &hml LGUI X  &hml LEFT_ALT C  &hll 18 V    &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &hlr 18 M     &hmr_comma RIGHT_ALT 0  &hmr_dot RGUI 0  &kp SLASH  &rshft_caps
-                                                 &lshft_caps      &hl_del 3 0  &kp SPACE                                                                 &kp RET  &hl_bspc 8 0  &rshft_caps
+&kp TAB           &kp Q      &kp W        &hll 11 E        &kp R        &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U         &hlr 11 I               &kp O            &kp P      &td_bspc_bspcwd
+&sk LEFT_CONTROL  &hll 13 A  &hll 1 S     &hll 10 D        &hll 3 F     &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &hlr 3 J      &hlr 10 K               &hlr 1 L         &kp SQT    &mt_del RIGHT_CONTROL 0
+&lshft_caps       &kp Z      &hml LGUI X  &hml LEFT_ALT C  &hll 18 V    &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &hlr 18 M     &hmr_comma RIGHT_ALT 0  &hmr_dot RGUI 0  &kp SLASH  &rshft_caps
+                                          &lshft_caps      &hl_del 3 0  &kp SPACE                                                                 &kp RET  &hl_bspc 8 0  &rshft_caps
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -461,7 +461,7 @@
             display-name = "SYM";
             bindings = <
 &trans            &as N1 EXCL  &as N2 AT       &as N3 HASH                 &as N4 DLLR    &as N5 PRCNT                    &trans          &as N6 CARET  &as N7 AMPS      &as N8 ASTRK  &as N9 LPAR  &as N0 RPAR  &trans
-&kp LEFT_CONTROL  &none        &kp GRAVE       &kp SQT                     &kp PLUS       &kp LPAR                &trans  &trans  &trans  &kp RPAR      &kp MINUS        &kp SEMI      &kp BSLH     &none        &td_del_delwd
+&sk LEFT_CONTROL  &none        &kp GRAVE       &kp SQT                     &kp PLUS       &kp LPAR                &trans  &trans  &trans  &kp RPAR      &kp MINUS        &kp SEMI      &kp BSLH     &none        &td_del_delwd
 &none             &none        &mt LGUI TILDE  &mt LEFT_ALT DOUBLE_QUOTES  &kp EQUAL      &kp LBKT      &trans            &trans          &kp RBKT      &kp UNDER        &kp COLON     &kp PIPE     &none        &none
                                                &sk LEFT_SHIFT              &td_del_delwd  &kp SPACE                                       &kp RET       &td_bspc_bspcwd  &none
             >;
@@ -473,7 +473,7 @@
             display-name = "NAV";
             bindings = <
 &trans            &none                 &none           &none                       &none              &none                        &trans          &kp PG_UP  &as HOME LC(LEFT)  &kp UP     &as END LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
-&kp LEFT_CONTROL  &as_sel_line LC(A) 0  &sel_word_bwd   &none                       &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td_del_delwd
+&sk LEFT_CONTROL  &as_sel_line LC(A) 0  &sel_word_bwd   &none                       &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td_del_delwd
 &none             &as LC(LS(Z)) LC(Z)   &mt LGUI LC(X)  &mt LEFT_ALT LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none      &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &none              &tog 4
                                                         &sk LEFT_SHIFT              &td_del_delwd      &kp SPACE                                    &kp RET    &td_bspc_bspcwd    &none
             >;
@@ -533,7 +533,7 @@
             display-name = "NUM";
             bindings = <
 &trans            &none  &none     &none           &none  &none                        &trans          &kp FSLH   &kp N7        &kp N8  &kp N9  &kp STAR  &trans
-&kp LEFT_CONTROL  &none  &none     &none           &none  &none                &trans  &trans  &trans  &kp MINUS  &kp N4        &kp N5  &kp N6  &kp PLUS  &td_del_delwd
+&sk LEFT_CONTROL  &none  &none     &none           &none  &none                &trans  &trans  &trans  &kp MINUS  &kp N4        &kp N5  &kp N6  &kp PLUS  &td_del_delwd
 &none             &none  &kp LGUI  &kp LEFT_ALT    &none  &none      &trans            &trans          &kp N0     &kp NUMBER_1  &kp N2  &kp N3  &kp DOT   &tog 9
                                    &sk LEFT_SHIFT  &none  &kp SPACE                                    &kp RET    &none         &kp N0
             >;
@@ -569,7 +569,7 @@
             display-name = "WIN";
             bindings = <
 &none             &none  &none                   &none           &none              &none                    &trans          &kp LS(LG(UP))    &kp LS(LG(LEFT))        &kp LA(LG(UP))          &kp LS(LG(RIGHT))   &none  &none
-&kp LEFT_CONTROL  &none  &kp LC(LG(LEFT_ARROW))  &none           &kp LC(LG(RIGHT))  &none            &trans  &trans  &trans  &kp LS(LG(DOWN))  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(DOWN_ARROW))  &kp LA(LG(RIGHT))   &none  &kp RIGHT_CONTROL
+&sk LEFT_CONTROL  &none  &kp LC(LG(LEFT_ARROW))  &none           &kp LC(LG(RIGHT))  &none            &trans  &trans  &trans  &kp LS(LG(DOWN))  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(DOWN_ARROW))  &kp LA(LG(RIGHT))   &none  &sk RIGHT_CONTROL
 &none             &none  &kp LGUI                &kp LEFT_ALT    &none              &none  &trans            &trans          &none             &kp LG(PG_DN)           &mt RIGHT_ALT LA(F4)    &mt RGUI LG(PG_UP)  &none  &none
                                                  &sk LEFT_SHIFT  &kp LG(TAB)        &none                                    &none             &kp LG(D)               &sk RIGHT_SHIFT
             >;
@@ -581,7 +581,7 @@
             display-name = "FN";
             bindings = <
 &bt BT_CLR        &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4                       &trans          &none  &kp F7  &kp F8            &kp F9       &kp F12  &none
-&kp LEFT_CONTROL  &kp C_PLAY_PAUSE  &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PRINTSCREEN            &trans  &trans  &trans  &none  &kp F4  &kp F5            &kp F6       &kp F11  &kp RIGHT_CONTROL
+&sk LEFT_CONTROL  &kp C_PLAY_PAUSE  &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PRINTSCREEN            &trans  &trans  &trans  &none  &kp F4  &kp F5            &kp F6       &kp F11  &sk RIGHT_CONTROL
 &rgb_ug RGB_TOG   &rgb_ug RGB_BRD   &kp LGUI      &kp LEFT_ALT       &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &trans            &trans          &none  &kp F1  &mt RIGHT_ALT F2  &mt RGUI F3  &kp F10  &none
                                                   &sk LEFT_SHIFT     &none            &none                                              &none  &none   &sk RIGHT_SHIFT
             >;
@@ -593,7 +593,7 @@
             display-name = "MOU";
             bindings = <
 &none             &none  &none     &none           &none   &none                        &trans          &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP             &mkp RCLK                &kp LC(LS(LA(P)))  &none
-&kp LEFT_CONTROL  &none  &mo 15    &mo 16          &mo 17  &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN           &mmv MOVE_RIGHT          &none              &kp RIGHT_CONTROL
+&sk LEFT_CONTROL  &none  &mo 15    &mo 16          &mo 17  &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN           &mmv MOVE_RIGHT          &none              &sk RIGHT_CONTROL
 &none             &none  &kp LGUI  &kp LEFT_ALT    &none   &none      &trans            &trans          &none           &msc SCRL_LEFT  &mt_mkp RIGHT_ALT MCLK   &mt_msc RGUI SCRL_RIGHT  &none              &tog 14
                                    &sk LEFT_SHIFT  &none   &mkp RCLK                                    &mkp LCLK       &mkp MB4        &mt_mkp RIGHT_SHIFT MB5
             >;
@@ -665,7 +665,7 @@
             display-name = "BRO";
             bindings = <
 &none             &none          &none     &none           &kp LC(R)  &kp LC(T)                    &trans          &none         &kp LA(LEFT)      &kp LC(LA(UP))   &kp LA(RIGHT)      &none  &none
-&kp LEFT_CONTROL  &kp LC(LS(A))  &none     &kp LC(LS(G))   &kp LC(G)  &none                &trans  &trans  &trans  &kp LA(HOME)  &kp LC(LA(LEFT))  &mm_move_tab     &kp LC(LA(RIGHT))  &none  &kp RIGHT_CONTROL
+&sk LEFT_CONTROL  &kp LC(LS(A))  &none     &kp LC(LS(G))   &kp LC(G)  &none                &trans  &trans  &trans  &kp LA(HOME)  &kp LC(LA(LEFT))  &mm_move_tab     &kp LC(LA(RIGHT))  &none  &sk RIGHT_CONTROL
 &none             &none          &kp LGUI  &kp LEFT_ALT    &none      &none      &trans            &trans          &kp LC(N)     &kp LA(F)         &kp RIGHT_ALT    &kp RGUI           &none  &none
                                            &sk LEFT_SHIFT  &none      &kp SLASH                                    &kp LC(L)     &none             &sk RIGHT_SHIFT
             >;
