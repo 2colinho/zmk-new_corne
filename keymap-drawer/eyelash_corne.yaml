@@ -274,10 +274,10 @@ layers:
   - F6
   - F11
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB TOG
   - RGB BRD
+  - LGUI
+  - $$mdi:apple-keyboard-option$$
   - RGB BRI
   - RGB EFF
   - {t: '$$mdi:transfer$$', type: trans}
