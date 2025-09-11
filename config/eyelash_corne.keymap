@@ -74,17 +74,6 @@
             tapping-term-ms = <200>;
         };
 
-        hm: hm {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            require-prior-idle-ms = <150>;
-            flavor = "balanced";
-            quick-tap-ms = <175>;
-        };
-
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&kp>;
@@ -137,17 +126,6 @@
             hold-trigger-key-positions = <42 43 44 45 46 47 47 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
         };
 
-        hl: hl {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            require-prior-idle-ms = <150>;
-            flavor = "balanced";
-            quick-tap-ms = <175>;
-        };
-
         hll: hll {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&kp>;
@@ -174,24 +152,22 @@
             hold-trigger-key-positions = <42 43 44 45 46 47 47 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
         };
 
-        hl_bspc: hl_bspc {
+        lt_bspc: lt_bspc {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&td_bspc_bspcwd>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            require-prior-idle-ms = <150>;
+            tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <175>;
         };
 
-        hl_del: hl_del {
+        lt_del: lt_del {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&td_del_delwd>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            require-prior-idle-ms = <150>;
+            tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <175>;
         };
@@ -458,7 +434,7 @@
 &kp TAB           &kp Q      &kp W        &hll 11 E        &kp R        &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U         &hlr 11 I               &kp O            &kp P      &td_bspc_bspcwd
 &sk LEFT_CONTROL  &hll 13 A  &hll 1 S     &hll 10 D        &hll 3 F     &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &hlr 3 J      &hlr 10 K               &hlr 1 L         &kp SQT    &mt_del RIGHT_CONTROL 0
 &lshft_caps       &kp Z      &hml LGUI X  &hml LEFT_ALT C  &hll 18 V    &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &hlr 18 M     &hmr_comma RIGHT_ALT 0  &hmr_dot RGUI 0  &kp SLASH  &rshft_caps
-                                          &lshft_caps      &hl_del 3 0  &kp SPACE                                                                 &kp RET  &hl_bspc 8 0  &rshft_caps
+                                          &lshft_caps      &lt_del 3 0  &kp SPACE                                                                 &kp RET  &lt_bspc 8 0  &rshft_caps
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
