@@ -607,10 +607,22 @@ rect.held, rect.combo.held {
 <text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 <g class="combo combopos-1">
+<path d="M65,105 l13,-38" class="combo"/>
+<path d="M65,105 l13,38" class="combo"/>
+<rect rx="6" ry="6" x="51" y="92" width="28" height="26" class="combo"/>
+<use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="56" y="96" height="18" width="18.0" class="combo tap glyph mdi:progress-download"/>
+</g>
+<g class="combo combopos-2">
+<path d="M915,105 l-13,-38" class="combo"/>
+<path d="M915,105 l-13,38" class="combo"/>
+<rect rx="6" ry="6" x="901" y="92" width="28" height="26" class="combo"/>
+<use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="906" y="96" height="18" width="18.0" class="combo tap glyph mdi:progress-download"/>
+</g>
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="159" y="78" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
-<g class="combo combopos-2">
+<g class="combo combopos-4">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="215" y="78" height="18" width="18.0" class="combo tap glyph mdi:keyboard-tab"/>
 </g>
@@ -2441,18 +2453,6 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-shift"/>
 <use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-8" y="9" height="15" width="15.0" class="key hold glyph mdi:gesture-tap-hold"/>
-</g>
-<g class="combo combopos-0">
-<path d="M84,105 l0,-37" class="combo"/>
-<path d="M84,105 l0,37" class="combo"/>
-<rect rx="6" ry="6" x="70" y="92" width="28" height="26" class="combo"/>
-<use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="75" y="96" height="18" width="18.0" class="combo tap glyph mdi:progress-download"/>
-</g>
-<g class="combo combopos-1">
-<path d="M896,105 l0,-37" class="combo"/>
-<path d="M896,105 l0,37" class="combo"/>
-<rect rx="6" ry="6" x="882" y="92" width="28" height="26" class="combo"/>
-<use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="887" y="96" height="18" width="18.0" class="combo tap glyph mdi:progress-download"/>
 </g>
 </g>
 </g>

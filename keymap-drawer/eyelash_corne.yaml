@@ -543,12 +543,12 @@ combos:
 - p: [1, 15, 29]
   k: '&soft_off'
   l: [QWERTY]
-- p: [1, 29]
+- p: [1, 29, 13]
   k: $$mdi:progress-download$$
-  l: [FN]
-- p: [11, 40]
+  l: [QWERTY]
+- p: [11, 40, 27]
   k: $$mdi:progress-download$$
-  l: [FN]
+  l: [QWERTY]
 - p: [15, 16]
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
