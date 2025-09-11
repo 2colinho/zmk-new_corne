@@ -237,7 +237,7 @@
 
         lshft_caps: lshft_caps {
             compatible = "zmk,behavior-mod-morph";
-            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
+            bindings = <&skq LEFT_SHIFT>, <&caps_word>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -245,7 +245,7 @@
 
         rshft_caps: rshft_caps {
             compatible = "zmk,behavior-mod-morph";
-            bindings = <&sk RIGHT_SHIFT>, <&kp CAPS>;
+            bindings = <&skq RIGHT_SHIFT>, <&kp CAPS>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
