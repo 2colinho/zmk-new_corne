@@ -216,6 +216,15 @@
             flavor = "tap-preferred";
         };
 
+        skq: skq {
+            compatible = "zmk,behavior-sticky-key";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
+            quick-release;
+            ignore-modifiers;
+        };
+
         sl_cont_sel: sl_cont_sel {
             compatible = "zmk,behavior-sticky-key";
             bindings = <&mo>;
@@ -264,16 +273,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        skq: skq {
-            compatible = "zmk,behavior-sticky-key";
-            label = "SKQ";
-            bindings = <&kp>;
-            #binding-cells = <1>;
-            release-after-ms = <1000>;
-            quick-release;
-            ignore-modifiers;
         };
     };
 
