@@ -92,7 +92,7 @@ layers:
   - '|'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - '&td_del_delwd'
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -141,7 +141,7 @@ layers:
   - '&sel_word_fwd'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: 'NAV ', h: toggle}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - '&td_del_delwd'
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -239,7 +239,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: ., s: '>'}
   - {t: 'NUM ', h: toggle}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -337,7 +337,7 @@ layers:
   - {t: Gui+PG UP, h: RGUI}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - Gui+$$mdi:keyboard-tab$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -386,7 +386,7 @@ layers:
   - {t: F3, h: RGUI}
   - F10
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -435,7 +435,7 @@ layers:
   - {t: '$$mdi:pan-right$$', h: RGUI}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: 'MOU ', h: toggle}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-left-click-outline$$
@@ -533,7 +533,7 @@ layers:
   - RGUI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: /, s: '?'}
   - Ctl+L
