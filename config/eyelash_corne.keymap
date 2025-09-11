@@ -89,7 +89,7 @@
             hold-trigger-key-positions = <42 43 44 45 46 47 47 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
         };
 
-        mt_hr_comma: mt_hr_comma {
+        hmr_comma: hmr_comma {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&comma_semi>;
 
@@ -102,7 +102,7 @@
             hold-trigger-key-positions = <42 43 44 45 46 47 47 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
         };
 
-        mt_hr_dot: mt_hr_dot {
+        hmr_dot: hmr_dot {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&dot_colon>;
 
@@ -184,7 +184,7 @@
             hold-trigger-key-positions = <42 43 44 45 46 47 47 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
         };
 
-        lt_hr_bspc: lt_hr_bspc {
+        hl_bspc: hl_bspc {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&td_bspc_bspcwd>;
 
@@ -195,7 +195,7 @@
             quick-tap-ms = <175>;
         };
 
-        lt_hr_del: lt_hr_del {
+        hl_del: hl_del {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&td_del_delwd>;
 
@@ -430,10 +430,10 @@
         base {
             display-name = "QWERTY";
             bindings = <
-&kp TAB                  &kp Q      &kp W        &hll 11 E        &kp R           &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U            &hlr 11 I                 &kp O              &kp P      &td_bspc_bspcwd
-&mt LEFT_CONTROL ESCAPE  &hll 13 A  &hll 1 S     &hll 10 D        &hll 3 F        &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &hlr 3 J         &hlr 10 K                 &hlr 1 L           &kp SQT    &mt_del RIGHT_CONTROL 0
-&lshft_caps              &kp Z      &hml LGUI X  &hml LEFT_ALT C  &hll 18 V       &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &hlr 18 M        &mt_hr_comma RIGHT_ALT 0  &mt_hr_dot RGUI 0  &kp SLASH  &rshft_caps
-                                                 &lshft_caps      &lt_hr_del 3 0  &kp SPACE                                                                 &kp RET  &lt_hr_bspc 8 0  &rshft_caps
+&kp TAB                  &kp Q      &kp W        &hll 11 E        &kp R        &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U         &hlr 11 I               &kp O            &kp P      &td_bspc_bspcwd
+&mt LEFT_CONTROL ESCAPE  &hll 13 A  &hll 1 S     &hll 10 D        &hll 3 F     &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &hlr 3 J      &hlr 10 K               &hlr 1 L         &kp SQT    &mt_del RIGHT_CONTROL 0
+&lshft_caps              &kp Z      &hml LGUI X  &hml LEFT_ALT C  &hll 18 V    &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &hlr 18 M     &hmr_comma RIGHT_ALT 0  &hmr_dot RGUI 0  &kp SLASH  &rshft_caps
+                                                 &lshft_caps      &hl_del 3 0  &kp SPACE                                                                 &kp RET  &hl_bspc 8 0  &rshft_caps
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
