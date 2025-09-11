@@ -454,7 +454,7 @@
         symbol {
             display-name = "SYM";
             bindings = <
-&trans            &mt N1 EXCL  &mt N2 AT       &mt N3 HASH                 &mt N4 DLLR    &mt N5 PRCNT                    &trans          &mt N6 CARET  &mt N7 AMPS      &mt N8 ASTRK  &mt N9 LPAR  &mt N0 RPAR  &trans
+&trans            &as N1 EXCL  &as N2 AT       &as N3 HASH                 &as N4 DLLR    &as N5 PRCNT                    &trans          &as N6 CARET  &as N7 AMPS      &as N8 ASTRK  &as N9 LPAR  &as N0 RPAR  &trans
 &kp LEFT_CONTROL  &none        &kp GRAVE       &kp SQT                     &kp PLUS       &kp LPAR                &trans  &trans  &trans  &kp RPAR      &kp MINUS        &kp SEMI      &kp BSLH     &none        &td_del_delwd
 &none             &none        &mt LGUI TILDE  &mt LEFT_ALT DOUBLE_QUOTES  &kp EQUAL      &kp LBKT      &trans            &trans          &kp RBKT      &kp UNDER        &kp COLON     &kp PIPE     &none        &none
                                                &kp LEFT_SHIFT              &td_del_delwd  &kp SPACE                                       &kp RET       &td_bspc_bspcwd  &none
