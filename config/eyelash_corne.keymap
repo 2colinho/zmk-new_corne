@@ -27,8 +27,6 @@
 
 &soft_off { hold-time-ms = <2000>; };
 
-&sk { quick-release; };
-
 / {
     behaviors {
         td_lshft_caps: td_lshft_caps {
@@ -266,6 +264,16 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        skq: skq {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SKQ";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
+            quick-release;
+            ignore-modifiers;
         };
     };
 
