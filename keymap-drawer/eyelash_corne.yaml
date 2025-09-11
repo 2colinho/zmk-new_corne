@@ -65,31 +65,31 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '~', type: held}
-  - {t: '`', s: '~'}
-  - {t: '-', s: _}
+  - {t: '`', s: '~', type: held}
+  - {t: '''', s: '"'}
+  - +
   - (
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - )
-  - +
-  - {t: \, s: '|'}
-  - {t: '|', type: held alternate}
+  - {t: '-', s: _}
+  - {t: ;, s: ':'}
+  - {t: \, s: '|', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&td_del_delwd'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - LGUI
-  - $$mdi:apple-keyboard-option$$
-  - _
+  - {t: '~', h: LGUI}
+  - {t: '"', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '=', s: +}
   - {t: '[', s: '{'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ']', s: '}'}
-  - {t: '=', s: +}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - _
+  - ':'
+  - '|'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
@@ -405,9 +405,6 @@ combos:
 - p: [16, 17]
   k: $$mdi:keyboard-tab$$
   l: [QWERTY, SYM, NAV, NAV, NAV]
-- p: [40, 25]
-  k: '?'
-  l: [QWERTY]
 - p: [33, 32]
   k: '{'
   l: [SYM]
