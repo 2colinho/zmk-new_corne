@@ -15,16 +15,16 @@ layers:
   - P
   - '&td_bspc_bspcwd'
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: A, h: MOU}
+  - {t: A, h: 'MOU '}
   - {t: S, h: SYM}
   - {t: D, h: WIN}
-  - {t: F, h: NAV}
+  - {t: F, h: 'NAV '}
   - G
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - H
-  - {t: J, h: NAV}
+  - {t: J, h: 'NAV '}
   - {t: K, h: WIN}
   - {t: L, h: SYM}
   - {t: '''', s: '"'}
@@ -44,7 +44,7 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:apple-keyboard-caps$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
-  - {t: '&td_del_delwd', h: NAV}
+  - {t: '&td_del_delwd', h: 'NAV '}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '&td_bspc_bspcwd', h: 'NUM '}
@@ -99,6 +99,55 @@ layers:
   - '&td_bspc_bspcwd'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   NAV:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - PG UP
+  - {t: 'Ctl+$$mdi:arrow-left-bold$$', h: HOME}
+  - $$mdi:arrow-up-bold$$
+  - {t: 'Ctl+$$mdi:arrow-right-bold$$', h: END}
+  - Meh+P
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-control$$
+  - {t: '&sel_line', h: Ctl+A}
+  - '&sel_word_bwd'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&sel_word_fwd'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - PG DN
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&td_del_delwd'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: Ctl+Z, h: Ctl+Sft+Z}
+  - {t: Ctl+X, h: LGUI}
+  - {t: Meh+C, h: '$$mdi:apple-keyboard-option$$'}
+  - Meh+V
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&sel_word_bwd'
+  - '&sel_line'
+  - '&sel_word_fwd'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: 'NAV ', h: toggle}
+  - $$mdi:apple-keyboard-shift$$
+  - '&td_del_delwd'
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - '&td_bspc_bspcwd'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  'NAV ':
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -344,6 +393,55 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
   MOU:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-up$$
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - $$mdi:mouse-right-click-outline$$
+  - Meh+P
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - 'MOU '
+  - 'MOU '
+  - 'MOU '
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-down$$
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - LGUI
+  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:pan-left$$
+  - {t: '$$mdi:mouse-scroll-wheel$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:pan-right$$', h: RGUI}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: 'MOU ', h: toggle}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:mouse-right-click-outline$$
+  - $$mdi:mouse-left-click-outline$$
+  - '&mkp MB4'
+  - {t: '&mkp MB5', h: '$$mdi:apple-keyboard-shift$$'}
+  'MOU ':
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -453,7 +551,7 @@ combos:
   l: [FN]
 - p: [16, 17]
   k: $$mdi:keyboard-tab$$
-  l: [QWERTY, SYM, NAV, NAV, NAV]
+  l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ']
 - p: [33, 32]
   k: '{'
   l: [SYM]
