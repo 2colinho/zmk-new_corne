@@ -74,6 +74,22 @@
             tapping-term-ms = <200>;
         };
 
+        mt_rgb_tog: mt_rgb_tog {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&rgb_tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        mt_rgb_brd: mt_rgb_brd {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&rgb_brd>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
         lt_bspc: lt_bspc {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&td_bspc_bspcwd>;
@@ -250,24 +266,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-        mt_rgb_tog: mt_rgb_tog {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&rgb_tog>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            label = "MT_RGB_TOG";
-        };
-
-        mt_rgb_brd: mt_rgb_brd {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&rgb_brd>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            label = "MT_RGB_BRD";
-        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -442,18 +440,22 @@
             tap-ms = <0>;
         };
 
-        rgb_brd: rgb_brd {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_BRD>;
-            label = "RGB_BRD";
-        };
-
         rgb_tog: rgb_tog {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&rgb_ug RGB_TOG>;
-            label = "RGB_TOG";
+
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
+
+        rgb_brd: rgb_brd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRD>;
+
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
     };
 
