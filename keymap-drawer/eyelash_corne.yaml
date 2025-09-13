@@ -372,10 +372,10 @@ layers:
   - F6
   - F11
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
-  - RGB TOG
-  - RGB BRD
-  - LGUI
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '&rgb_tog', h: LGUI}
+  - {t: '&rgb_brd', h: '$$mdi:apple-keyboard-option$$'}
   - RGB BRI
   - RGB EFF
   - {t: '$$mdi:transfer$$', type: trans}
