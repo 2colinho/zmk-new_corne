@@ -261,7 +261,7 @@
 
         mm_move_tab: mm_move_tab {
             compatible = "zmk,behavior-mod-morph";
-            bindings = <&kp LC(LA(DOWN))>, <&kp LC(LS(LA(K)))>;
+            bindings = <&kp LC(LA(DOWN))>, <&kp LA(LC(LS(K)))>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -444,7 +444,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&rgb_ug RGB_TOG>;
-
             wait-ms = <0>;
             tap-ms = <0>;
         };
@@ -453,7 +452,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&rgb_ug RGB_BRD>;
-
             wait-ms = <0>;
             tap-ms = <0>;
         };
@@ -489,9 +487,9 @@
         navigation {
             display-name = "NAV";
             bindings = <
-&trans            &none                 &none           &none                       &none              &none                        &trans          &kp PG_UP  &as HOME LC(LEFT)  &kp UP     &as END LC(RIGHT)  &kp LC(LS(LA(P)))  &trans
+&trans            &none                 &none           &none                       &none              &none                        &trans          &kp PG_UP  &as HOME LC(LEFT)  &kp UP     &as END LC(RIGHT)  &kp LA(LC(LS(P)))  &trans
 &sk LEFT_CONTROL  &as_sel_line LC(A) 0  &sel_word_bwd   &none                       &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td_del_delwd
-&none             &as LC(LS(Z)) LC(Z)   &mt LGUI LC(X)  &mt LEFT_ALT LC(LS(LA(C)))  &kp LC(LS(LA(V)))  &none      &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &none              &tog 4
+&none             &as LC(LS(Z)) LC(Z)   &mt LGUI LC(X)  &mt LEFT_ALT LA(LC(LS(C)))  &kp LA(LC(LS(V)))  &none      &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &none              &tog 4
                                                         &sk LEFT_SHIFT              &td_del_delwd      &kp SPACE                                    &kp RET    &td_bspc_bspcwd    &none
             >;
 
@@ -609,7 +607,7 @@
         mouse {
             display-name = "MOU";
             bindings = <
-&none             &none  &none     &none           &none   &none                        &trans          &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP             &mkp RCLK                &kp LC(LS(LA(P)))  &none
+&none             &none  &none     &none           &none   &none                        &trans          &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP             &mkp RCLK                &kp LA(LC(LS(P)))  &none
 &sk LEFT_CONTROL  &none  &mo 15    &mo 16          &mo 17  &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN           &mmv MOVE_RIGHT          &none              &sk RIGHT_CONTROL
 &none             &none  &kp LGUI  &kp LEFT_ALT    &none   &none      &trans            &trans          &none           &msc SCRL_LEFT  &mt_mkp RIGHT_ALT MCLK   &mt_msc RGUI SCRL_RIGHT  &none              &tog 14
                                    &sk LEFT_SHIFT  &none   &mkp RCLK                                    &mkp LCLK       &mkp MB4        &mt_mkp RIGHT_SHIFT MB5
