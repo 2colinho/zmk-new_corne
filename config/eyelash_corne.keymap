@@ -297,13 +297,13 @@
             layers = <0 1 3 4 6 8 9>;
         };
 
-        combo_bspc {
+        combo_bspcwd {
             bindings = <&kp LC(BSPC)>;
             key-positions = <23 24>;
             layers = <0 1 3 4 6 8 9>;
         };
 
-        combo_del {
+        combo_delwd {
             bindings = <&kp LC(DEL)>;
             key-positions = <24 25>;
             layers = <0 1 3 4 6 8 9>;
