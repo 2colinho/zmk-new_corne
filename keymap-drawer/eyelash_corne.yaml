@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Ctl+Z, h: Ctl+Sft+Z}
   - {t: Ctl+X, h: LGUI}
-  - '&smart_copy'
+  - {t: '&smart_copy', h: '$$mdi:apple-keyboard-option$$'}
   - Meh+V
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
