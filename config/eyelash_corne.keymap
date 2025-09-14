@@ -50,14 +50,6 @@
             #binding-cells = <0>;
         };
 
-        mt_del: mt_del {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&td_del_delwd>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
         mt_mkp: mt_mkp {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&mkp>;
@@ -466,7 +458,7 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB           &kp Q      &kp W        &hll 11 E        &kp R       &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U        &hlr 11 I               &kp O            &kp P      &td_bspc_bspcwd
-&sk LEFT_CONTROL  &hll 13 A  &hll 1 S     &hll 10 D        &hll 3 F    &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &hlr 3 J     &hlr 10 K               &hlr 1 L         &kp SQT    &mt_del RIGHT_CONTROL 0
+&sk LEFT_CONTROL  &hll 13 A  &hll 1 S     &hll 10 D        &hll 3 F    &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &hlr 3 J     &hlr 10 K               &hlr 1 L         &kp SQT    &sk RIGHT_CONTROL
 &lshft_caps       &kp Z      &hml LGUI X  &hml LEFT_ALT C  &hll 18 V   &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &hlr 18 M    &hmr_comma RIGHT_ALT 0  &hmr_dot RGUI 0  &kp SLASH  &rshft_caps
                                           &lshft_caps      &ltq 3 DEL  &kp SPACE                                                                 &kp RET  &ltq 8 BSPC  &rshft_caps
             >;
