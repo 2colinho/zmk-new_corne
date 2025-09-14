@@ -555,6 +555,12 @@ combos:
 - p: [16, 17]
   k: $$mdi:keyboard-tab$$
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
+- p: [23, 24]
+  k: {t: 'Ctl+$$mdi:backspace$$', type: backspace}
+  l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
+- p: [24, 25]
+  k: Ctl+$$mdi:backspace-reverse-outline$$
+  l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
 - p: [32, 33]
   k: '{'
   l: [SYM]
@@ -567,9 +573,3 @@ combos:
 - p: [22, 23]
   k: '>'
   l: [SYM]
-- p: [23, 24]
-  k: {t: 'Ctl+$$mdi:backspace$$', type: backspace}
-  l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
-- p: [24, 25]
-  k: Ctl+$$mdi:backspace-reverse-outline$$
-  l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
