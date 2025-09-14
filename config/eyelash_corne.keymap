@@ -90,19 +90,9 @@
             tapping-term-ms = <200>;
         };
 
-        lt_bspc: lt_bspc {
+        ltq: ltq {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&mo>, <&td_bspc_bspcwd>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-            quick-tap-ms = <175>;
-        };
-
-        lt_del: lt_del {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&mo>, <&td_del_delwd>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -475,10 +465,10 @@
         base {
             display-name = "QWERTY";
             bindings = <
-&kp TAB           &kp Q      &kp W        &hll 11 E        &kp R        &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U         &hlr 11 I               &kp O            &kp P      &td_bspc_bspcwd
-&sk LEFT_CONTROL  &hll 13 A  &hll 1 S     &hll 10 D        &hll 3 F     &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &hlr 3 J      &hlr 10 K               &hlr 1 L         &kp SQT    &mt_del RIGHT_CONTROL 0
-&lshft_caps       &kp Z      &hml LGUI X  &hml LEFT_ALT C  &hll 18 V    &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &hlr 18 M     &hmr_comma RIGHT_ALT 0  &hmr_dot RGUI 0  &kp SLASH  &rshft_caps
-                                          &lshft_caps      &lt_del 3 0  &kp SPACE                                                                 &kp RET  &lt_bspc 8 0  &rshft_caps
+&kp TAB           &kp Q      &kp W        &hll 11 E        &kp R       &kp T                                    &mmv MOVE_UP                     &kp Y    &kp U        &hlr 11 I               &kp O            &kp P      &td_bspc_bspcwd
+&sk LEFT_CONTROL  &hll 13 A  &hll 1 S     &hll 10 D        &hll 3 F    &kp G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &hlr 3 J     &hlr 10 K               &hlr 1 L         &kp SQT    &mt_del RIGHT_CONTROL 0
+&lshft_caps       &kp Z      &hml LGUI X  &hml LEFT_ALT C  &hll 18 V   &kp B      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N    &hlr 18 M    &hmr_comma RIGHT_ALT 0  &hmr_dot RGUI 0  &kp SLASH  &rshft_caps
+                                          &lshft_caps      &ltq 3 DEL  &kp SPACE                                                                 &kp RET  &ltq 8 BSPC  &rshft_caps
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -487,10 +477,10 @@
         symbol {
             display-name = "SYM";
             bindings = <
-&trans            &as N1 EXCL  &as N2 AT       &as N3 HASH                 &as N4 DLLR    &as N5 PRCNT                    &trans          &as N6 CARET  &as N7 AMPS      &as N8 ASTRK  &as N9 LPAR  &as N0 RPAR  &trans
-&sk LEFT_CONTROL  &none        &kp GRAVE       &kp SQT                     &kp PLUS       &kp LPAR                &trans  &trans  &trans  &kp RPAR      &kp MINUS        &kp SEMI      &kp BSLH     &none        &td_del_delwd
-&none             &none        &mt LGUI TILDE  &mt LEFT_ALT DOUBLE_QUOTES  &kp EQUAL      &kp LBKT      &trans            &trans          &kp RBKT      &kp UNDER        &kp COLON     &kp PIPE     &none        &none
-                                               &sk LEFT_SHIFT              &td_del_delwd  &kp SPACE                                       &kp RET       &td_bspc_bspcwd  &none
+&trans            &as N1 EXCL  &as N2 AT       &as N3 HASH                 &as N4 DLLR  &as N5 PRCNT                    &trans          &as N6 CARET  &as N7 AMPS  &as N8 ASTRK  &as N9 LPAR  &as N0 RPAR  &trans
+&sk LEFT_CONTROL  &none        &kp GRAVE       &kp SQT                     &kp PLUS     &kp LPAR                &trans  &trans  &trans  &kp RPAR      &kp MINUS    &kp SEMI      &kp BSLH     &none        &td_del_delwd
+&none             &none        &mt LGUI TILDE  &mt LEFT_ALT DOUBLE_QUOTES  &kp EQUAL    &kp LBKT      &trans            &trans          &kp RBKT      &kp UNDER    &kp COLON     &kp PIPE     &none        &none
+                                               &sk LEFT_SHIFT              &kp DEL      &kp SPACE                                       &kp RET       &kp BSPC     &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -502,7 +492,7 @@
 &trans            &none                 &none           &none                       &none              &none                        &trans          &kp PG_UP  &as HOME LC(LEFT)  &kp UP     &as END LC(RIGHT)  &kp LA(LC(LS(P)))  &trans
 &sk LEFT_CONTROL  &as_sel_line LC(A) 0  &sel_word_bwd   &none                       &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td_del_delwd
 &none             &as LC(LS(Z)) LC(Z)   &mt LGUI LC(X)  &mt LEFT_ALT LA(LC(LS(C)))  &kp LA(LC(LS(V)))  &none      &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &none              &tog 4
-                                                        &sk LEFT_SHIFT              &td_del_delwd      &kp SPACE                                    &kp RET    &td_bspc_bspcwd    &none
+                                                        &sk LEFT_SHIFT              &kp DEL            &kp SPACE                                    &kp RET    &kp BSPC           &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
