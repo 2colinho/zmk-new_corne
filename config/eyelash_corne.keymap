@@ -481,10 +481,10 @@
         navigation {
             display-name = "NAV";
             bindings = <
-&trans            &none                 &none           &none                       &none              &none                        &trans          &kp PG_UP  &as HOME LC(LEFT)  &kp UP     &as END LC(RIGHT)  &kp LA(LC(LS(P)))  &trans
-&sk LEFT_CONTROL  &as_sel_line LC(A) 0  &sel_word_bwd   &none                       &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td_del_delwd
-&none             &as LC(LS(Z)) LC(Z)   &mt LGUI LC(X)  &mt LEFT_ALT LA(LC(LS(C)))  &kp LA(LC(LS(V)))  &none      &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &none              &tog 4
-                                                        &sk LEFT_SHIFT              &kp DEL            &kp SPACE                                    &kp RET    &kp BSPC           &none
+&trans            &none                 &none           &none                        &none              &none                        &trans          &kp PG_UP  &as HOME LC(LEFT)  &kp UP     &as END LC(RIGHT)  &kp LA(LC(LS(P)))  &trans
+&sk LEFT_CONTROL  &as_sel_line LC(A) 0  &sel_word_bwd   &none                        &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td_del_delwd
+&none             &as LC(LS(Z)) LC(Z)   &mt LGUI LC(X)  &hml LEFT_ALT LA(LC(LS(C)))  &kp LA(LC(LS(V)))  &none      &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &none              &tog 4
+                                                        &sk LEFT_SHIFT               &kp DEL            &kp SPACE                                    &kp RET    &kp BSPC           &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
