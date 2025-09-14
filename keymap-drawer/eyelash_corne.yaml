@@ -372,7 +372,7 @@ layers:
   - F6
   - F11
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', h: '$$mdi:progress-download$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '&rgb_tog', h: LGUI}
   - {t: '&rgb_brd', h: '$$mdi:apple-keyboard-option$$'}
@@ -385,7 +385,7 @@ layers:
   - {t: F2, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F3, h: RGUI}
   - F10
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', h: '$$mdi:progress-download$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -542,12 +542,6 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
-  l: [QWERTY]
-- p: [1, 13, 29]
-  k: $$mdi:progress-download$$
-  l: [QWERTY]
-- p: [11, 27, 40]
-  k: $$mdi:progress-download$$
   l: [QWERTY]
 - p: [15, 16]
   k: $$mdi:keyboard-esc$$
