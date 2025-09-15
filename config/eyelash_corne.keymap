@@ -250,7 +250,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mm_move_tab: mm_move_tab {
+        down_mehk: down_mehk {
             compatible = "zmk,behavior-mod-morph";
             bindings = <&kp LC(LA(DOWN))>, <&kp LA(LC(LS(K)))>;
 
@@ -258,9 +258,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        hml_smart_copy: hml_smart_copy {
+        hml_mehc: hml_mehc {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&smart_copy>;
+            bindings = <&kp>, <&mehc>;
 
             #binding-cells = <2>;
             tapping-term-ms = <280>;
@@ -269,7 +269,7 @@
             quick-tap-ms = <175>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <7 22 36 8 23 37 9 10 11 12 24 25 26 27 38 39 40 41 42 43 44 45 46 47>;
-            label = "HML_SMART_COPY";
+            label = "HML_MEHC";
         };
     };
 
@@ -445,7 +445,7 @@
             tap-ms = <0>;
         };
 
-        smart_copy: smart_copy {
+        mehc: mehc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -457,7 +457,7 @@
                 <&kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>;
         };
 
-        smart_paste: smart_paste {
+        mehv: mehv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -516,10 +516,10 @@
         navigation {
             display-name = "NAV";
             bindings = <
-&trans            &none                 &none           &none                       &none              &none                        &trans          &kp PG_UP  &as HOME LC(LEFT)  &kp UP     &as END LC(RIGHT)  &kp LA(LC(LS(P)))  &trans
-&sk LEFT_CONTROL  &as_sel_line LC(A) 0  &sel_word_bwd   &none                       &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td_del_delwd
-&none             &as LC(LS(Z)) LC(Z)   &mt LGUI LC(X)  &hml_smart_copy LEFT_ALT 0  &kp LA(LC(LS(V)))  &none      &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &none              &tog 4
-                                                        &sk LEFT_SHIFT              &kp DEL            &kp SPACE                                    &kp RET    &kp BSPC           &none
+&trans            &none                 &none           &none                 &none              &none                        &trans          &kp PG_UP  &as HOME LC(LEFT)  &kp UP     &as END LC(RIGHT)  &kp LA(LC(LS(P)))  &trans
+&sk LEFT_CONTROL  &as_sel_line LC(A) 0  &sel_word_bwd   &none                 &sel_word_fwd      &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td_del_delwd
+&none             &as LC(LS(Z)) LC(Z)   &mt LGUI LC(X)  &hml_mehc LEFT_ALT 0  &kp LA(LC(LS(V)))  &none      &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &none              &tog 4
+                                                        &sk LEFT_SHIFT        &kp DEL            &kp SPACE                                    &kp RET    &kp BSPC           &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -709,7 +709,7 @@
             display-name = "BRO";
             bindings = <
 &none             &none          &none     &none           &kp LC(R)  &kp LC(T)                    &trans          &none         &kp LA(LEFT)      &kp LC(LA(UP))   &kp LA(RIGHT)      &none  &none
-&sk LEFT_CONTROL  &kp LC(LS(A))  &none     &kp LC(LS(G))   &kp LC(G)  &none                &trans  &trans  &trans  &kp LA(HOME)  &kp LC(LA(LEFT))  &mm_move_tab     &kp LC(LA(RIGHT))  &none  &sk RIGHT_CONTROL
+&sk LEFT_CONTROL  &kp LC(LS(A))  &none     &kp LC(LS(G))   &kp LC(G)  &none                &trans  &trans  &trans  &kp LA(HOME)  &kp LC(LA(LEFT))  &down_mehk       &kp LC(LA(RIGHT))  &none  &sk RIGHT_CONTROL
 &none             &none          &kp LGUI  &kp LEFT_ALT    &none      &none      &trans            &trans          &kp LC(N)     &kp LA(F)         &kp RIGHT_ALT    &kp RGUI           &none  &none
                                            &sk LEFT_SHIFT  &none      &kp SLASH                                    &kp LC(L)     &none             &sk RIGHT_SHIFT
             >;
