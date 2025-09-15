@@ -58,14 +58,6 @@
             tapping-term-ms = <200>;
         };
 
-        mt_msc: mt_msc {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&msc>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
         ltq: ltq {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&kp>;
@@ -279,6 +271,56 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        hmr_mkp: hmr_mkp {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <42 43 44 45 46 47 47 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
+            label = "HMR_MKP";
+        };
+
+        hmr_msc: hmr_msc {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&msc>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <42 43 44 45 46 47 47 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
+            label = "HMR_MSC";
+        };
+
+        mtq: mtq {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            label = "MTQ";
+        };
+
+        mtq_mkp: mtq_mkp {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            label = "MTQ_MKP";
         };
     };
 
@@ -645,10 +687,10 @@
         mouse {
             display-name = "MOU";
             bindings = <
-&none             &none  &none     &none           &none   &none                        &trans          &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP             &mkp RCLK                &kp LA(LC(LS(P)))  &none
-&sk LEFT_CONTROL  &none  &mo 15    &mo 16          &mo 17  &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN           &mmv MOVE_RIGHT          &none              &sk RIGHT_CONTROL
-&none             &none  &kp LGUI  &kp LEFT_ALT    &none   &none      &trans            &trans          &none           &msc SCRL_LEFT  &mt_mkp RIGHT_ALT MCLK   &mt_msc RGUI SCRL_RIGHT  &none              &tog 14
-                                   &sk LEFT_SHIFT  &none   &mkp RCLK                                    &mkp LCLK       &mkp MB4        &mt_mkp RIGHT_SHIFT MB5
+&none             &none  &none     &none           &none   &none                        &trans          &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP              &mkp RCLK                 &kp LA(LC(LS(P)))  &none
+&sk LEFT_CONTROL  &none  &mo 15    &mo 16          &mo 17  &none                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN            &mmv MOVE_RIGHT           &none              &sk RIGHT_CONTROL
+&none             &none  &kp LGUI  &kp LEFT_ALT    &none   &none      &trans            &trans          &none           &msc SCRL_LEFT  &hmr_mkp RIGHT_ALT MCLK   &hmr_msc RGUI SCRL_RIGHT  &none              &tog 14
+                                   &sk LEFT_SHIFT  &none   &mkp RCLK                                    &mkp LCLK       &mkp MB4        &mtq_mkp RIGHT_SHIFT MB5
             >;
 
             sensor-bindings = <&scroll_encoder>;
