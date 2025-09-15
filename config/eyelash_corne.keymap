@@ -118,6 +118,19 @@
             hold-trigger-key-positions = <42 43 44 45 46 47 47 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
         };
 
+        hml_mehc: hml_mehc {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&mehc>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <7 22 36 8 23 37 9 10 11 12 24 25 26 27 38 39 40 41 42 43 44 45 46 47>;
+        };
+
         hmr_comma: hmr_comma {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&comma_semi>;
@@ -256,20 +269,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        hml_mehc: hml_mehc {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&mehc>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            require-prior-idle-ms = <150>;
-            flavor = "balanced";
-            quick-tap-ms = <175>;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <7 22 36 8 23 37 9 10 11 12 24 25 26 27 38 39 40 41 42 43 44 45 46 47>;
-            label = "HML_MEHC";
         };
     };
 
