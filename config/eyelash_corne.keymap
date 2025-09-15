@@ -66,22 +66,6 @@
             tapping-term-ms = <200>;
         };
 
-        mt_rgb_tog: mt_rgb_tog {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&rgb_tog>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        mt_rgb_brd: mt_rgb_brd {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&rgb_brd>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
         ltq: ltq {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&kp>;
@@ -269,6 +253,34 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        hml_rgb_tog: hml_rgb_tog {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&rgb_tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <7 22 36 8 23 37 9 10 11 12 24 25 26 27 38 39 40 41 42 43 44 45 46 47>;
+            label = "HML_RGB_TOG";
+        };
+
+        hml_rgb_brd: hml_rgb_brd {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&rgb_brd>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <7 22 36 8 23 37 9 10 11 12 24 25 26 27 38 39 40 41 42 43 44 45 46 47>;
+            label = "HML_RGB_BRD";
         };
     };
 
@@ -623,10 +635,10 @@
         function {
             display-name = "FN";
             bindings = <
-&bt BT_CLR        &bt BT_SEL 0      &bt BT_SEL 1        &bt BT_SEL 2            &bt BT_SEL 3     &bt BT_SEL 4                       &trans          &none  &kp F7  &kp F8            &kp F9       &kp F12  &none
-&sk LEFT_CONTROL  &kp C_PLAY_PAUSE  &kp C_MUTE          &kp C_VOLUME_DOWN       &kp C_VOLUME_UP  &kp PRINTSCREEN            &trans  &trans  &trans  &none  &kp F4  &kp F5            &kp F6       &kp F11  &sk RIGHT_CONTROL
-&boot 0 0         &none             &mt_rgb_tog LGUI 0  &mt_rgb_brd LEFT_ALT 0  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &trans            &trans          &none  &kp F1  &mt RIGHT_ALT F2  &mt RGUI F3  &kp F10  &boot 0 0
-                                                        &sk LEFT_SHIFT          &none            &none                                              &none  &none   &sk RIGHT_SHIFT
+&bt BT_CLR        &bt BT_SEL 0      &bt BT_SEL 1         &bt BT_SEL 2             &bt BT_SEL 3     &bt BT_SEL 4                       &trans          &none  &kp F7  &kp F8             &kp F9        &kp F12  &none
+&sk LEFT_CONTROL  &kp C_PLAY_PAUSE  &kp C_MUTE           &kp C_VOLUME_DOWN        &kp C_VOLUME_UP  &kp PRINTSCREEN            &trans  &trans  &trans  &none  &kp F4  &kp F5             &kp F6        &kp F11  &sk RIGHT_CONTROL
+&boot 0 0         &none             &hml_rgb_tog LGUI 0  &hml_rgb_brd LEFT_ALT 0  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &trans            &trans          &none  &kp F1  &hmr RIGHT_ALT F2  &hmr RGUI F3  &kp F10  &boot 0 0
+                                                         &sk LEFT_SHIFT           &none            &none                                              &none  &none   &sk RIGHT_SHIFT
             >;
 
             sensor-bindings = <&scroll_encoder>;
