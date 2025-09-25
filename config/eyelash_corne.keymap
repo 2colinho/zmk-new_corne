@@ -319,6 +319,33 @@
             label = "TD_PARS";
             tapping-term-ms = <1000>;
         };
+
+        td_abkts: td_abkts {
+            compatible = "zmk,behavior-tap-dance";
+            bindings = <&kp LESS_THAN>, <&mc_abkts>;
+
+            #binding-cells = <0>;
+            label = "TD_ABKTS";
+            tapping-term-ms = <1000>;
+        };
+
+        td_bkts: td_bkts {
+            compatible = "zmk,behavior-tap-dance";
+            bindings = <&kp LBKT>, <&mc_bkts>;
+
+            #binding-cells = <0>;
+            label = "TD_BKTS";
+            tapping-term-ms = <1000>;
+        };
+
+        td_brcs: td_brcs {
+            compatible = "zmk,behavior-tap-dance";
+            bindings = <&kp LBRC>, <&mc_brcs>;
+
+            #binding-cells = <0>;
+            label = "TD_BRCS";
+            tapping-term-ms = <1000>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -401,7 +428,7 @@
         };
 
         combo_lbrc {
-            bindings = <&kp LBRC>;
+            bindings = <&td_brcs>;
             key-positions = <32 33>;
             layers = <1>;
         };
@@ -413,7 +440,7 @@
         };
 
         combo_lessthan {
-            bindings = <&kp LESS_THAN>;
+            bindings = <&td_abkts>;
             key-positions = <17 18>;
             layers = <1>;
         };
@@ -573,6 +600,33 @@
             wait-ms = <0>;
             tap-ms = <0>;
         };
+
+        mc_abkts: mc_abkts {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT>;
+            label = "MC_ABKTS";
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
+
+        mc_bkts: mc_bkts {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RBKT &kp LEFT>;
+            label = "MC_BKTS";
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
+
+        mc_brcs: mc_brcs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC &kp RBRC &kp LEFT>;
+            label = "MC_BRCS";
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
     };
 
     keymap {
@@ -595,7 +649,7 @@
             bindings = <
 &trans            &as N1 EXCL  &as N2 AT        &as N3 HASH                  &as N4 DLLR  &as N5 PRCNT                    &trans          &as N6 CARET  &as N7 AMPS  &as N8 ASTRK  &as N9 LPAR  &as N0 RPAR  &trans
 &sk LEFT_CONTROL  &none        &kp GRAVE        &kp SQT                      &kp PLUS     &td_pars                &trans  &trans  &trans  &kp RPAR      &kp MINUS    &kp SEMI      &kp BSLH     &none        &td_del_delwd
-&none             &none        &hml LGUI TILDE  &hml LEFT_ALT DOUBLE_QUOTES  &kp EQUAL    &kp LBKT      &trans            &trans          &kp RBKT      &kp UNDER    &kp COLON     &kp PIPE     &none        &none
+&none             &none        &hml LGUI TILDE  &hml LEFT_ALT DOUBLE_QUOTES  &kp EQUAL    &td_bkts      &trans            &trans          &kp RBKT      &kp UNDER    &kp COLON     &kp PIPE     &none        &none
                                                 &sk LEFT_SHIFT               &kp TAB      &kp SPACE                                       &kp RET       &kp BSPC     &none
             >;
 
