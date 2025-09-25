@@ -68,7 +68,7 @@ layers:
   - {t: '`', s: '~', type: held}
   - {t: '''', s: '"'}
   - +
-  - (
+  - '&td_lpar_rpar'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
