@@ -68,7 +68,7 @@ layers:
   - {t: '`', s: '~', type: held}
   - {t: '''', s: '"'}
   - +
-  - '&td_lpar_rpar'
+  - '&td_pars'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Ctl+Z, h: Ctl+Sft+Z}
   - {t: Ctl+X, h: LGUI}
-  - {t: '&mehc', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '&mc_mehc', h: '$$mdi:apple-keyboard-option$$'}
   - Meh+V
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -559,10 +559,10 @@ combos:
   k: Ctl+X
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
 - p: [30, 31]
-  k: '&mehc'
+  k: '&mc_mehc'
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
 - p: [31, 32]
-  k: '&mehv'
+  k: '&mc_mehv'
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
 - p: [32, 33]
   k: '{'
