@@ -83,7 +83,7 @@ layers:
   - {t: '~', h: LGUI}
   - {t: '"', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '=', s: +}
-  - {t: '[', s: '{'}
+  - '&td_bkts'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ']', s: '}'}
@@ -565,13 +565,13 @@ combos:
   k: '&mc_mehv'
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
 - p: [32, 33]
-  k: '{'
+  k: '&td_brcs'
   l: [SYM]
 - p: [36, 37]
   k: '}'
   l: [SYM]
 - p: [17, 18]
-  k: <
+  k: '&td_abkts'
   l: [SYM]
 - p: [22, 23]
   k: '>'

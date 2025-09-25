@@ -833,8 +833,7 @@ rect.held, rect.combo.held {
 <g transform="translate(308, 153)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">[</text>
-<text x="0" y="-24" class="key shifted">{</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 75%">&amp;td_bkts</tspan></text>
 </g>
 <g transform="translate(378, 153)" class="key trans keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -936,7 +935,7 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="266" y="137" width="28" height="26" class="combo"/>
-<text x="280" y="150" class="combo tap">{</text>
+<text x="280" y="150" class="combo tap"><tspan style="font-size: 75%">&amp;td_brcs</tspan></text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="686" y="137" width="28" height="26" class="combo"/>
@@ -944,7 +943,7 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="266" y="81" width="28" height="26" class="combo"/>
-<text x="280" y="94" class="combo tap">&lt;</text>
+<text x="280" y="94" class="combo tap"><tspan style="font-size: 67%">&amp;td_abkts</tspan></text>
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="686" y="81" width="28" height="26" class="combo"/>
