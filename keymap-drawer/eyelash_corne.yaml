@@ -555,6 +555,15 @@ combos:
 - p: [24, 25]
   k: '&td_del_delwd'
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
+- p: [30, 32]
+  k: Ctl+X
+  l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
+- p: [30, 31]
+  k: '&mehc'
+  l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
+- p: [31, 32]
+  k: '&mehv'
+  l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
 - p: [32, 33]
   k: '{'
   l: [SYM]
@@ -567,12 +576,3 @@ combos:
 - p: [22, 23]
   k: '>'
   l: [SYM]
-- p: [30, 31]
-  k: '&mehc'
-  l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
-- p: [31, 32]
-  k: '&mehv'
-  l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
-- p: [30, 32]
-  k: Ctl+X
-  l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
