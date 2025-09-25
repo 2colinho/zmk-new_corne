@@ -550,10 +550,10 @@ combos:
   k: $$mdi:keyboard-tab$$
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
 - p: [23, 24]
-  k: {t: 'Ctl+$$mdi:backspace$$', type: backspace}
+  k: '&td_bspc_bspcwd'
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
 - p: [24, 25]
-  k: Ctl+$$mdi:backspace-reverse-outline$$
+  k: '&td_del_delwd'
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
 - p: [32, 33]
   k: '{'
