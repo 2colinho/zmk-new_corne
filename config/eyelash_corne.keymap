@@ -50,6 +50,38 @@
             #binding-cells = <0>;
         };
 
+        td_pars: td_pars {
+            compatible = "zmk,behavior-tap-dance";
+            bindings = <&kp LPAR>, <&mc_pars>;
+
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+        };
+
+        td_abkts: td_abkts {
+            compatible = "zmk,behavior-tap-dance";
+            bindings = <&kp LESS_THAN>, <&mc_abkts>;
+
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+        };
+
+        td_bkts: td_bkts {
+            compatible = "zmk,behavior-tap-dance";
+            bindings = <&kp LBKT>, <&mc_bkts>;
+
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+        };
+
+        td_brcs: td_brcs {
+            compatible = "zmk,behavior-tap-dance";
+            bindings = <&kp LBRC>, <&mc_brcs>;
+
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+        };
+
         mtq: mtq {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&kp>;
@@ -310,42 +342,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-        td_pars: td_pars {
-            compatible = "zmk,behavior-tap-dance";
-            bindings = <&kp LPAR>, <&mc_pars>;
-
-            #binding-cells = <0>;
-            label = "TD_PARS";
-            tapping-term-ms = <300>;
-        };
-
-        td_abkts: td_abkts {
-            compatible = "zmk,behavior-tap-dance";
-            bindings = <&kp LESS_THAN>, <&mc_abkts>;
-
-            #binding-cells = <0>;
-            label = "TD_ABKTS";
-            tapping-term-ms = <300>;
-        };
-
-        td_bkts: td_bkts {
-            compatible = "zmk,behavior-tap-dance";
-            bindings = <&kp LBKT>, <&mc_bkts>;
-
-            #binding-cells = <0>;
-            label = "TD_BKTS";
-            tapping-term-ms = <300>;
-        };
-
-        td_brcs: td_brcs {
-            compatible = "zmk,behavior-tap-dance";
-            bindings = <&kp LBRC>, <&mc_brcs>;
-
-            #binding-cells = <0>;
-            label = "TD_BRCS";
-            tapping-term-ms = <300>;
-        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -576,6 +572,38 @@
                 <&kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>;
         };
 
+        mc_pars: mc_pars {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp LEFT>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
+
+        mc_abkts: mc_abkts {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
+
+        mc_bkts: mc_bkts {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RBKT &kp LEFT>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
+
+        mc_brcs: mc_brcs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC &kp RBRC &kp LEFT>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
+
         rgb_tog: rgb_tog {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -588,42 +616,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&rgb_ug RGB_BRD>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-        };
-
-        mc_pars: mc_pars {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LPAR &kp RPAR &kp LEFT>;
-            label = "MC_PARS";
-            wait-ms = <0>;
-            tap-ms = <0>;
-        };
-
-        mc_abkts: mc_abkts {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT>;
-            label = "MC_ABKTS";
-            wait-ms = <0>;
-            tap-ms = <0>;
-        };
-
-        mc_bkts: mc_bkts {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LBKT &kp RBKT &kp LEFT>;
-            label = "MC_BKTS";
-            wait-ms = <0>;
-            tap-ms = <0>;
-        };
-
-        mc_brcs: mc_brcs {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LBRC &kp RBRC &kp LEFT>;
-            label = "MC_BRCS";
             wait-ms = <0>;
             tap-ms = <0>;
         };
