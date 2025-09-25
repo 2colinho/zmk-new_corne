@@ -55,7 +55,6 @@
             bindings = <&kp LPAR>, <&mc_pars>;
 
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
         };
 
         td_abkts: td_abkts {
@@ -63,7 +62,6 @@
             bindings = <&kp LESS_THAN>, <&mc_abkts>;
 
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
         };
 
         td_bkts: td_bkts {
@@ -71,7 +69,6 @@
             bindings = <&kp LBKT>, <&mc_bkts>;
 
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
         };
 
         td_brcs: td_brcs {
@@ -79,7 +76,6 @@
             bindings = <&kp LBRC>, <&mc_brcs>;
 
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
         };
 
         mtq: mtq {
