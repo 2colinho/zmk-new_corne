@@ -317,7 +317,7 @@
 
             #binding-cells = <0>;
             label = "TD_PARS";
-            tapping-term-ms = <1000>;
+            tapping-term-ms = <300>;
         };
 
         td_abkts: td_abkts {
@@ -326,7 +326,7 @@
 
             #binding-cells = <0>;
             label = "TD_ABKTS";
-            tapping-term-ms = <1000>;
+            tapping-term-ms = <300>;
         };
 
         td_bkts: td_bkts {
@@ -335,7 +335,7 @@
 
             #binding-cells = <0>;
             label = "TD_BKTS";
-            tapping-term-ms = <1000>;
+            tapping-term-ms = <300>;
         };
 
         td_brcs: td_brcs {
@@ -344,7 +344,7 @@
 
             #binding-cells = <0>;
             label = "TD_BRCS";
-            tapping-term-ms = <1000>;
+            tapping-term-ms = <300>;
         };
     };
 
