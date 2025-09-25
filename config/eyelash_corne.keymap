@@ -310,6 +310,14 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        td_lpar_rpar: td_lpar_rpar {
+            compatible = "zmk,behavior-tap-dance";
+            bindings = <&kp LPAR>, <&rpar>;
+
+            #binding-cells = <0>;
+            label = "TD_LPAR_RPAR";
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -555,6 +563,15 @@
             wait-ms = <0>;
             tap-ms = <0>;
         };
+
+        rpar: rpar {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RPAR &kp LEFT>;
+            label = "RPAR";
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
     };
 
     keymap {
@@ -575,10 +592,10 @@
         symbol {
             display-name = "SYM";
             bindings = <
-&trans            &as N1 EXCL  &as N2 AT        &as N3 HASH                  &as N4 DLLR  &as N5 PRCNT                    &trans          &as N6 CARET  &as N7 AMPS  &as N8 ASTRK  &as N9 LPAR  &as N0 RPAR  &trans
-&sk LEFT_CONTROL  &none        &kp GRAVE        &kp SQT                      &kp PLUS     &kp LPAR                &trans  &trans  &trans  &kp RPAR      &kp MINUS    &kp SEMI      &kp BSLH     &none        &td_del_delwd
-&none             &none        &hml LGUI TILDE  &hml LEFT_ALT DOUBLE_QUOTES  &kp EQUAL    &kp LBKT      &trans            &trans          &kp RBKT      &kp UNDER    &kp COLON     &kp PIPE     &none        &none
-                                                &sk LEFT_SHIFT               &kp TAB      &kp SPACE                                       &kp RET       &kp BSPC     &none
+&trans            &as N1 EXCL  &as N2 AT        &as N3 HASH                  &as N4 DLLR  &as N5 PRCNT                     &trans          &as N6 CARET  &as N7 AMPS  &as N8 ASTRK  &as N9 LPAR  &as N0 RPAR  &trans
+&sk LEFT_CONTROL  &none        &kp GRAVE        &kp SQT                      &kp PLUS     &td_lpar_rpar            &trans  &trans  &trans  &kp RPAR      &kp MINUS    &kp SEMI      &kp BSLH     &none        &td_del_delwd
+&none             &none        &hml LGUI TILDE  &hml LEFT_ALT DOUBLE_QUOTES  &kp EQUAL    &kp LBKT       &trans            &trans          &kp RBKT      &kp UNDER    &kp COLON     &kp PIPE     &none        &none
+                                                &sk LEFT_SHIFT               &kp TAB      &kp SPACE                                        &kp RET       &kp BSPC     &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
