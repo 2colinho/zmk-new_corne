@@ -576,3 +576,6 @@ combos:
 - p: [22, 23]
   k: '>'
   l: [SYM]
+- p: [29, 30]
+  k: '&td_undo_redo'
+  l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
