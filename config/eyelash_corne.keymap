@@ -367,7 +367,7 @@
             bindings = <&kp ESCAPE>;
             key-positions = <15 16>;
             layers = <0>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
             require-prior-idle-ms = <150>;
         };
 
@@ -375,7 +375,7 @@
             bindings = <&kp TAB>;
             key-positions = <16 17>;
             layers = <0 1 3 4 6 8 9>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <150>;
         };
 
@@ -383,7 +383,7 @@
             bindings = <&td_bspc_bspcwd>;
             key-positions = <23 24>;
             layers = <0 1 3 4 6 8 9>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <150>;
         };
 
@@ -391,14 +391,14 @@
             bindings = <&td_del_delwd>;
             key-positions = <24 25>;
             layers = <0 1 3 4 6 8 9>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
             require-prior-idle-ms = <150>;
         };
 
         combo_cut {
             bindings = <&kp LC(X)>;
             key-positions = <30 32>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <150>;
             layers = <0 1 3 4 6 8 9>;
         };
@@ -406,7 +406,7 @@
         combo_copy {
             bindings = <&mc_mehc>;
             key-positions = <30 31>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
             require-prior-idle-ms = <150>;
             layers = <0 1 3 4 6 8 9>;
         };
@@ -414,7 +414,7 @@
         combo_paste {
             bindings = <&mc_mehv>;
             key-positions = <31 32>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <150>;
             layers = <0 1 3 4 6 8 9>;
         };
@@ -422,7 +422,7 @@
         combo_undo {
             bindings = <&kp LC(Z)>;
             key-positions = <29 30>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <150>;
             layers = <0 1 3 4 6 8 9>;
         };
@@ -430,7 +430,7 @@
         combo_redo {
             bindings = <&kp LC(LS(Z))>;
             key-positions = <29 31>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <150>;
             layers = <0 1 3 4 6 8 9>;
         };
