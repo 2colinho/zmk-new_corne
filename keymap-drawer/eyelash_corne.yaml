@@ -567,6 +567,9 @@ combos:
 - p: [29, 30]
   k: Ctl+Z
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
+- p: [29, 31]
+  k: Ctl+Sft+Z
+  l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
 - p: [32, 33]
   k: '&td_brcs'
   l: [SYM]
@@ -579,6 +582,3 @@ combos:
 - p: [22, 23]
   k: '>'
   l: [SYM]
-- p: [29, 31]
-  k: Ctl+Sft+Z
-  l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
