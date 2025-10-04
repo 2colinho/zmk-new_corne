@@ -130,8 +130,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Ctl+Z, h: Ctl+Sft+Z}
   - {t: Ctl+X, h: LGUI}
-  - {t: '&mc_mehc', h: '$$mdi:apple-keyboard-option$$'}
-  - Meh+V
+  - {t: Ctl+INS, h: '$$mdi:apple-keyboard-option$$'}
+  - Sft+INS
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -565,10 +565,10 @@ combos:
   k: Ctl+X
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
 - p: [30, 31]
-  k: '&mc_mehc'
+  k: Ctl+INS
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
 - p: [31, 32]
-  k: '&mc_mehv'
+  k: Sft+INS
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
 - p: [29, 30]
   k: Ctl+Z
