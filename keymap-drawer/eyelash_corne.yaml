@@ -66,7 +66,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '`', s: '~', type: held}
-  - {t: '''', s: '"'}
+  - '~'
   - +
   - '&td_pars'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -75,12 +75,12 @@ layers:
   - )
   - {t: '-', s: _}
   - {t: ;, s: ':'}
-  - {t: \, s: '|', type: held alternate}
+  - {t: ':', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&td_del_delwd'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '~', h: LGUI}
+  - {t: '''', h: LGUI, s: '"'}
   - {t: '"', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '=', s: +}
   - '&td_bkts'
@@ -88,7 +88,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ']', s: '}'}
   - _
-  - ':'
+  - {t: \, s: '|'}
   - '|'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
