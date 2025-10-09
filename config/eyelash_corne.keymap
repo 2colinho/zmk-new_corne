@@ -78,6 +78,27 @@
             #binding-cells = <0>;
         };
 
+        td_none_nav: td_none_nav {
+            compatible = "zmk,behavior-tap-dance";
+            bindings = <&none>, <&tog 4>;
+
+            #binding-cells = <0>;
+        };
+
+        td_dot_num: td_dot_num {
+            compatible = "zmk,behavior-tap-dance";
+            bindings = <&kp DOT>, <&tog 9>;
+
+            #binding-cells = <0>;
+        };
+
+        td_none_mou: td_none_mou {
+            compatible = "zmk,behavior-tap-dance";
+            bindings = <&none>, <&tog 14>;
+
+            #binding-cells = <0>;
+        };
+
         mtq: mtq {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&kp>;
@@ -327,30 +348,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        td_dot_num: td_dot_num {
-            compatible = "zmk,behavior-tap-dance";
-            bindings = <&kp DOT>, <&tog 9>;
-
-            #binding-cells = <0>;
-            label = "TD_DOT_NUM";
-        };
-
-        td_none_nav: td_none_nav {
-            compatible = "zmk,behavior-tap-dance";
-            bindings = <&none>, <&tog 4>;
-
-            #binding-cells = <0>;
-            label = "TD_NONE_NAV";
-        };
-
-        td_none_mou: td_none_mou {
-            compatible = "zmk,behavior-tap-dance";
-            bindings = <&none>, <&tog 14>;
-
-            #binding-cells = <0>;
-            label = "TD_NONE_MOU";
         };
     };
 
