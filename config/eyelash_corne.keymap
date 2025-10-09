@@ -33,7 +33,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&caps_word>;
+            bindings = <&skq LEFT_SHIFT>, <&caps_word>, <&kp CAPS>;
         };
 
         td_bspc_bspcwd: td_bspc_bspcwd {
@@ -448,14 +448,6 @@
             layers = <0 1 3 4 6 8 9>;
         };
 
-        combo_caps {
-            bindings = <&kp CAPS>;
-            key-positions = <43 46>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-        };
-
         combo_selall {
             bindings = <&kp LC(A)>;
             key-positions = <14 17>;
@@ -716,10 +708,10 @@
         base {
             display-name = "QWERTY";
             bindings = <
-&none  &kp Q                &kp W        &hll 11 E        &kp R      &kp T                                     &mmv MOVE_UP                     &kp Y       &kp U        &hlr 11 I               &kp O            &kp P                   &none
-&none  &hml LEFT_CONTROL A  &hll 1 S     &hll 10 D        &hll 3 F   &kp G                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H       &hlr 3 J     &hlr 10 K               &hlr 1 L         &hmr RIGHT_CONTROL SQT  &none
-&none  &hll 13 Z            &hml LGUI X  &hml LEFT_ALT C  &hll 18 V  &kp B       &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N       &hlr 18 M    &hmr_comma RIGHT_ALT 0  &hmr_dot RGUI 0  &kp SLASH               &none
-                                         &none            &kp SPACE  &ltq 3 TAB                                                                 &ltq 8 RET  &lshft_caps  &none
+&none  &kp Q                &kp W        &hll 11 E        &kp R      &kp T                                     &mmv MOVE_UP                     &kp Y       &kp U           &hlr 11 I               &kp O            &kp P                   &none
+&none  &hml LEFT_CONTROL A  &hll 1 S     &hll 10 D        &hll 3 F   &kp G                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H       &hlr 3 J        &hlr 10 K               &hlr 1 L         &hmr RIGHT_CONTROL SQT  &none
+&none  &hll 13 Z            &hml LGUI X  &hml LEFT_ALT C  &hll 18 V  &kp B       &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N       &hlr 18 M       &hmr_comma RIGHT_ALT 0  &hmr_dot RGUI 0  &kp SLASH               &none
+                                         &none            &kp SPACE  &ltq 3 TAB                                                                 &ltq 8 RET  &td_lshft_caps  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
