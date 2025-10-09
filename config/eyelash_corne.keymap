@@ -821,9 +821,9 @@
         mouse {
             display-name = "MOU";
             bindings = <
-&none             &none  &none     &none         &none      &none                       &trans          &msc SCRL_UP    &mkp LCLK                 &mmv MOVE_UP             &mkp RCLK                 &kp LA(LC(LS(P)))  &none
-&sk LEFT_CONTROL  &none  &mo 15    &mo 16        &mo 17     &none               &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT            &mmv MOVE_DOWN           &mmv MOVE_RIGHT           &none              &sk RIGHT_CONTROL
-&none             &none  &kp LGUI  &kp LEFT_ALT  &none      &none     &trans            &trans          &none           &msc SCRL_LEFT            &hmr_mkp RIGHT_ALT MCLK  &hmr_msc RGUI SCRL_RIGHT  &none              &tog 14
+&none  &none             &none     &none         &none      &none                       &trans          &msc SCRL_UP    &mkp LCLK                 &mmv MOVE_UP             &mkp RCLK                 &kp LA(LC(LS(P)))  &none
+&none  &kp LEFT_CONTROL  &mo 15    &mo 16        &mo 17     &none               &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT            &mmv MOVE_DOWN           &mmv MOVE_RIGHT           &kp RIGHT_CONTROL  &none
+&none  &none             &kp LGUI  &kp LEFT_ALT  &none      &none     &trans            &trans          &none           &msc SCRL_LEFT            &hmr_mkp RIGHT_ALT MCLK  &hmr_msc RGUI SCRL_RIGHT  &none              &tog 14
                                    &none         &mkp RCLK  &mkp MB4                                    &mkp MB5        &mtq_mkp LEFT_SHIFT LCLK  &none
             >;
 
@@ -893,10 +893,10 @@
         browser {
             display-name = "BRO";
             bindings = <
-&none             &none          &none     &none          &kp LC(R)  &kp LC(T)                    &trans          &none         &kp LA(LEFT)      &kp LC(LA(UP))  &kp LA(RIGHT)      &none  &none
-&sk LEFT_CONTROL  &kp LC(LS(A))  &none     &kp LC(LS(G))  &kp LC(G)  &none                &trans  &trans  &trans  &kp LA(HOME)  &kp LC(LA(LEFT))  &down_mehk      &kp LC(LA(RIGHT))  &none  &sk RIGHT_CONTROL
-&none             &none          &kp LGUI  &kp LEFT_ALT   &none      &none      &trans            &trans          &kp LC(N)     &kp LA(F)         &kp RIGHT_ALT   &kp RGUI           &none  &none
-                                           &none          &kp SLASH  &kp LC(L)                                    &none         &sk LEFT_SHIFT    &none
+&none  &none                        &none     &none          &kp LC(R)  &kp LC(T)                    &trans          &none         &kp LA(LEFT)      &kp LC(LA(UP))  &kp LA(RIGHT)      &none              &none
+&none  &hml LEFT_CONTROL LC(LS(A))  &none     &kp LC(LS(G))  &kp LC(G)  &none                &trans  &trans  &trans  &kp LA(HOME)  &kp LC(LA(LEFT))  &down_mehk      &kp LC(LA(RIGHT))  &kp RIGHT_CONTROL  &none
+&none  &none                        &kp LGUI  &kp LEFT_ALT   &none      &none      &trans            &trans          &kp LC(N)     &kp LA(F)         &kp RIGHT_ALT   &kp RGUI           &none              &none
+                                              &none          &kp SLASH  &kp LC(L)                                    &none         &sk LEFT_SHIFT    &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
