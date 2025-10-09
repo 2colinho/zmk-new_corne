@@ -591,3 +591,6 @@ combos:
 - p: [22, 23]
   k: '>'
   l: [SYM]
+- p: [43, 46]
+  k: $$mdi:apple-keyboard-caps$$
+  l: [QWERTY]
