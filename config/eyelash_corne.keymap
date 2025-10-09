@@ -78,21 +78,21 @@
             #binding-cells = <0>;
         };
 
-        td_none_nav: td_none_nav {
+        td_none_tognav: td_none_tognav {
             compatible = "zmk,behavior-tap-dance";
             bindings = <&none>, <&tog 4>;
 
             #binding-cells = <0>;
         };
 
-        td_dot_num: td_dot_num {
+        td_dot_tognum: td_dot_tognum {
             compatible = "zmk,behavior-tap-dance";
             bindings = <&kp DOT>, <&tog 9>;
 
             #binding-cells = <0>;
         };
 
-        td_none_mou: td_none_mou {
+        td_none_togmou: td_none_togmou {
             compatible = "zmk,behavior-tap-dance";
             bindings = <&none>, <&tog 14>;
 
@@ -724,7 +724,7 @@
             bindings = <
 &none  &none                         &none            &none                  &none          &none                      &trans          &kp PG_UP  &as HOME LC(LEFT)  &kp UP     &as END LC(RIGHT)  &kp LA(LC(LS(P)))  &none
 &none  &hml_sel_line LEFT_CONTROL 0  &sel_word_bwd    &none                  &sel_word_fwd  &none              &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &kp RIGHT_CONTROL  &none
-&none  &kp LC(Z)                     &hml LGUI LC(X)  &hml LEFT_ALT LC(INS)  &kp LS(INS)    &none    &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &td_none_nav       &none
+&none  &kp LC(Z)                     &hml LGUI LC(X)  &hml LEFT_ALT LC(INS)  &kp LS(INS)    &none    &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &td_none_tognav    &none
                                                       &none                  &kp SPACE      &kp TAB                                    &kp RET    &sk LEFT_SHIFT     &none
             >;
 
@@ -784,7 +784,7 @@
             bindings = <
 &none  &none             &none     &none         &none      &none                      &trans          &kp FSLH   &kp N7          &kp N8             &kp N9        &kp STAR                 &none
 &none  &kp LEFT_CONTROL  &none     &none         &none      &none              &trans  &trans  &trans  &kp MINUS  &kp N4          &kp N5             &kp N6        &hmr RIGHT_CONTROL PLUS  &none
-&none  &none             &kp LGUI  &kp LEFT_ALT  &none      &none    &trans            &trans          &kp N0     &kp NUMBER_1    &hmr RIGHT_ALT N2  &hmr RGUI N3  &td_dot_num              &none
+&none  &none             &kp LGUI  &kp LEFT_ALT  &none      &none    &trans            &trans          &kp N0     &kp NUMBER_1    &hmr RIGHT_ALT N2  &hmr RGUI N3  &td_dot_tognum           &none
                                    &none         &kp SPACE  &kp TAB                                    &kp RET    &sk LEFT_SHIFT  &none
             >;
 
@@ -844,7 +844,7 @@
             bindings = <
 &none  &none             &none     &none         &none      &none                       &trans          &msc SCRL_UP    &mkp LCLK                 &mmv MOVE_UP             &mkp RCLK                 &kp LA(LC(LS(P)))  &none
 &none  &kp LEFT_CONTROL  &mo 15    &mo 16        &mo 17     &none               &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT            &mmv MOVE_DOWN           &mmv MOVE_RIGHT           &kp RIGHT_CONTROL  &none
-&none  &none             &kp LGUI  &kp LEFT_ALT  &none      &none     &trans            &trans          &none           &msc SCRL_LEFT            &hmr_mkp RIGHT_ALT MCLK  &hmr_msc RGUI SCRL_RIGHT  &td_none_mou       &none
+&none  &none             &kp LGUI  &kp LEFT_ALT  &none      &none     &trans            &trans          &none           &msc SCRL_LEFT            &hmr_mkp RIGHT_ALT MCLK  &hmr_msc RGUI SCRL_RIGHT  &td_none_togmou    &none
                                    &none         &mkp RCLK  &mkp MB4                                    &mkp MB5        &mtq_mkp LEFT_SHIFT LCLK  &none
             >;
 
