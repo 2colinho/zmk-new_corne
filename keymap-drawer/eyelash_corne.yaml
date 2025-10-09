@@ -139,8 +139,8 @@ layers:
   - '&sel_word_bwd'
   - '&sel_line'
   - '&sel_word_fwd'
+  - '&td_none_nav'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: 'NAV ', h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-tab$$
@@ -237,8 +237,8 @@ layers:
   - '1'
   - {t: '2', h: '$$mdi:apple-keyboard-option$$', s: '@'}
   - {t: '3', h: RGUI, s: '#'}
-  - {t: ., s: '>'}
-  - {t: 'NUM ', h: toggle}
+  - '&td_dot_num'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-tab$$
@@ -433,8 +433,8 @@ layers:
   - $$mdi:pan-left$$
   - {t: '$$mdi:mouse-scroll-wheel$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:pan-right$$', h: RGUI}
+  - '&td_none_mou'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: 'MOU ', h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-right-click-outline$$
   - '&mkp MB4'
