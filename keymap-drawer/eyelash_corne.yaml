@@ -406,8 +406,8 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - Meh+P
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-control$$
   - 'MOU '
   - 'MOU '
   - 'MOU '
@@ -419,8 +419,8 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LGUI
@@ -504,8 +504,8 @@ layers:
   - Alt+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
-  - Ctl+Sft+A
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: Ctl+Sft+A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+Sft+G
   - Ctl+G
@@ -517,8 +517,8 @@ layers:
   - Ctl+Alt+$$mdi:arrow-left-bold$$
   - {t: 'Ctl+Alt+$$mdi:arrow-down-bold$$', s: Meh+K}
   - Ctl+Alt+$$mdi:arrow-right-bold$$
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LGUI
