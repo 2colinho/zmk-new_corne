@@ -564,6 +564,9 @@ combos:
 - p: [9, 10]
   k: Ctl+$$mdi:backspace-reverse-outline$$
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
+- p: [43, 46]
+  k: $$mdi:apple-keyboard-caps$$
+  l: [QWERTY]
 - p: [30, 32]
   k: Ctl+X
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
@@ -591,6 +594,3 @@ combos:
 - p: [22, 23]
   k: '>'
   l: [SYM]
-- p: [43, 46]
-  k: $$mdi:apple-keyboard-caps$$
-  l: [QWERTY]
