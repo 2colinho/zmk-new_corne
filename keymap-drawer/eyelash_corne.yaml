@@ -373,7 +373,7 @@ layers:
   - {t: F11, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:bluetooth-off$$', h: '$$mdi:progress-download$$'}
+  - {t: '&bt_clr BT_CLR', h: '$$mdi:progress-download$$'}
   - {t: '&rgb_tog', h: LGUI}
   - {t: '&rgb_brd', h: '$$mdi:apple-keyboard-option$$'}
   - RGB BRI
