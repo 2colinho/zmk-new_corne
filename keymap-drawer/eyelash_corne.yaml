@@ -357,8 +357,8 @@ layers:
   - F9
   - F12
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
-  - PLAY PAUSE
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: PLAY PAUSE, h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:volume-off$$
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
@@ -370,8 +370,8 @@ layers:
   - F4
   - F5
   - F6
-  - F11
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: F11, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', h: '$$mdi:progress-download$$'}
   - $$mdi:bluetooth-off$$
   - {t: '&rgb_tog', h: LGUI}
