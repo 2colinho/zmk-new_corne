@@ -761,9 +761,9 @@
         numpad {
             display-name = "NUM";
             bindings = <
-&none             &none  &none     &none         &none      &none                      &trans          &kp FSLH   &kp N7          &kp N8  &kp N9  &kp STAR  &none
-&sk LEFT_CONTROL  &none  &none     &none         &none      &none              &trans  &trans  &trans  &kp MINUS  &kp N4          &kp N5  &kp N6  &kp PLUS  &td_del_delwd
-&none             &none  &kp LGUI  &kp LEFT_ALT  &none      &none    &trans            &trans          &kp N0     &kp NUMBER_1    &kp N2  &kp N3  &kp DOT   &tog 9
+&none  &none             &none     &none         &none      &none                      &trans          &kp FSLH   &kp N7          &kp N8             &kp N9        &kp STAR                 &none
+&none  &kp LEFT_CONTROL  &none     &none         &none      &none              &trans  &trans  &trans  &kp MINUS  &kp N4          &kp N5             &kp N6        &hmr RIGHT_CONTROL PLUS  &none
+&none  &none             &kp LGUI  &kp LEFT_ALT  &none      &none    &trans            &trans          &kp N0     &kp NUMBER_1    &hmr RIGHT_ALT N2  &hmr RGUI N3  &kp DOT                  &tog 9
                                    &none         &kp SPACE  &kp TAB                                    &kp RET    &sk LEFT_SHIFT  &none
             >;
 
@@ -797,9 +797,9 @@
         window {
             display-name = "WIN";
             bindings = <
-&none             &none  &none                   &none         &none              &none                          &trans          &kp LS(LG(UP))    &kp LS(LG(LEFT))        &kp LA(LG(UP))          &kp LS(LG(RIGHT))    &none  &none
-&sk LEFT_CONTROL  &none  &kp LC(LG(LEFT_ARROW))  &none         &kp LC(LG(RIGHT))  &none                  &trans  &trans  &trans  &kp LS(LG(DOWN))  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(DOWN_ARROW))  &kp LA(LG(RIGHT))    &none  &sk RIGHT_CONTROL
-&none             &none  &kp LGUI                &kp LEFT_ALT  &none              &none        &trans            &trans          &none             &kp LG(PG_DN)           &hmr RIGHT_ALT LA(F4)   &hmr RGUI LG(PG_UP)  &none  &none
+&none  &none             &none                   &none         &none              &none                          &trans          &kp LS(LG(UP))    &kp LS(LG(LEFT))        &kp LA(LG(UP))          &kp LS(LG(RIGHT))    &none              &none
+&none  &kp LEFT_CONTROL  &kp LC(LG(LEFT_ARROW))  &none         &kp LC(LG(RIGHT))  &none                  &trans  &trans  &trans  &kp LS(LG(DOWN))  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(DOWN_ARROW))  &kp LA(LG(RIGHT))    &kp RIGHT_CONTROL  &none
+&none  &none             &kp LGUI                &kp LEFT_ALT  &none              &none        &trans            &trans          &none             &kp LG(PG_DN)           &hmr RIGHT_ALT LA(F4)   &hmr RGUI LG(PG_UP)  &none              &none
                                                  &none         &kp LG(D)          &kp LG(TAB)                                    &none             &sk LEFT_SHIFT          &none
             >;
 
