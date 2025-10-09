@@ -670,10 +670,10 @@
         symbol {
             display-name = "SYM";
             bindings = <
-&trans            &as N1 EXCL  &as N2 AT      &as N3 HASH                  &as N4 DLLR  &as N5 PRCNT                    &trans          &as N6 CARET  &as N7 AMPS  &as N8 ASTRK  &as N9 LPAR  &as N0 RPAR  &trans
-&sk LEFT_CONTROL  &none        &kp GRAVE      &kp TILDE                    &kp PLUS     &td_pars                &trans  &trans  &trans  &kp RPAR      &kp MINUS    &kp SEMI      &kp COLON    &none        &td_del_delwd
-&none             &none        &hml LGUI SQT  &hml LEFT_ALT DOUBLE_QUOTES  &kp EQUAL    &td_bkts      &trans            &trans          &kp RBKT      &kp UNDER    &kp BSLH      &kp PIPE     &none        &none
-                                              &sk LEFT_SHIFT               &kp TAB      &kp SPACE                                       &kp RET       &kp BSPC     &none
+&trans            &as N1 EXCL  &as N2 AT      &as N3 HASH                  &as N4 DLLR  &as N5 PRCNT                    &trans          &as N6 CARET  &as N7 AMPS     &as N8 ASTRK  &as N9 LPAR  &as N0 RPAR  &trans
+&sk LEFT_CONTROL  &none        &kp GRAVE      &kp TILDE                    &kp PLUS     &td_pars                &trans  &trans  &trans  &kp RPAR      &kp MINUS       &kp SEMI      &kp COLON    &none        &td_del_delwd
+&none             &none        &hml LGUI SQT  &hml LEFT_ALT DOUBLE_QUOTES  &kp EQUAL    &td_bkts      &trans            &trans          &kp RBKT      &kp UNDER       &kp BSLH      &kp PIPE     &none        &none
+                                              &none                        &kp SPACE    &kp TAB                                         &kp RET       &sk LEFT_SHIFT  &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -682,10 +682,10 @@
         navigation {
             display-name = "NAV";
             bindings = <
-&trans            &none                 &none            &none                  &none          &none                        &trans          &kp PG_UP  &as HOME LC(LEFT)  &kp UP     &as END LC(RIGHT)  &kp LA(LC(LS(P)))  &trans
-&sk LEFT_CONTROL  &as_sel_line LC(A) 0  &sel_word_bwd    &none                  &sel_word_fwd  &none                &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td_del_delwd
-&none             &as LC(LS(Z)) LC(Z)   &hml LGUI LC(X)  &hml LEFT_ALT LC(INS)  &kp LS(INS)    &none      &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &none              &tog 4
-                                                         &sk LEFT_SHIFT         &kp TAB        &kp SPACE                                    &kp RET    &kp BSPC           &none
+&trans            &none                 &none            &none                  &none          &none                      &trans          &kp PG_UP  &as HOME LC(LEFT)  &kp UP     &as END LC(RIGHT)  &kp LA(LC(LS(P)))  &trans
+&sk LEFT_CONTROL  &as_sel_line LC(A) 0  &sel_word_bwd    &none                  &sel_word_fwd  &none              &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN   &kp RIGHT          &none              &td_del_delwd
+&none             &as LC(LS(Z)) LC(Z)   &hml LGUI LC(X)  &hml LEFT_ALT LC(INS)  &kp LS(INS)    &none    &trans            &trans          &none      &sel_word_bwd      &sel_line  &sel_word_fwd      &none              &tog 4
+                                                         &none                  &kp SPACE      &kp TAB                                    &kp RET    &sk LEFT_SHIFT     &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -742,10 +742,10 @@
         numpad {
             display-name = "NUM";
             bindings = <
-&trans            &none  &none     &none           &none  &none                        &trans          &kp FSLH   &kp N7        &kp N8  &kp N9  &kp STAR  &trans
-&sk LEFT_CONTROL  &none  &none     &none           &none  &none                &trans  &trans  &trans  &kp MINUS  &kp N4        &kp N5  &kp N6  &kp PLUS  &td_del_delwd
-&none             &none  &kp LGUI  &kp LEFT_ALT    &none  &none      &trans            &trans          &kp N0     &kp NUMBER_1  &kp N2  &kp N3  &kp DOT   &tog 9
-                                   &sk LEFT_SHIFT  &none  &kp SPACE                                    &kp RET    &none         &kp N0
+&trans            &none  &none     &none         &none      &none                      &trans          &kp FSLH   &kp N7          &kp N8  &kp N9  &kp STAR  &trans
+&sk LEFT_CONTROL  &none  &none     &none         &none      &none              &trans  &trans  &trans  &kp MINUS  &kp N4          &kp N5  &kp N6  &kp PLUS  &td_del_delwd
+&none             &none  &kp LGUI  &kp LEFT_ALT  &none      &none    &trans            &trans          &kp N0     &kp NUMBER_1    &kp N2  &kp N3  &kp DOT   &tog 9
+                                   &none         &kp SPACE  &kp TAB                                    &kp RET    &sk LEFT_SHIFT  &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
