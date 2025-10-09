@@ -47,7 +47,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:numeric$$'}
   - {t: '$$mdi:keyboard-return$$', h: 'NUM '}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
+  - '&td_lshft_caps'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SYM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -564,9 +564,6 @@ combos:
 - p: [9, 10]
   k: Ctl+$$mdi:backspace-reverse-outline$$
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
-- p: [43, 46]
-  k: $$mdi:apple-keyboard-caps$$
-  l: [QWERTY]
 - p: [14, 17]
   k: Ctl+A
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
