@@ -345,11 +345,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   FN:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:bluetooth-off$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$', type: held}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$', type: held}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F7
@@ -373,7 +373,7 @@ layers:
   - {t: F11, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', h: '$$mdi:progress-download$$'}
   - {t: '&rgb_tog', h: LGUI}
   - {t: '&rgb_brd', h: '$$mdi:apple-keyboard-option$$'}
   - RGB BRI
