@@ -707,7 +707,6 @@
             bindings = <&bt BT_CLR>;
             wait-ms = <0>;
             tap-ms = <0>;
-            label = "BT_CLR";
         };
     };
 
