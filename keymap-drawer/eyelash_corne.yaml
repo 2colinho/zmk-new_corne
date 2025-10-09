@@ -139,7 +139,7 @@ layers:
   - '&sel_word_bwd'
   - '&sel_line'
   - '&sel_word_fwd'
-  - '&td_none_tognav'
+  - '&td_tognav'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-space$$
@@ -372,8 +372,8 @@ layers:
   - F6
   - {t: F11, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', h: '$$mdi:progress-download$$'}
-  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:bluetooth-off$$', h: '$$mdi:progress-download$$'}
   - {t: '&rgb_tog', h: LGUI}
   - {t: '&rgb_brd', h: '$$mdi:apple-keyboard-option$$'}
   - RGB BRI
@@ -384,8 +384,8 @@ layers:
   - F1
   - {t: F2, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F3, h: RGUI}
-  - F10
-  - {t: '$$mdi:minus-circle-outline$$', h: '$$mdi:progress-download$$'}
+  - {t: F10, h: '$$mdi:progress-download$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -433,7 +433,7 @@ layers:
   - $$mdi:pan-left$$
   - {t: '$$mdi:mouse-scroll-wheel$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:pan-right$$', h: RGUI}
-  - '&td_none_togmou'
+  - '&td_togmou'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-right-click-outline$$
