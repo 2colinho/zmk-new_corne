@@ -139,7 +139,7 @@ layers:
   - '&sel_word_bwd'
   - '&sel_line'
   - '&sel_word_fwd'
-  - '&td_none_nav'
+  - '&td_none_tognav'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-space$$
@@ -237,7 +237,7 @@ layers:
   - '1'
   - {t: '2', h: '$$mdi:apple-keyboard-option$$', s: '@'}
   - {t: '3', h: RGUI, s: '#'}
-  - '&td_dot_num'
+  - '&td_dot_tognum'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-space$$
@@ -433,7 +433,7 @@ layers:
   - $$mdi:pan-left$$
   - {t: '$$mdi:mouse-scroll-wheel$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:pan-right$$', h: RGUI}
-  - '&td_none_mou'
+  - '&td_none_togmou'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-right-click-outline$$
