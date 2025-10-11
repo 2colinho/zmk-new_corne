@@ -413,7 +413,7 @@
             bindings = <&kp ESCAPE>;
             key-positions = <15 16>;
             layers = <0>;
-            timeout-ms = <40>;
+            timeout-ms = <35>;
             require-prior-idle-ms = <150>;
         };
 
@@ -444,7 +444,7 @@
         combo_bspcwd {
             bindings = <&kp LC(BSPC)>;
             key-positions = <8 9>;
-            timeout-ms = <40>;
+            timeout-ms = <35>;
             require-prior-idle-ms = <150>;
             layers = <0 1 3 4 6 8 9>;
         };
@@ -453,14 +453,14 @@
             bindings = <&kp DEL>;
             key-positions = <24 25>;
             layers = <0 1 3 4 6 8 9>;
-            timeout-ms = <40>;
+            timeout-ms = <35>;
             require-prior-idle-ms = <150>;
         };
 
         combo_delwd {
             bindings = <&kp LC(DEL)>;
             key-positions = <9 10>;
-            timeout-ms = <40>;
+            timeout-ms = <35>;
             require-prior-idle-ms = <150>;
             layers = <0 1 3 4 6 8 9>;
         };
@@ -468,7 +468,7 @@
         combo_selall {
             bindings = <&kp LC(A)>;
             key-positions = <14 17>;
-            timeout-ms = <40>;
+            timeout-ms = <35>;
             require-prior-idle-ms = <150>;
             layers = <0 1 3 4 6 8 9>;
         };
@@ -476,7 +476,7 @@
         combo_save {
             bindings = <&kp LC(S)>;
             key-positions = <15 17>;
-            timeout-ms = <40>;
+            timeout-ms = <35>;
             require-prior-idle-ms = <150>;
             layers = <0 1 3 4 6 8 9>;
         };
@@ -508,7 +508,7 @@
         combo_copy {
             bindings = <&kp LC(INS)>;
             key-positions = <30 31>;
-            timeout-ms = <40>;
+            timeout-ms = <35>;
             require-prior-idle-ms = <150>;
             layers = <0 1 3 4 6 8 9>;
         };
