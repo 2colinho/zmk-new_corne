@@ -514,9 +514,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Alt+HOME
-  - Ctl+Alt+$$mdi:arrow-left-bold$$
+  - Ctl+PG UP
   - {t: 'Ctl+Alt+$$mdi:arrow-down-bold$$', s: Meh+K}
-  - Ctl+Alt+$$mdi:arrow-right-bold$$
+  - Ctl+PG DN
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
