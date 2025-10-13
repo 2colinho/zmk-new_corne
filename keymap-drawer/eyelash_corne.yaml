@@ -597,9 +597,9 @@ combos:
 - p: [22, 23]
   k: '>'
   l: [SYM]
-- p: [23, 24]
+- p: [8, 9]
   k: '&mkp MB4'
   l: ['MOU ', 'MOU ', 'MOU ', 'MOU ', 'MOU ']
-- p: [24, 25]
+- p: [9, 10]
   k: '&mkp MB5'
   l: ['MOU ', 'MOU ', 'MOU ', 'MOU ', 'MOU ']
