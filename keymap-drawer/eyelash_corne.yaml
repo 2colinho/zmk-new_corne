@@ -110,7 +110,7 @@ layers:
   - {t: 'Ctl+$$mdi:arrow-left-bold$$', h: HOME}
   - $$mdi:arrow-up-bold$$
   - {t: 'Ctl+$$mdi:arrow-right-bold$$', h: END}
-  - Meh+P
+  - Hyper+P
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '&sel_line', h: '$$mdi:apple-keyboard-control$$'}
@@ -404,7 +404,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-right-click-outline$$
-  - Meh+P
+  - Hyper+P
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-control$$
@@ -515,7 +515,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Alt+HOME
   - Ctl+PG UP
-  - {t: 'Ctl+Alt+$$mdi:arrow-down-bold$$', s: Meh+K}
+  - {t: 'Ctl+Alt+$$mdi:arrow-down-bold$$', s: Hyper+K}
   - Ctl+PG DN
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
