@@ -377,9 +377,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        down_mehk: down_mehk {
+        down_hyperk: down_hyperk {
             compatible = "zmk,behavior-mod-morph";
-            bindings = <&kp LC(LA(DOWN))>, <&kp LA(LC(LS(K)))>;
+            bindings = <&kp LC(LA(DOWN))>, <&kp LA(LC(LS(LG(K))))>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -658,30 +658,6 @@
             tap-ms = <0>;
         };
 
-        smart_copy: smart_copy {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp C>,
-                <&macro_release>,
-                <&kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>;
-        };
-
-        smart_paste: smart_paste {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp V>,
-                <&macro_release>,
-                <&kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>;
-        };
-
         mc_pars: mc_pars {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -761,9 +737,9 @@
         navigation {
             display-name = "NAV";
             bindings = <
-&none  &none                         &none            &none                  &none          &none                      &trans          &kp PG_UP  &as HOME LC(LEFT)  &kp UP                     &as END LC(RIGHT)         &kp LA(LC(LS(P)))  &none
-&none  &hml_sel_line LEFT_CONTROL 0  &sel_word_bwd    &none                  &sel_word_fwd  &none              &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN                   &kp RIGHT                 &kp RIGHT_CONTROL  &none
-&none  &kp LC(Z)                     &hml LGUI LC(X)  &hml LEFT_ALT LC(INS)  &kp LS(INS)    &none    &trans            &trans          &none      &sel_word_bwd      &hmr_sel_line RIGHT_ALT 0  &hmr_sel_word_fwd RGUI 0  &td_tognav         &none
+&none  &none                         &none            &none                  &none          &none                      &trans          &kp PG_UP  &as HOME LC(LEFT)  &kp UP                     &as END LC(RIGHT)         &kp LA(LC(LS(LG(P))))  &none
+&none  &hml_sel_line LEFT_CONTROL 0  &sel_word_bwd    &none                  &sel_word_fwd  &none              &trans  &trans  &trans  &kp PG_DN  &kp LEFT           &kp DOWN                   &kp RIGHT                 &kp RIGHT_CONTROL      &none
+&none  &kp LC(Z)                     &hml LGUI LC(X)  &hml LEFT_ALT LC(INS)  &kp LS(INS)    &none    &trans            &trans          &none      &sel_word_bwd      &hmr_sel_line RIGHT_ALT 0  &hmr_sel_word_fwd RGUI 0  &td_tognav             &none
                                                       &none                  &kp SPACE      &kp TAB                                    &kp RET    &sk LEFT_SHIFT     &none
             >;
 
@@ -881,9 +857,9 @@
         mouse {
             display-name = "MOU";
             bindings = <
-&none  &none             &none     &none         &none      &none                    &trans          &msc SCRL_UP    &mkp LCLK                 &mmv MOVE_UP             &mkp RCLK                 &kp LA(LC(LS(P)))  &none
-&none  &kp LEFT_CONTROL  &mo 15    &mo 16        &mo 17     &none            &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT            &mmv MOVE_DOWN           &mmv MOVE_RIGHT           &kp RIGHT_CONTROL  &none
-&none  &none             &kp LGUI  &kp LEFT_ALT  &none      &none  &trans            &trans          &none           &msc SCRL_LEFT            &hmr_mkp RIGHT_ALT MCLK  &hmr_msc RGUI SCRL_RIGHT  &td_togmou         &none
+&none  &none             &none     &none         &none      &none                    &trans          &msc SCRL_UP    &mkp LCLK                 &mmv MOVE_UP             &mkp RCLK                 &kp LA(LC(LS(LG(P))))  &none
+&none  &kp LEFT_CONTROL  &mo 15    &mo 16        &mo 17     &none            &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT            &mmv MOVE_DOWN           &mmv MOVE_RIGHT           &kp RIGHT_CONTROL      &none
+&none  &none             &kp LGUI  &kp LEFT_ALT  &none      &none  &trans            &trans          &none           &msc SCRL_LEFT            &hmr_mkp RIGHT_ALT MCLK  &hmr_msc RGUI SCRL_RIGHT  &td_togmou             &none
                                    &none         &mkp RCLK  &none                                    &none           &mtq_mkp LEFT_SHIFT LCLK  &none
             >;
 
@@ -954,7 +930,7 @@
             display-name = "BRO";
             bindings = <
 &none  &none                        &none     &none          &kp LC(R)  &kp LC(T)                    &trans          &none         &kp LA(LEFT)    &kp LC(LA(UP))  &kp LA(RIGHT)  &none              &none
-&none  &hml LEFT_CONTROL LC(LS(A))  &none     &kp LC(LS(G))  &kp LC(G)  &none                &trans  &trans  &trans  &kp LA(HOME)  &kp LC(PG_UP)   &down_mehk      &kp LC(PG_DN)  &kp RIGHT_CONTROL  &none
+&none  &hml LEFT_CONTROL LC(LS(A))  &none     &kp LC(LS(G))  &kp LC(G)  &none                &trans  &trans  &trans  &kp LA(HOME)  &kp LC(PG_UP)   &down_hyperk    &kp LC(PG_DN)  &kp RIGHT_CONTROL  &none
 &none  &none                        &kp LGUI  &kp LEFT_ALT   &none      &none      &trans            &trans          &kp LC(N)     &kp LA(F)       &kp RIGHT_ALT   &kp RGUI       &none              &none
                                               &none          &kp SLASH  &kp LC(L)                                    &none         &sk LEFT_SHIFT  &none
             >;
