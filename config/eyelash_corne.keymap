@@ -934,10 +934,10 @@
         mouse {
             display-name = "MOU";
             bindings = <
-&none  &none             &none     &none         &none      &none                    &trans          &msc SCRL_UP    &mkp LCLK                 &mmv MOVE_UP             &mkp RCLK                 &kp LA(LC(LS(LG(P))))  &none
-&none  &kp LEFT_CONTROL  &mo 15    &mo 16        &mo 17     &none            &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT            &mmv MOVE_DOWN           &mmv MOVE_RIGHT           &kp RIGHT_CONTROL      &none
-&none  &none             &kp LGUI  &kp LEFT_ALT  &none      &none  &trans            &trans          &none           &msc SCRL_LEFT            &hmr_mkp RIGHT_ALT MCLK  &hmr_msc RGUI SCRL_RIGHT  &td_togmou             &none
-                                   &none         &mkp RCLK  &none                                    &none           &mtq_mkp LEFT_SHIFT LCLK  &none
+&none  &none             &none     &none         &none                     &none                    &trans          &msc SCRL_UP    &mkp LCLK                 &mmv MOVE_UP             &mkp RCLK                 &kp LA(LC(LS(LG(P))))  &none
+&none  &kp LEFT_CONTROL  &mo 15    &mo 16        &mo 17                    &none            &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT            &mmv MOVE_DOWN           &mmv MOVE_RIGHT           &kp RIGHT_CONTROL      &none
+&none  &none             &kp LGUI  &kp LEFT_ALT  &none                     &none  &trans            &trans          &none           &msc SCRL_LEFT            &hmr_mkp RIGHT_ALT MCLK  &hmr_msc RGUI SCRL_RIGHT  &td_togmou             &none
+                                   &none         &mtq_mkp LEFT_SHIFT RCLK  &none                                    &none           &mtq_mkp LEFT_SHIFT LCLK  &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
