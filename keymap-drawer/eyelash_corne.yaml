@@ -27,7 +27,7 @@ layers:
   - {t: J, h: 'NAV '}
   - {t: K, h: WIN}
   - {t: L, h: SYM}
-  - {t: '''', h: '$$mdi:apple-keyboard-control$$', s: '"'}
+  - {t: '&td_sqts', h: '$$mdi:apple-keyboard-control$$', s: '&td_dqts'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Z, h: 'MOU '}
@@ -80,8 +80,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '''', h: LGUI, s: '"'}
-  - {t: '"', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '&td_sqts', h: LGUI}
+  - {t: '&td_dqts', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '=', s: +}
   - '&td_bkts'
   - {t: '$$mdi:transfer$$', type: trans}
