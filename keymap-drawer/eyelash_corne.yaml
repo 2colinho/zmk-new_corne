@@ -64,7 +64,7 @@ layers:
   - {t: ), h: '0'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-control$$
+  - {t: '!', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '`', s: '~', type: held}
   - '~'
   - +
@@ -76,7 +76,7 @@ layers:
   - {t: '-', s: _}
   - {t: ;, s: ':'}
   - {t: ':', type: held alternate}
-  - $$mdi:apple-keyboard-control$$
+  - {t: '?', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
