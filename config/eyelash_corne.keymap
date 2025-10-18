@@ -802,10 +802,10 @@
         symbol {
             display-name = "SYM";
             bindings = <
-&none  &as N1 EXCL       &as N2 AT        &as N3 HASH          &as N4 DLLR  &as N5 PRCNT                    &trans          &as N6 CARET  &as N7 AMPS     &as N8 ASTRK         &as N9 LPAR     &as N0 RPAR        &none
-&none  &kp LEFT_CONTROL  &kp GRAVE        &kp TILDE            &kp PLUS     &td_pars                &trans  &trans  &trans  &kp RPAR      &kp MINUS       &kp SEMI             &kp COLON       &kp RIGHT_CONTROL  &none
-&none  &none             &hml_sqt LGUI 0  &hml_dqt LEFT_ALT 0  &kp EQUAL    &td_bkts      &trans            &trans          &kp RBKT      &kp UNDER       &hmr RIGHT_ALT BSLH  &hmr RGUI PIPE  &none              &none
-                                          &none                &kp SPACE    &kp TAB                                         &kp RET       &sk LEFT_SHIFT  &none
+&none  &as N1 EXCL             &as N2 AT        &as N3 HASH          &as N4 DLLR  &as N5 PRCNT                    &trans          &as N6 CARET  &as N7 AMPS     &as N8 ASTRK         &as N9 LPAR     &as N0 RPAR                  &none
+&none  &hml LEFT_CONTROL EXCL  &kp GRAVE        &kp TILDE            &kp PLUS     &td_pars                &trans  &trans  &trans  &kp RPAR      &kp MINUS       &kp SEMI             &kp COLON       &hmr RIGHT_CONTROL QUESTION  &none
+&none  &none                   &hml_sqt LGUI 0  &hml_dqt LEFT_ALT 0  &kp EQUAL    &td_bkts      &trans            &trans          &kp RBKT      &kp UNDER       &hmr RIGHT_ALT BSLH  &hmr RGUI PIPE  &none                        &none
+                                                &none                &kp SPACE    &kp TAB                                         &kp RET       &sk LEFT_SHIFT  &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
