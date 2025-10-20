@@ -546,6 +546,12 @@ combos:
 - p: [15, 16]
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
+- p: [17, 43]
+  k: $$mdi:apple-keyboard-shift$$
+  l: [QWERTY]
+- p: [17, 44]
+  k: $$mdi:apple-keyboard-control$$
+  l: [QWERTY]
 - p: [16, 17]
   k: $$mdi:keyboard-tab$$
   l: [QWERTY, SYM, 'NAV ', 'NAV ', 'NAV ', 'NUM ', 'NUM ']
@@ -603,9 +609,3 @@ combos:
 - p: [9, 10]
   k: '&mkp MB5'
   l: ['MOU ', 'MOU ', 'MOU ', 'MOU ', 'MOU ']
-- p: [17, 43]
-  k: $$mdi:apple-keyboard-shift$$
-  l: [QWERTY]
-- p: [17, 44]
-  k: $$mdi:apple-keyboard-control$$
-  l: [QWERTY]
