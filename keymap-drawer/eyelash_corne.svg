@@ -671,6 +671,18 @@ rect.held, rect.combo.held {
 <tspan x="224" dy="-0.6em">Sft+</tspan><tspan x="224" dy="1.2em">INS</tspan>
 </text>
 </g>
+<g class="combo combopos-15">
+<path d="M269,150 l-12,-41" class="combo"/>
+<path d="M269,150 l12,41" class="combo"/>
+<rect rx="6" ry="6" x="255" y="137" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="260" y="141" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
+</g>
+<g class="combo combopos-16">
+<path d="M300,158 l-37,-52" class="combo"/>
+<path d="M300,158 l37,52" class="combo"/>
+<rect rx="6" ry="6" x="286" y="145" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="291" y="149" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-control"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 318)" class="layer-SYM">
