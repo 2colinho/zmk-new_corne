@@ -449,7 +449,6 @@
         mou_word: mou_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            layers = <base_fast>;
             continue-list = <SPACE DOT COMMA FSLH SQT>;
             ignore-alphas;
             ignore-modifiers;
