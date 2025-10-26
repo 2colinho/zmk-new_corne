@@ -542,19 +542,19 @@ layers:
   BRO:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Hyper+W
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+R
   - Ctl+T
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Alt+$$mdi:arrow-left-bold$$
-  - Ctl+Alt+$$mdi:arrow-up-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Alt+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Ctl+Sft+A, h: '$$mdi:apple-keyboard-control$$'}
+  - Ctl+Sft+A
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+Sft+G
   - Ctl+G
@@ -564,29 +564,29 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Alt+HOME
   - Ctl+PG UP
-  - {t: 'Ctl+Alt+$$mdi:arrow-down-bold$$', s: Hyper+K}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+PG DN
-  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - LGUI
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+N
   - {t: Alt+F, type: held alternate}
-  - $$mdi:apple-keyboard-option$$
-  - RGUI
+  - {t: Ctl+W, h: Ctl+Sft+T}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: /, s: '?'}
   - Ctl+L
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
 - p: [1, 15, 29]
