@@ -438,14 +438,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        down_hyperk: down_hyperk {
-            compatible = "zmk,behavior-mod-morph";
-            bindings = <&kp LC(LA(DOWN))>, <&kp LA(LC(LS(LG(K))))>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         mou_word: mou_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
@@ -1054,10 +1046,10 @@
         browser {
             display-name = "BRO";
             bindings = <
-&none  &none                        &none     &none          &kp LC(R)  &kp LC(T)                    &trans          &none         &kp LA(LEFT)    &kp LC(LA(UP))  &kp LA(RIGHT)  &none              &none
-&none  &hml LEFT_CONTROL LC(LS(A))  &none     &kp LC(LS(G))  &kp LC(G)  &none                &trans  &trans  &trans  &kp LA(HOME)  &kp LC(PG_UP)   &down_hyperk    &kp LC(PG_DN)  &kp RIGHT_CONTROL  &none
-&none  &none                        &kp LGUI  &kp LEFT_ALT   &none      &none      &trans            &trans          &kp LC(N)     &kp LA(F)       &kp RIGHT_ALT   &kp RGUI       &none              &none
-                                              &none          &kp SLASH  &kp LC(L)                                    &none         &sk LEFT_SHIFT  &none
+&none  &none          &kp LA(LC(LS(LG(W))))  &none          &kp LC(R)  &kp LC(T)                    &trans          &none         &kp LA(LEFT)   &none                &kp LA(RIGHT)  &none  &none
+&none  &kp LC(LS(A))  &none                  &kp LC(LS(G))  &kp LC(G)  &none                &trans  &trans  &trans  &kp LA(HOME)  &kp LC(PG_UP)  &none                &kp LC(PG_DN)  &none  &none
+&none  &none          &none                  &none          &none      &none      &trans            &trans          &kp LC(N)     &kp LA(F)      &as LC(LS(T)) LC(W)  &none          &none  &none
+                                             &none          &kp SLASH  &kp LC(L)                                    &none         &none          &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
