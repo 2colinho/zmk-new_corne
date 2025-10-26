@@ -445,6 +445,14 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        mou_word: mou_word {
+            compatible = "zmk,behavior-auto-layer";
+            #binding-cells = <0>;
+            layers = <1>;
+            continue-list = <SPACE DOT COMMA FSLH SQT>;
+            ignore-alphas;
+            ignore-modifiers;
+        };
     };
 
     rgb_encoder: rgb_encoder {
