@@ -798,6 +798,15 @@
             wait-ms = <0>;
             tap-ms = <0>;
         };
+
+        num_macro: num_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &mou_word>;
+            label = "NUM_MACRO";
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
     };
 
     keymap {
