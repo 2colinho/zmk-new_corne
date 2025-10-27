@@ -550,6 +550,9 @@ combos:
   k: $$mdi:apple-keyboard-shift$$
   l: [QWERTY]
 - p: [17, 44]
+  k: $$mdi:apple-keyboard-control$$
+  l: ['MOU ']
+- p: [17, 44]
   k: '&mou_macro'
   l: [QWERTY]
 - p: [16, 17]
@@ -609,6 +612,3 @@ combos:
 - p: [9, 10]
   k: '&mkp MB5'
   l: ['MOU ', 'MOU ', 'MOU ', 'MOU ', 'MOU ']
-- p: [17, 44]
-  k: $$mdi:apple-keyboard-control$$
-  l: ['MOU ']
