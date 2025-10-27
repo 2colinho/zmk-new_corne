@@ -1039,9 +1039,9 @@
         mouse_free {
             display-name = "MOU ";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R                  &kp T                    &trans          &kp Y  &kp U                &kp I      &kp O    &kp P     &none
-&none  &kp A  &kp S  &kp D  &kp F                  &kp G            &trans  &trans  &trans  &kp H  &kp J                &kp K      &kp L    &kp SQT   &none
-&none  &kp Z  &kp X  &kp C  &kp V                  &kp B  &trans            &trans          &kp N  &kp M                &kp COMMA  &kp DOT  &kp FSLH  &none
+&none  &kp Q  &kp W  &kp E  &kp R                  &kp T                    &trans          &kp Y  &kp U                &kp I      &kp O    &kp LA(LC(LS(LG(P))))  &none
+&none  &kp A  &kp S  &kp D  &kp F                  &kp G            &trans  &trans  &trans  &kp H  &kp J                &kp K      &kp L    &kp SQT                &none
+&none  &kp Z  &kp X  &kp C  &kp V                  &kp B  &trans            &trans          &kp N  &kp M                &kp COMMA  &kp DOT  &kp FSLH               &none
                      &none  &mtq LEFT_CONTROL RET  &none                                    &none  &mtq LEFT_SHIFT RET  &none
             >;
 
