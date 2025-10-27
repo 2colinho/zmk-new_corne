@@ -633,13 +633,13 @@
         combo_mb4 {
             bindings = <&mkp MB4>;
             key-positions = <8 9>;
-            layers = <13 14 15 16 17>;
+            layers = <13 14 15 16 17 18>;
         };
 
         combo_mb5 {
             bindings = <&mkp MB5>;
             key-positions = <9 10>;
-            layers = <13 14 15 16 17>;
+            layers = <13 14 15 16 17 18>;
         };
     };
 
