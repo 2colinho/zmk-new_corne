@@ -735,7 +735,7 @@
             tap-ms = <0>;
         };
 
-        num_macro: num_macro {
+        mou_macro: mou_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
