@@ -486,7 +486,7 @@
             layers = <0>;
         };
 
-        combo_leftcontrol {
+        combo_moufreeoff {
             bindings = <&kp ESC>;
             key-positions = <17 44>;
             timeout-ms = <50>;
@@ -494,7 +494,7 @@
             layers = <18>;
         };
 
-        combo_mouword {
+        combo_moufreeon {
             bindings = <&mou_macro>;
             key-positions = <17 44>;
             timeout-ms = <50>;
