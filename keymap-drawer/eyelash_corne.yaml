@@ -471,7 +471,7 @@ layers:
   - {t: '''', s: '"'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Z, type: held}
+  - {t: Z, h: '$$mdi:apple-keyboard-control$$', type: held}
   - X
   - C
   - V
@@ -482,12 +482,12 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - {t: /, h: '$$mdi:apple-keyboard-control$$', s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   BRO:
@@ -545,7 +545,7 @@ combos:
   l: [QWERTY]
 - p: [15, 16]
   k: $$mdi:keyboard-esc$$
-  l: [QWERTY, 'MOU ']
+  l: [QWERTY]
 - p: [17, 43]
   k: $$mdi:apple-keyboard-shift$$
   l: [QWERTY]
