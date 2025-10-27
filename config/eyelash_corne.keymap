@@ -486,20 +486,20 @@
             layers = <0>;
         };
 
-        combo_moufreeoff {
-            bindings = <&kp ESC>;
-            key-positions = <17 44>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <150>;
-            layers = <18>;
-        };
-
         combo_moufreeon {
             bindings = <&mou_macro>;
             key-positions = <17 44>;
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
             layers = <0>;
+        };
+
+        combo_moufreeoff {
+            bindings = <&kp ESC>;
+            key-positions = <17 44>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            layers = <18>;
         };
 
         combo_tab {
