@@ -453,7 +453,7 @@ layers:
   - U
   - I
   - O
-  - P
+  - Hyper+P
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - A
