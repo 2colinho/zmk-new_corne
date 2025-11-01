@@ -546,13 +546,13 @@ combos:
 - p: [15, 16]
   k: $$mdi:keyboard-esc$$
   l: [QWERTY, 'MOU ']
-- p: [17, 43]
+- p: [17, 18]
   k: $$mdi:apple-keyboard-shift$$
   l: [QWERTY]
-- p: [17, 44]
+- p: [22, 23]
   k: '&mou_macro'
   l: [QWERTY]
-- p: [17, 44]
+- p: [22, 23]
   k: $$mdi:keyboard-esc$$
   l: ['MOU ']
 - p: [16, 17]
