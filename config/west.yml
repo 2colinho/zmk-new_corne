@@ -8,16 +8,21 @@ manifest:
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
     - name: urob
       url-base: https://github.com/urob
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh
   projects:
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
       revision: main
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3.0
+      revision: main
       import: app/west.yml
     - name: zmk-auto-layer
       remote: urob
-      revision: v0.3.0
+      revision: main
+    - name: zmk-tri-state
+      remote: dhruvinsh
+      revision: main
   self:
     path: config
