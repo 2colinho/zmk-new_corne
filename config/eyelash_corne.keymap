@@ -445,6 +445,13 @@
             ignore-alphas;
             ignore-modifiers;
         };
+
+        swapper: swapper {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT>, <&kp TAB>, <&kt LEFT_ALT>;
+            ignored-key-positions = <3 9 23 24 25>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
