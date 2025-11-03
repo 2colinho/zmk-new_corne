@@ -595,6 +595,9 @@ combos:
 - p: [15, 16]
   k: $$mdi:keyboard-esc$$
   l: [QWERTY, 'MOU ']
+- p: [36, 37]
+  k: '&num_word 8'
+  l: [QWERTY]
 - p: [17, 18]
   k: $$mdi:apple-keyboard-shift$$
   l: [QWERTY]
