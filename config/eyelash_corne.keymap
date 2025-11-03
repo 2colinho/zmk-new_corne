@@ -488,17 +488,25 @@
         combo_escape {
             bindings = <&kp ESC>;
             key-positions = <15 16>;
-            layers = <0 19>;
+            layers = <0 8 19>;
             timeout-ms = <35>;
             require-prior-idle-ms = <150>;
         };
 
-        combo_numword {
+        combo_numwordon {
             bindings = <&num_word 8>;
             key-positions = <36 37>;
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
             layers = <0>;
+        };
+
+        combo_numwordoff {
+            bindings = <&kp ESC>;
+            key-positions = <36 37>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            layers = <8>;
         };
 
         combo_leftshift {
