@@ -491,6 +491,14 @@
             require-prior-idle-ms = <150>;
         };
 
+        combo_numword {
+            bindings = <&num_word 8>;
+            key-positions = <36 37>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
         combo_leftshift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <17 18>;
