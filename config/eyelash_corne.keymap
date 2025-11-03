@@ -666,12 +666,6 @@
             key-positions = <8 9>;
             layers = <14 15 16 17 18 19>;
         };
-
-        combo_mb5 {
-            bindings = <&mkp MB5>;
-            key-positions = <9 10>;
-            layers = <14 15 16 17 18 19>;
-        };
     };
 
     macros {
@@ -973,10 +967,10 @@
         application {
             display-name = "APP";
             bindings = <
-&none  &none  &none              &kp LS(TAB)  &swapper           &kp LA(LC(LS(T)))                    &trans          &kp LA(LC(LS(Y)))  &none  &kp LA(LC(LS(I)))  &none  &none  &none
-&none  &none  &kp LA(LC(LS(S)))  &none        &kp LA(LC(LS(F)))  &none                        &trans  &trans  &trans  &none              &none  &kp LA(LC(LS(K)))  &none  &none  &none
-&none  &none  &none              &none        &none              &none              &trans            &trans          &kp LA(LC(LS(N)))  &none  &none              &none  &none  &none
-                                 &none        &none              &none                                                &none              &none  &none
+&none  &none  &none              &kp LS(TAB)        &swapper           &kp LA(LC(LS(T)))                    &trans          &kp LA(LC(LS(Y)))  &none  &kp LA(LC(LS(I)))  &none  &none  &none
+&none  &none  &kp LA(LC(LS(S)))  &none              &kp LA(LC(LS(F)))  &none                        &trans  &trans  &trans  &none              &none  &kp LA(LC(LS(K)))  &none  &none  &none
+&none  &none  &none              &kp LA(LC(LS(C)))  &none              &none              &trans            &trans          &kp LA(LC(LS(N)))  &none  &none              &none  &none  &none
+                                 &none              &none              &none                                                &none              &none  &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
