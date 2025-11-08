@@ -666,6 +666,12 @@
             key-positions = <8 9>;
             layers = <14 15 16 17 18 19>;
         };
+
+        combo_mb5 {
+            bindings = <&mkp MB5>;
+            key-positions = <9 10>;
+            layers = <14 15 16 17 18 19>;
+        };
     };
 
     macros {
