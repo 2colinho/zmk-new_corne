@@ -664,3 +664,6 @@ combos:
 - p: [8, 9]
   k: '&mkp MB4'
   l: ['MOU ', 'MOU ', 'MOU ', 'MOU ', 'MOU ', 'MOU ']
+- p: [9, 10]
+  k: '&mkp MB5'
+  l: ['MOU ', 'MOU ', 'MOU ', 'MOU ', 'MOU ', 'MOU ']
