@@ -485,7 +485,7 @@ layers:
   - '&td_togmou'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:mouse-right-click-outline$$
+  - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:mouse-left-click-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
