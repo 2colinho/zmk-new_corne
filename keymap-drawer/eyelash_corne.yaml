@@ -107,9 +107,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - PG UP
-  - Ctl+$$mdi:arrow-left-bold$$
-  - {t: '$$mdi:arrow-up-bold$$', h: Ctl+HOME}
-  - Ctl+$$mdi:arrow-right-bold$$
+  - {t: 'Ctl+$$mdi:arrow-left-bold$$', h: HOME}
+  - $$mdi:arrow-up-bold$$
+  - {t: 'Ctl+$$mdi:arrow-right-bold$$', h: Ctl+END}
   - Hyper+P
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -122,9 +122,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PG DN
-  - {t: '$$mdi:arrow-left-bold$$', h: HOME}
-  - {t: '$$mdi:arrow-down-bold$$', h: Ctl+END}
-  - {t: '$$mdi:arrow-right-bold$$', h: END}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
