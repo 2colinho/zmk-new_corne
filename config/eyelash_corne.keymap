@@ -273,32 +273,6 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 42 43 44 45 46 47 47>;
         };
 
-        hmr_mkp: hmr_mkp {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&mkp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            require-prior-idle-ms = <150>;
-            flavor = "balanced";
-            quick-tap-ms = <175>;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 42 43 44 45 46 47 47>;
-        };
-
-        hmr_msc: hmr_msc {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&msc>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            require-prior-idle-ms = <150>;
-            flavor = "balanced";
-            quick-tap-ms = <175>;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 42 43 44 45 46 47 47>;
-        };
-
         hmr_sel_word_fwd: hmr_sel_word_fwd {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&sel_word_fwd>;
@@ -1121,10 +1095,10 @@
         mouse {
             display-name = "MOU";
             bindings = <
-&none  &none             &none     &none         &none      &none                    &trans          &msc SCRL_UP    &mkp LCLK                 &mmv MOVE_UP             &mkp RCLK                 &kp LA(LC(LS(LG(P))))  &none
-&none  &kp LEFT_CONTROL  &mo 16    &mo 17        &mo 18     &none            &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT            &mmv MOVE_DOWN           &mmv MOVE_RIGHT           &kp RIGHT_CONTROL      &none
-&none  &none             &kp LGUI  &kp LEFT_ALT  &none      &none  &trans            &trans          &none           &msc SCRL_LEFT            &hmr_mkp RIGHT_ALT MCLK  &hmr_msc RGUI SCRL_RIGHT  &td_togmou             &none
-                                   &none         &mkp LCLK  &none                                    &none           &mtq_mkp LEFT_SHIFT LCLK  &none
+&none  &none             &none   &none   &none      &none                    &trans          &msc SCRL_UP    &mkp LCLK                 &mmv MOVE_UP    &mkp RCLK        &kp LA(LC(LS(LG(P))))  &none
+&none  &kp LEFT_CONTROL  &mo 16  &mo 17  &mo 18     &none            &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT            &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp RIGHT_CONTROL      &none
+&none  &none             &none   &none   &none      &none  &trans            &trans          &none           &msc SCRL_LEFT            &mkp MCLK       &msc SCRL_RIGHT  &td_togmou             &none
+                                 &none   &mkp LCLK  &none                                    &none           &mtq_mkp LEFT_SHIFT LCLK  &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -1157,8 +1131,8 @@
         mouse_xslow {
             display-name = "MOU ";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &msc MOVE_Y(10)  &trans            &mmv MOVE_Y(-40)  &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &msc MOVE_Y(-10)   &mmv MOVE_X(-40)  &mmv MOVE_Y(40)   &mmv MOVE_X(40)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &msc MOVE_Y(10)   &trans            &mmv MOVE_Y(-40)  &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &msc MOVE_Y(-10)  &mmv MOVE_X(-40)  &mmv MOVE_Y(40)   &mmv MOVE_X(40)  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans            &msc MOVE_X(-10)  &trans            &msc MOVE_X(10)  &trans  &trans
                         &trans  &trans  &trans                                    &trans            &trans            &trans
             >;
@@ -1169,8 +1143,8 @@
         mouse_slow {
             display-name = "MOU ";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &msc MOVE_Y(30)  &trans             &mmv MOVE_Y(-120)  &trans            &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &msc MOVE_Y(-30)   &mmv MOVE_X(-120)  &mmv MOVE_Y(120)   &mmv MOVE_X(120)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &msc MOVE_Y(30)   &trans             &mmv MOVE_Y(-120)  &trans            &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &msc MOVE_Y(-30)  &mmv MOVE_X(-120)  &mmv MOVE_Y(120)   &mmv MOVE_X(120)  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans            &msc MOVE_X(-30)   &trans             &msc MOVE_X(30)   &trans  &trans
                         &trans  &trans  &trans                                    &trans            &trans             &trans
             >;
@@ -1181,8 +1155,8 @@
         mouse_fast {
             display-name = "MOU ";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &msc MOVE_Y(400)  &trans              &mmv MOVE_Y(-1600)  &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &msc MOVE_Y(-400)   &mmv MOVE_X(-1600)  &mmv MOVE_Y(1600)   &mmv MOVE_X(1600)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &msc MOVE_Y(400)   &trans              &mmv MOVE_Y(-1600)  &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &msc MOVE_Y(-400)  &mmv MOVE_X(-1600)  &mmv MOVE_Y(1600)   &mmv MOVE_X(1600)  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans             &msc MOVE_X(-400)   &trans              &msc MOVE_X(400)   &trans  &trans
                         &trans  &trans  &trans                                    &trans             &trans              &trans
             >;
