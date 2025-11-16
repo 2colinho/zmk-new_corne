@@ -1181,10 +1181,10 @@
         mouse_fast {
             display-name = "MOU ";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans              &mmv MOVE_Y(-1600)  &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv MOVE_X(-1600)  &mmv MOVE_Y(1600)   &mmv MOVE_X(1600)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans              &trans              &trans             &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans              &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &msc MOVE_Y(-400)  &trans              &mmv MOVE_Y(-1600)  &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &msc MOVE_Y(400)   &mmv MOVE_X(-1600)  &mmv MOVE_Y(1600)   &mmv MOVE_X(1600)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans             &msc MOVE_X(-400)   &trans              &msc MOVE_X(400)   &trans  &trans
+                        &trans  &trans  &trans                                    &trans             &trans              &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
