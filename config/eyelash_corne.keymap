@@ -1157,10 +1157,10 @@
         mouse_xslow {
             display-name = "MOU ";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans            &mmv MOVE_Y(-40)  &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv MOVE_X(-40)  &mmv MOVE_Y(40)   &mmv MOVE_X(40)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans            &trans            &trans           &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &msc MOVE_Y(-10)  &trans            &mmv MOVE_Y(-40)  &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &msc MOVE_Y(10)   &mmv MOVE_X(-40)  &mmv MOVE_Y(40)   &mmv MOVE_X(40)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans            &msc MOVE_X(-10)  &trans            &msc MOVE_X(10)  &trans  &trans
+                        &trans  &trans  &trans                                    &trans            &trans            &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -1169,10 +1169,10 @@
         mouse_slow {
             display-name = "MOU ";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans             &mmv MOVE_Y(-120)  &trans            &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &mmv MOVE_X(-120)  &mmv MOVE_Y(120)   &mmv MOVE_X(120)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans             &trans             &trans            &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &msc MOVE_Y(-20)  &trans             &mmv MOVE_Y(-120)  &trans            &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &msc MOVE_Y(20)   &mmv MOVE_X(-120)  &mmv MOVE_Y(120)   &mmv MOVE_X(120)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans            &msc MOVE_X(-20)   &trans             &msc MOVE_X(20)   &trans  &trans
+                        &trans  &trans  &trans                                    &trans            &trans             &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
