@@ -939,9 +939,9 @@
         base {
             display-name = "QWERTY";
             bindings = <
-&none  &kp Q                &kp W        &kp E            &kp R          &kp T                                     &mmv MOVE_UP                     &kp Y       &kp U           &kp I                   &kp O            &kp P                     &none
+&none  &hll 14 Q            &kp W        &kp E            &kp R          &kp T                                     &mmv MOVE_UP                     &kp Y       &kp U           &kp I                   &kp O            &kp P                     &none
 &none  &hml LEFT_CONTROL A  &hll 1 S     &hll 11 D        &hll 3 F       &hll 12 G                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &hlr 12 H   &hlr 3 J        &hlr 11 K               &hlr 1 L         &hmr_sqt RIGHT_CONTROL 0  &none
-&none  &hll 14 Z            &hml LGUI X  &hml LEFT_ALT C  &hll 20 V      &kp B       &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N       &hlr 20 M       &hmr_comma RIGHT_ALT 0  &hmr_dot RGUI 0  &kp SLASH                 &none
+&none  &kp Z                &hml LGUI X  &hml LEFT_ALT C  &hll 20 V      &kp B       &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N       &hlr 20 M       &hmr_comma RIGHT_ALT 0  &hmr_dot RGUI 0  &kp SLASH                 &none
                                          &none            &ltq 10 SPACE  &ltq 3 TAB                                                                 &ltq 8 RET  &td_lshft_caps  &none
             >;
 
@@ -1095,9 +1095,9 @@
         mouse {
             display-name = "MOU";
             bindings = <
-&none  &none             &none   &none   &none      &none                    &trans          &msc SCRL_UP    &mkp LCLK                 &mmv MOVE_UP    &mkp RCLK        &kp LA(LC(LS(LG(P))))  &none
+&none  &none             &mo 16  &mo 17  &mo 18     &none                    &trans          &msc SCRL_UP    &mkp LCLK                 &mmv MOVE_UP    &mkp RCLK        &kp LA(LC(LS(LG(P))))  &none
 &none  &kp LEFT_CONTROL  &none   &none   &none      &none            &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT            &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp RIGHT_CONTROL      &none
-&none  &none             &mo 16  &mo 17  &mo 18     &none  &trans            &trans          &none           &msc SCRL_LEFT            &mkp MCLK       &msc SCRL_RIGHT  &td_togmou             &none
+&none  &none             &none   &none   &none      &none  &trans            &trans          &none           &msc SCRL_LEFT            &mkp MCLK       &msc SCRL_RIGHT  &td_togmou             &none
                                  &none   &mkp LCLK  &none                                    &none           &mtq_mkp LEFT_SHIFT LCLK  &none
             >;
 
