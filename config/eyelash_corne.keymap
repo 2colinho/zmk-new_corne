@@ -438,7 +438,7 @@
         leader: leader {
             compatible = "zmk,behavior-leader-key";
             #binding-cells = <0>;
-            ignore-keys = <LSHFT RSHFT>;
+            ignore-keys = <LEFT_SHIFT RIGHT_SHIFT>;
             at { sequence = <A T>; bindings = <&kp AT>; };
             hash { sequence = <H A>; bindings = <&kp HASH>; };
             dllr { sequence = <D O>; bindings = <&kp DLLR>; };
@@ -763,7 +763,7 @@
             bindings = <&mkp MB4>;
             key-positions = <8 9>;
             layers = <14 15 16 17 18 19>;
-        };
+        };RSHFT
 
         combo_mb5 {
             bindings = <&mkp MB5>;
