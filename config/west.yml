@@ -21,6 +21,9 @@ manifest:
     - name: zmk-auto-layer
       remote: urob
       revision: v0.3.0
+    - name: zmk-leader-key
+      remote: urob
+      revision: v0.3.0
     - name: zmk-tri-state
       remote: dhruvinsh
       revision: main
