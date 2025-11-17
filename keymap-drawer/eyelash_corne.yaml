@@ -2,7 +2,7 @@ layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Q
+  - {t: Q, h: 'MOU '}
   - W
   - E
   - R
@@ -30,7 +30,7 @@ layers:
   - {t: '&td_sqts', h: '$$mdi:apple-keyboard-control$$', s: '&td_dqts'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Z, h: 'MOU '}
+  - Z
   - {t: X, h: LGUI}
   - {t: C, h: '$$mdi:apple-keyboard-option$$'}
   - {t: V, h: BRO}
@@ -444,9 +444,9 @@ layers:
   MOU:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - 'MOU '
+  - 'MOU '
+  - 'MOU '
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-up$$
@@ -472,9 +472,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - 'MOU '
-  - 'MOU '
-  - 'MOU '
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -492,10 +492,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   'MOU ':
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Q
-  - W
-  - E
-  - R
+  - {t: Q, type: held}
+  - {t: W, type: held}
+  - {t: E, type: held}
+  - {t: R, type: held}
   - T
   - {t: '$$mdi:transfer$$', type: trans}
   - Y
@@ -520,10 +520,10 @@ layers:
   - {t: '''', h: '$$mdi:apple-keyboard-control$$', s: '"'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Z, type: held}
-  - {t: X, type: held}
-  - {t: C, type: held}
-  - {t: V, type: held}
+  - Z
+  - X
+  - C
+  - V
   - B
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
