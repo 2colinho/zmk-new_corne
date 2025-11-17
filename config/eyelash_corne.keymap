@@ -434,6 +434,18 @@
 
             ignored-key-positions = <3>;
         };
+
+        leader: leader {
+            compatible = "zmk,behavior-leader-key";
+            #binding-cells = <0>;
+            ignore-keys = <LSHFT RSHFT>;
+            at { sequence = <A T>; bindings = <&kp AT>; };
+            hash { sequence = <H A>; bindings = <&kp HASH>; };
+            dllr { sequence = <D O>; bindings = <&kp DLLR>; };
+            prcnt { sequence = <P C>; bindings = <&kp PRCNT>; };
+            caret { sequence = <C T>; bindings = <&kp CARET>; };
+            amps { sequence = <A M>; bindings = <&kp AMPS>; };
+        };
     };
 
     rgb_encoder: rgb_encoder {
