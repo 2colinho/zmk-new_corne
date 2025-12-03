@@ -802,6 +802,14 @@
             key-positions = <9 10>;
             layers = <14 15 16 17 18 19>;
         };
+
+        combo_tomou {
+            bindings = <&to 15>;
+            key-positions = <2 3>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
     };
 
     macros {
