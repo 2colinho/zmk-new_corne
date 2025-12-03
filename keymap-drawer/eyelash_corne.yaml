@@ -2,7 +2,7 @@ layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Q, h: 'MOU '}
+  - Q
   - W
   - E
   - R
@@ -30,7 +30,7 @@ layers:
   - {t: '&td_sqts', h: '$$mdi:apple-keyboard-control$$', s: '&td_dqts'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Z
+  - {t: Z, h: 'MOU '}
   - {t: X, h: LGUI}
   - {t: C, h: '$$mdi:apple-keyboard-option$$'}
   - {t: V, h: BRO}
@@ -492,7 +492,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   'MOU ':
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Q, type: held}
+  - Q
   - W
   - E
   - R
@@ -520,7 +520,7 @@ layers:
   - {t: '''', h: '$$mdi:apple-keyboard-control$$', s: '"'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Z
+  - {t: Z, type: held}
   - X
   - C
   - V
