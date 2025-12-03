@@ -601,6 +601,12 @@ combos:
 - p: [22, 23]
   k: $$mdi:keyboard-esc$$
   l: ['MOU ']
+- p: [2, 3]
+  k: {t: QWERTY, h: toggle}
+  l: ['MOU ']
+- p: [15, 16]
+  k: {t: QWERTY, h: toggle}
+  l: ['MOU ']
 - p: [17, 18]
   k: $$mdi:apple-keyboard-shift$$
   l: [QWERTY]
@@ -612,6 +618,9 @@ combos:
   l: [QWERTY]
 - p: [3, 4]
   k: '&leader'
+  l: [QWERTY]
+- p: [2, 3]
+  k: {t: 'MOU ', h: toggle}
   l: [QWERTY]
 - p: [16, 17]
   k: $$mdi:keyboard-tab$$
@@ -712,12 +721,3 @@ combos:
 - p: [9, 10]
   k: '&mkp MB5'
   l: ['MOU ', 'MOU ', 'MOU ', 'MOU ', 'MOU ', 'MOU ']
-- p: [2, 3]
-  k: {t: 'MOU ', h: toggle}
-  l: [QWERTY]
-- p: [2, 3]
-  k: {t: QWERTY, h: toggle}
-  l: ['MOU ']
-- p: [15, 16]
-  k: {t: QWERTY, h: toggle}
-  l: ['MOU ']
