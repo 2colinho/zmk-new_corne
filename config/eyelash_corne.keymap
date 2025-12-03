@@ -806,6 +806,18 @@
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
+
+        combo_tobse {
+            bindings = <&to 0>;
+            key-positions = <2 3>;
+            layers = <15>;
+        };
+
+        combo_tobse0 {
+            bindings = <&to 0>;
+            key-positions = <15 16>;
+            layers = <15>;
+        };
     };
 
     macros {
