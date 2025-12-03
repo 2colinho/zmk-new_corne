@@ -439,12 +439,36 @@
             compatible = "zmk,behavior-leader-key";
             #binding-cells = <0>;
             ignore-keys = <LEFT_SHIFT RIGHT_SHIFT>;
-            at { sequence = <A T>; bindings = <&kp AT>; };
-            hash { sequence = <H A>; bindings = <&kp HASH>; };
-            dllr { sequence = <D O>; bindings = <&kp DLLR>; };
-            prcnt { sequence = <P C>; bindings = <&kp PRCNT>; };
-            caret { sequence = <C T>; bindings = <&kp CARET>; };
-            amps { sequence = <A M>; bindings = <&kp AMPS>; };
+
+            at {
+                sequence = <A T>;
+                bindings = <&kp AT>;
+            };
+
+            hash {
+                sequence = <H A>;
+                bindings = <&kp HASH>;
+            };
+
+            dllr {
+                sequence = <D O>;
+                bindings = <&kp DLLR>;
+            };
+
+            prcnt {
+                sequence = <P C>;
+                bindings = <&kp PRCNT>;
+            };
+
+            caret {
+                sequence = <C T>;
+                bindings = <&kp CARET>;
+            };
+
+            amps {
+                sequence = <A M>;
+                bindings = <&kp AMPS>;
+            };
         };
     };
 
@@ -1115,8 +1139,8 @@
         mouse {
             display-name = "MOU";
             bindings = <
-&none  &none             &mo 16  &mo 17  &mo 18     &none                    &trans          &msc SCRL_UP    &mkp LCLK                 &mmv MOVE_UP    &mkp RCLK        &kp LA(LC(LS(LG(P))))  &none
-&none  &kp LEFT_CONTROL  &none   &none   &none      &none            &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT            &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp RIGHT_CONTROL      &none
+&none  &none             &none   &none   &none      &none                    &trans          &msc SCRL_UP    &mkp LCLK                 &mmv MOVE_UP    &mkp RCLK        &kp LA(LC(LS(LG(P))))  &none
+&none  &kp LEFT_CONTROL  &mo 16  &mo 17  &mo 18     &none            &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT            &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp RIGHT_CONTROL      &none
 &none  &none             &none   &none   &none      &none  &trans            &trans          &none           &msc SCRL_LEFT            &mkp MCLK       &msc SCRL_RIGHT  &td_togmou             &none
                                  &none   &mkp LCLK  &none                                    &none           &mtq_mkp LEFT_SHIFT LCLK  &none
             >;
