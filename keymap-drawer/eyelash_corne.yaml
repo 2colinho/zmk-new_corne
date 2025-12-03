@@ -444,9 +444,9 @@ layers:
   MOU:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - 'MOU '
-  - 'MOU '
-  - 'MOU '
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-up$$
@@ -457,9 +457,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - 'MOU '
+  - 'MOU '
+  - 'MOU '
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -493,9 +493,9 @@ layers:
   'MOU ':
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Q, type: held}
-  - {t: W, type: held}
-  - {t: E, type: held}
-  - {t: R, type: held}
+  - W
+  - E
+  - R
   - T
   - {t: '$$mdi:transfer$$', type: trans}
   - Y
@@ -506,9 +506,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - S
-  - D
-  - F
+  - {t: S, type: held}
+  - {t: D, type: held}
+  - {t: F, type: held}
   - G
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
