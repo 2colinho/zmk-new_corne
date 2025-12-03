@@ -715,3 +715,9 @@ combos:
 - p: [2, 3]
   k: {t: 'MOU ', h: toggle}
   l: [QWERTY]
+- p: [2, 3]
+  k: {t: QWERTY, h: toggle}
+  l: ['MOU ']
+- p: [15, 16]
+  k: {t: QWERTY, h: toggle}
+  l: ['MOU ']
