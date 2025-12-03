@@ -712,3 +712,6 @@ combos:
 - p: [9, 10]
   k: '&mkp MB5'
   l: ['MOU ', 'MOU ', 'MOU ', 'MOU ', 'MOU ', 'MOU ']
+- p: [2, 3]
+  k: {t: 'MOU ', h: toggle}
+  l: [QWERTY]
