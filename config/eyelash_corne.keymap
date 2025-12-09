@@ -554,7 +554,7 @@
         combo_leader {
             bindings = <&leader>;
             key-positions = <3 4>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
@@ -562,7 +562,7 @@
         combo_tomou {
             bindings = <&to 15>;
             key-positions = <2 3>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
@@ -610,7 +610,7 @@
         combo_delwd {
             bindings = <&kp LC(DEL)>;
             key-positions = <9 10>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             require-prior-idle-ms = <150>;
             layers = <0 1 3 4 6 8 9>;
         };
