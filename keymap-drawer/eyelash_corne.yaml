@@ -313,7 +313,7 @@ layers:
   - Meh+S
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Meh+F
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Meh+G
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
