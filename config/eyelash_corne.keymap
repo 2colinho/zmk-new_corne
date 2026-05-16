@@ -1120,7 +1120,7 @@
             display-name = "APP";
             bindings = <
 &none  &none  &none              &kp LS(TAB)        &swapper           &kp LA(LC(LS(T)))                    &trans          &kp LA(LC(LS(Y)))  &none  &kp LA(LC(LS(I)))  &none  &none  &none
-&none  &none  &kp LA(LC(LS(S)))  &none              &kp LA(LC(LS(F)))  &none                        &trans  &trans  &trans  &none              &none  &kp LA(LC(LS(K)))  &none  &none  &none
+&none  &none  &kp LA(LC(LS(S)))  &none              &kp LA(LC(LS(F)))  &kp LA(LC(LS(G)))            &trans  &trans  &trans  &none              &none  &kp LA(LC(LS(K)))  &none  &none  &none
 &none  &none  &none              &kp LA(LC(LS(C)))  &none              &none              &trans            &trans          &kp LA(LC(LS(N)))  &none  &none              &none  &none  &none
                                  &none              &none              &none                                                &none              &none  &none
             >;
